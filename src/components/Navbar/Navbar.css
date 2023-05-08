@@ -41,19 +41,19 @@
       from(hsla(212, 35%, 21%, 0.719)),
       to(#141e30)
     ),
-    url("../assets/background.jpg");
+    url("../../../assets/background.jpg");
   background: -o-linear-gradient(
       left,
       hsla(212, 35%, 21%, 0.719),
       hsla(212, 35%, 56%, 0.719)
     ),
-    url("../assets/background.jpg");
+    url("../../../assets/background.jpg");
   background: linear-gradient(
       to right,
       hsla(212, 35%, 21%, 0.719),
       hsla(212, 35%, 56%, 0.719)
     ),
-    url("../assets/background.jpg");
+    url("../../../assets/background.jpg");
   max-height: 500px;
   min-height: 200px;
   justify-content: start;

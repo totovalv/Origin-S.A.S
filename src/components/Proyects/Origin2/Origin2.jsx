@@ -6,7 +6,7 @@ import img5Slider from "../../../../assets/img/OriginII/Acabados/Origin2_A5.jpg"
 import img6Slider from "../../../../assets/img/OriginII/Acabados/Origin2_A6.jpg";
 import img7Slider from "../../../../assets/img/OriginII/Acabados/Origin2_A7.jpg";
 import img8Slider from "../../../../assets/img/OriginII/Acabados/Origin2_A8.jpg";
-import infoTable from "../../../../assets/img/info_table.png";
+import infoTable from "../../../../assets/info_table.png";
 import ContactUs from "../../ContactUs/ContactUs";
 import Footer from "../../Footer/Footer.tsx";
 import Navbar from "../../Navbar/Navbar";
@@ -167,7 +167,7 @@ function Origin2() {
         <div className={style.iconsGrid}>
           <div className={style.itemIcon}>
             <img className={style.icon} src={p} alt="" />
-            <div className={style.iconsText}>PARQUEADEROS COMUNALES</div>
+            <div className={style.iconsText}>PARQUEADEROS PRIVADOS</div>
           </div>
 
           <div className={style.itemIcon}>

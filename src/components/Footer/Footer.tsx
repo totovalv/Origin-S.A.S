@@ -36,7 +36,7 @@ function Footer() {
             </div>
             <div className="originsBlock">
               <div className="followUsInfoLabelOriginTitle">Origin 3</div>
-              <div className="followUsInfoLabelOrigin"> Carrera 77A #83-31  Carrera 77A #83-39  </div>
+              <div className="followUsInfoLabelOrigin"> Carrera 77A #83-31 <br/><hr/> Carrera 77A #83-39  </div>
               <div className="followUsInfoLabelOrigin"> Bogotá - Colombia</div>
             </div>
           </div>

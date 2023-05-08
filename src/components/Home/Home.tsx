@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar.jsx";
 // import titanPlaza from "../../img/Tiatan_Plaza.jpg";
 import titanPlaza from "../../../assets/img/titan2.jpg";
-import lago from "../../../assets/img/Santa_maria_del_lago.jpeg";
+import lago from "../../../assets/Santa_maria_del_lago.jpeg";
 import trasmi from "../../../assets/img/Estacion_Avenida_Cali.jpg";
 import puentearanda from "../../../assets/img/Loclidad Puente Aranda.avif";
 import imgFachada from "../../../assets/img/Fachada3_Origin3.jpg";

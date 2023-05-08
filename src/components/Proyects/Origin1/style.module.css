@@ -382,6 +382,8 @@
   width: 100%;
   height: 90vh;
   margin-bottom: 5rem;
+  margin-top: 7rem;
+  
 }
 
 .titleUbicacion {
@@ -412,7 +414,7 @@
   align-items: center;
   box-shadow: 0.313rem 0.31rem 1.563rem 0rem rgba(46, 61, 73, 0.2);
   border-radius: 1.25rem;
-  margin: 6.25rem auto 1.25rem;
+  margin: 0.8rem auto 1.25rem;
 }
 
 .carouselContainerBuildings {
@@ -438,10 +440,10 @@
   animation-play-state: paused;
 }
 .carouselBuildings .imageOne {
-  background-image: url("../../../img/OriginI/GALERIA-1-ORIGIN-1.jpg");
+  background-image: url("../../../../assets/img/OriginI/GALERIA-1-ORIGIN-1.jpg");
 }
 .carouselBuildings .imageTwo {
-  background-image: url("../../../img/OriginI/galeria-1-origin1.jpg");
+  background-image: url("../../../../assets/img/OriginI/galeria-1-origin1.jpg");
 }
 
 @keyframes sliding {

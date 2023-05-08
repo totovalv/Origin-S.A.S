@@ -8,7 +8,7 @@ function ContactUs() {
       <div className="floating-container">
         <a
             className="floating-button"
-            href="https://api.whatsapp.com/send?phone=5491166417018&text=HOLA"
+            href="https://api.whatsapp.com/send?phone=573005635358&text=Quiero Recibir mas informacion sobre..."
           >
             <img className="whatsappIcon" src={WhatsAppIcon} alt="whatsapp" />
           </a>

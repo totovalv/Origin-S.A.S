@@ -63,6 +63,7 @@ html {
 .slider {
   width: 200%;
   height: 100%;
+  
 }
 
 .slider ul {
@@ -70,6 +71,8 @@ html {
   animation: cambio 15s infinite alternate linear;
   width: 100%;
   height: 100%;
+
+
 }
 .slider li {
   width: 100%;

@@ -16,8 +16,35 @@ import people from "../../icons/people.png";
 import terraza from "../../icons/terraza.png";
 import trash from "../../icons/trash.png";
 import style from "./style.module.css";
+// import { useState } from "react";
 
 function Origin2() {
+  // let [currentImg,setCurrenImg]= useState(img1Slider)
+  // const handlePrevious = ()=>{
+  //   if(currentImg===img1Slider) setCurrenImg(img8Slider)
+  //   if(currentImg===img2Slider) setCurrenImg(img1Slider)
+  //   if(currentImg===img3Slider) setCurrenImg(img2Slider)
+  //   if(currentImg===img4Slider) setCurrenImg(img3Slider)
+  //   if(currentImg===img5Slider) setCurrenImg(img4Slider)
+  //   if(currentImg===img6Slider) setCurrenImg(img5Slider)
+  //   if(currentImg===img7Slider) setCurrenImg(img6Slider)
+  //   if(currentImg===img8Slider) setCurrenImg(img7Slider)
+  // }
+  // const handleNext = ()=>{
+  //   if(currentImg===img1Slider) setCurrenImg(img2Slider)
+  //   if(currentImg===img2Slider) setCurrenImg(img3Slider)
+  //   if(currentImg===img3Slider) setCurrenImg(img4Slider)
+  //   if(currentImg===img4Slider) setCurrenImg(img5Slider)
+  //   if(currentImg===img5Slider) setCurrenImg(img6Slider)
+  //   if(currentImg===img6Slider) setCurrenImg(img7Slider)
+  //   if(currentImg===img7Slider) setCurrenImg(img8Slider)
+  //   if(currentImg===img8Slider) setCurrenImg(img1Slider)
+  // }
+  const setImage=(img)=>{
+    // setCurrenImg(img)
+    console.log(img);
+  }
+
   return (
     <div>
       <Navbar />
@@ -34,47 +61,49 @@ function Origin2() {
         <div className={style.sectionHome}>
           <div>
             <div className={style.carouselHome}>
-              <input type="radio" name="slides" id="slide-1" />
-              <input type="radio" name="slides" id="slide-2" />
-              <input type="radio" name="slides" id="slide-3" />
-              <input type="radio" name="slides" id="slide-4" />
-              <input type="radio" name="slides" id="slide-5" />
-              <input type="radio" name="slides" id="slide-6" />
-              <input type="radio" name="slides" id="slide-7" />
-              <input type="radio" name="slides" id="slide-8" />
+              {/* <div onClick={()=>handlePrevious()}>{"<"} </div> */}
+              <input onClick={(img1Slider)=>setImage(img1Slider)} type="radio" name="slides" id="slide-1" />
+              <input onClick={(img2Slider)=>setImage(img2Slider)} type="radio" name="slides" id="slide-2" />
+              <input onClick={(img3Slider)=>setImage(img3Slider)} type="radio" name="slides" id="slide-3" />
+              <input onClick={(img4Slider)=>setImage(img4Slider)}  type="radio" name="slides" id="slide-4" />
+              <input onClick={(img5Slider)=>setImage(img5Slider)} type="radio" name="slides" id="slide-5" />
+              <input  onClick={(img6Slider)=>setImage(img6Slider)} type="radio" name="slides" id="slide-6" />
+              <input onClick={(img7Slider)=>setImage(img7Slider)}type="radio" name="slides" id="slide-7" />
+              <input  onClick={(img8Slider)=>setImage(img8Slider)} type="radio" name="slides" id="slide-8" />
+              {/* <div onClick={()=>handleNext()}>{">"} </div> */}
               <ul className={style.carousel__slides}>
                 <li className={style.carousel__slide}>
-                  <figure>
+                  <figure >
                     <div>
-                      <img src={img1Slider} alt="" />
+                      <img  src={img1Slider} alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img2Slider} alt="" />
+                      <img  src={img2Slider} alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img3Slider} alt="" />
+                      <img  src={img3Slider} alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img4Slider} alt="" />
+                      <img  src={img4Slider} alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img5Slider} alt="" />
+                      <img   src={img5Slider} alt="" />
                     </div>
                   </figure>
                 </li>
@@ -88,7 +117,7 @@ function Origin2() {
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img7Slider} alt="" />
+                      <img  src={img7Slider} alt="" />
                     </div>
                   </figure>
                 </li>
@@ -103,42 +132,42 @@ function Origin2() {
               <ul className={style.carousel__thumbnails}>
                 <li>
                   <label htmlFor="slide-1">
-                    <img src={img1Slider} alt="" />
+                    <img onClick={(img1Slider)=>setImage(img1Slider)} src={img1Slider} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-2">
-                    <img src={img2Slider} alt="" />
+                    <img onClick={(img2Slider)=>setImage(img2Slider)} src={img2Slider} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-3">
-                    <img src={img3Slider} alt="" />
+                    <img  onClick={(img3Slider)=>setImage(img3Slider)} src={img3Slider} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-4">
-                    <img src={img4Slider} alt="" />
+                    <img onClick={(img4Slider)=>setImage(img4Slider)} src={img4Slider} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-5">
-                    <img src={img5Slider} alt="" />
+                    <img onClick={(img5Slider)=>setImage(img5Slider)}src={img5Slider} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-6">
-                    <img src={img6Slider} alt="" />
+                    <img onClick={(img6Slider)=>setImage(img6Slider)} src={img6Slider} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-7">
-                    <img src={img7Slider} alt="" />
+                    <img onClick={(img7Slider)=>setImage(img7Slider)} src={img7Slider} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-8">
-                    <img src={img8Slider} alt="" />
+                    <img  onClick={(img8Slider)=>setImage(img8Slider)}src={img8Slider} alt="" />
                   </label>
                 </li>
               </ul>

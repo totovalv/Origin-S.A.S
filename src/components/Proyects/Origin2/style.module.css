@@ -65,6 +65,9 @@
   display: flex;
   justify-content: center;
 }
+.imgTimeline{
+  width: 95vw;
+}
 
 /* ----------------------------------------------------------------------------- */
 

@@ -10,7 +10,7 @@ import infoTable from "../../../../assets/info_table.png";
 import ContactUs from "../../ContactUs/ContactUs";
 import Footer from "../../Footer/Footer.tsx";
 import Navbar from "../../Navbar/Navbar";
-import timeline from "../../../../assets/timeline.png";
+import timeline from "../../../../assets/timeline2.jpg";
 import car from "../../icons/car.png";
 import p from "../../icons/p.png";
 import people from "../../icons/people.png";
@@ -210,7 +210,7 @@ function Origin2() {
       </div>
 
       <div className={style.timeline}>
-        <img src={timeline} alt="timeline" />
+        <img className={style.imgTimeline} src={timeline} alt="timeline" />
       </div>
       <div className={style.carouselWrapperBuildings}>
         <div className={style.carouselContainerBuildings}>

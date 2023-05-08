@@ -1,0 +1,24 @@
+
+
+.floating-container {
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+  margin: 10px 5px;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.floating-container:hover {
+  bottom: 6rem;
+
+}
+
+.whatsappIcon{
+  width: 5rem;
+  height:5rem;
+}
+
+
+
+
+

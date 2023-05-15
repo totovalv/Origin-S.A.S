@@ -1,21 +1,15 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import FacebookIcon from "@mui/icons-material/Facebook";
-import logo from "../../../assets/LOGOCOLOR.png";
-// import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import {BsFacebook} from 'react-icons/bs'
 import {AiOutlineMail} from 'react-icons/ai'
-
-
 import "./Footer.css";
-// import prueba from "../assets/imagen8.png";
+
 
 function Footer() {
   return (
     <>
       <footer className="bodyFooter">
         <div className="containerLogo">
-          <img className="imgLogo" src={logo} alt="" />
+          <img className="imgLogo" src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177149/Logos/LOGOCOLOR_misos2.png" alt="" />
         </div>
 
         <hr className="hrVertical"></hr>

@@ -443,7 +443,7 @@
 .carouselBuildings {
   display: flex;
   width: 162.5rem;
-  animation: sliding 10s infinite;
+  animation: sliding 8s infinite;
 }
 .carouselBuildings div {
   width: 162.5rem;
@@ -456,10 +456,10 @@
   animation-play-state: paused;
 }
 .carouselBuildings .imageOne {
-  background-image: url("../../../../assets/img/OriginII/galeria-1-origin2.jpg");
+  background-image: url("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684178502/Origin2%20Acabados/galeria-1-origin2_z9o6bj.jpg");
 }
 .carouselBuildings .imageTwo {
-  background-image: url("../../../../assets/img/OriginII/galeria-2-origin2.jpg");
+  background-image: url("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684178503/Origin2%20Acabados/galeria-2-origin2_szlgd3.jpg");
 }
 
 @keyframes sliding {

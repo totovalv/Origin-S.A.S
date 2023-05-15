@@ -2,18 +2,7 @@ import React from "react";
 import ContactUs from "../ContactUs/ContactUs";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar.jsx";
-// import titanPlaza from "../../img/Tiatan_Plaza.jpg";
-import titanPlaza from "../../../assets/img/titan2.jpg";
-import lago from "../../../assets/Santa_maria_del_lago.jpeg";
-import trasmi from "../../../assets/img/Estacion_Avenida_Cali.jpg";
-import puentearanda from "../../../assets/img/Loclidad Puente Aranda.avif";
-import imgFachada from "../../../assets/img/Fachada3_Origin3.jpg";
-import imgHome from "../../../assets/img/imgHome.jpg";
-import APTOS2 from "../../../assets/img/FACH2.png";
-import FachadaFinal from "../../../assets/img/FACHADA FRONTAL.png";
-import {BsFillPeopleFill} from 'react-icons/bs';
-import ApartmentIcon from "../../../assets/img/IconEdificio.png";
-import mapa from "../../../assets/mapa.jpeg";
+import { BsFillPeopleFill } from "react-icons/bs";
 import "./home.css";
 
 function Home() {
@@ -29,13 +18,12 @@ function Home() {
               <div className="slider">
                 <ul>
                   <li>
-                    <img src={imgHome} alt="fachadaOrigin2" />
+                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177148/Origin2%20Acabados/imgHome_czivcr.jpg" alt="fachadaOrigin2" />
                   </li>
-                  {/* <li  style={{ display: "flex", justifyContent: "center" }} > */}
+
                   <li>
                     <img
-                      // style={{ width: "80%" }}
-                      src={imgFachada}
+                      src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177147/Origin1%20Acabados/Fachada3_Origin3_uosf5q.jpg"
                       alt="fachadaOrigin2"
                     />
                   </li>
@@ -63,10 +51,7 @@ function Home() {
               <div className="buttonNosotrosPosition">
                 <button className="buttonNosotros">
                   Nosotros{" "}
-                  <BsFillPeopleFill
-                   
-                    className="iconB"
-                  ></BsFillPeopleFill>
+                  <BsFillPeopleFill className="iconB"></BsFillPeopleFill>
                 </button>
               </div>
             </div>
@@ -78,7 +63,7 @@ function Home() {
             <div className="container__text">
               <h1>Conoce nuestro nuevo proyecto</h1>
               <div className="positionContainer">
-                <img src={FachadaFinal} alt="FachacdaOrigin3 " />
+                <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png" alt="FachadaOrigin3 " />
                 <p>
                   <h4>Edificio Origin III</h4>
                   Es un proyecto de apartamentos y apartaestudios desde 23.3m2
@@ -112,16 +97,28 @@ function Home() {
             <div className="slider2">
               <ul>
                 <li>
-                  <img src={titanPlaza} alt={"img"} />
+                  <img
+                    src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177155/Origin3%20Aleda%C3%B1os/titan2_svbocm.jpg"
+                    alt={"img"}
+                  />
                 </li>
                 <li>
-                  <img src={trasmi} alt={"img"} />
+                  <img
+                    src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177102/Origin3%20Aleda%C3%B1os/Estacion_Avenida_Cali_njtspo.jpg"
+                    alt={"img"}
+                  />
                 </li>
                 <li>
-                  <img src={lago} alt={"img"} />
+                  <img
+                    src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177153/Origin3%20Aleda%C3%B1os/Santa_maria_del_lago_xwesoy.png"
+                    alt={"img"}
+                  />
                 </li>
                 <li>
-                  <img src={mapa} alt={"img"} />
+                  <img
+                    src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684180251/Origin3%20Aleda%C3%B1os/MAPAlugares_iiguur.jpg"
+                    alt={"img"}
+                  />
                 </li>
               </ul>
             </div>
@@ -135,26 +132,26 @@ function Home() {
 
       <div className="titleProyects">
         <h1>PROYECTOS</h1>
-        <img src={ApartmentIcon} alt="icon" />
+        <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177147/Logos/IconEdificio_tp9u7o.png" alt="icon" />
       </div>
 
       <div className="allProjects">
         <div className="imagesProjects">
           <hr />
           {/* <hr className="hrYellow" /> */}
-          <img src={imgFachada} alt="" />
+          <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177147/Origin1%20Acabados/Fachada3_Origin3_uosf5q.jpg" alt="" />
           <h1>ORIGIN I</h1>
           <hr className="hrYellow" />
         </div>
         <div className="imagesProjects">
-          <img src={imgHome} alt="" />
+          <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177148/Origin2%20Acabados/imgHome_czivcr.jpg" alt="" />
           <h1>ORIGIN II</h1>
           <hr className="hrblue" />
         </div>
         <div className="imagesProjects">
           {/* <hr className="hrYellow" /> */}
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <img style={{ width: "80%" }} src={FachadaFinal} alt="" />
+            <img style={{ width: "80%" }} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png" alt="" />
           </div>
           <h1 style={{ marginTop: "-290px" }}>
             ORIGIN III <p>(En proceso)</p>
@@ -174,4 +171,3 @@ function Home() {
 }
 
 export default Home;
-

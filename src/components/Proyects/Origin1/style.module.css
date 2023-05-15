@@ -430,7 +430,7 @@
 .carouselBuildings {
   display: flex;
   width: 162.5rem;
-  animation: sliding 10s infinite;
+  animation: sliding 8s infinite;
 }
 .carouselBuildings div {
   width: 162.5rem;
@@ -443,10 +443,10 @@
   animation-play-state: paused;
 }
 .carouselBuildings .imageOne {
-  background-image: url("../../../../assets/img/OriginI/galeriacorreccion\ \(1\).jpg");
+  background-image: url("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684178350/Origin1%20Acabados/galeriacorreccion_1_tmz8oq.jpg");
 }
 .carouselBuildings .imageTwo {
-  background-image: url("../../../../assets/img/OriginI/galeria-1-origin1.jpg");
+  background-image: url("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684178350/Origin1%20Acabados/galeria-1-origin1_hcuhwj.jpg");
 }
 
 @keyframes sliding {

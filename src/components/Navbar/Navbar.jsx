@@ -9,7 +9,6 @@ import { Box } from "@mui/system";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../../../assets/LOGOborde.png"
 import CssBaseline from '@mui/material/CssBaseline';
 const StyledMenu = styled((props) => (
   <Menu
@@ -93,7 +92,7 @@ function Navbar() {
     <>
       <header className="header">
       <CssBaseline />
-          <img className="logoNavbar" src={logo} alt="logo" />
+          <img className="logoNavbar" src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177149/Logos/LOGOborde_hmuzyc.png" alt="logo" />
           <div className="titulo">ORIGIN HOLDINGS S.A.S</div>
         <Box sx={{ alignSelf:'start', justifySelf: "end", fontFamily: "Segoe UI Symbol",mt:1 }}>
           <Button sx={{ color: "#fff" , ":hover":{

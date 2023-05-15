@@ -1,24 +1,7 @@
-import img1Slider from "../../../../assets/img/OriginII/Acabados/Origin2_A1.jpg";
-import img2Slider from "../../../../assets/img/OriginII/Acabados/Origin2_A2.jpg";
-import img3Slider from "../../../../assets/img/OriginII/Acabados/Origin2_A3.jpg";
-import img4Slider from "../../../../assets/img/OriginII/Acabados/Origin2_A4.jpg";
-import img5Slider from "../../../../assets/img/OriginII/Acabados/Origin2_A5.jpg";
-import img6Slider from "../../../../assets/img/OriginII/Acabados/Origin2_A6.jpg";
-import img7Slider from "../../../../assets/img/OriginII/Acabados/Origin2_A7.jpg";
-import img8Slider from "../../../../assets/img/OriginII/Acabados/Origin2_A8.jpg";
-import infoTable from "../../../../assets/info_table.png";
 import ContactUs from "../../ContactUs/ContactUs";
 import Footer from "../../Footer/Footer.tsx";
 import Navbar from "../../Navbar/Navbar";
-import timeline from "../../../../assets/timeline2.jpg";
-import car from "../../icons/car.png";
-import p from "../../icons/p.png";
-import people from "../../icons/people.png";
-import reception from "../../icons/reception.png";
-import terraza from "../../icons/terraza.png";
-import trash from "../../icons/trash.png";
 import style from "./style.module.css";
-import bbq from "../../icons/bbq.png";
 
 function Origin2() {
   return (
@@ -31,7 +14,7 @@ function Origin2() {
             <h1>ORIGIN II</h1>
           </div>
           <div className={style.infoTable}>
-            <img src={infoTable} alt="" />
+            <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177148/Origin2%20Acabados/info_table2_q0bpww.png" alt="" />
           </div>
         </div>
         <div className={style.sectionHome}>
@@ -49,56 +32,56 @@ function Origin2() {
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img1Slider} alt="" />
+                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1683588779/Origin2%20Acabados/Origin2_A1_xgq5zp.jpg" alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img2Slider} alt="" />
+                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684185276/Origin2%20Acabados/Origin2_A7_gw7jyj.jpg" alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img3Slider} alt="" />
+                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A3_a2wxtq.jpg" alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img4Slider} alt="" />
+                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A4_bz7eco.jpg" alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img5Slider} alt="" />
+                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A5_ok5wyg.png" alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img6Slider} alt="" />
+                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184945/Origin2%20Acabados/Origin2_A6_xdtyd0.jpg" alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img7Slider} alt="" />
+                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A2_icznkh.jpg" alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src={img8Slider} alt="" />
+                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A8_k3iwto.jpg" alt="" />
                     </div>
                   </figure>
                 </li>
@@ -106,42 +89,42 @@ function Origin2() {
               <ul className={style.carousel__thumbnails}>
                 <li>
                   <label htmlFor="slide-1">
-                    <img src={img1Slider} alt="" />
+                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1683588779/Origin2%20Acabados/Origin2_A1_xgq5zp.jpg" alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-2">
-                    <img src={img2Slider} alt="" />
+                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684185276/Origin2%20Acabados/Origin2_A7_gw7jyj.jpg" alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-3">
-                    <img src={img3Slider} alt="" />
+                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A3_a2wxtq.jpg" alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-4">
-                    <img src={img4Slider} alt="" />
+                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A4_bz7eco.jpg" alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-5">
-                    <img src={img5Slider} alt="" />
+                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A5_ok5wyg.png" alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-6">
-                    <img src={img6Slider} alt="" />
+                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184945/Origin2%20Acabados/Origin2_A6_xdtyd0.jpg" alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-7">
-                    <img src={img7Slider} alt="" />
+                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A2_icznkh.jpg" alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-8">
-                    <img src={img8Slider} alt="" />
+                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A8_k3iwto.jpg" alt="" />
                   </label>
                 </li>
               </ul>
@@ -166,51 +149,51 @@ function Origin2() {
         <div className={style.titleEspaciosDisp}>ESPACIOS DISPONIBLES </div>
         <div className={style.iconsGrid}>
           <div className={style.itemIcon}>
-            <img className={style.icon} src={p} alt="" />
+            <img className={style.icon} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/p_vcv9ie.png" alt="" />
             <div className={style.iconsText}>PARQUEADEROS PRIVADOS</div>
           </div>
 
           <div className={style.itemIcon}>
-            <img className={style.icon} src={reception} alt="" />
+            <img className={style.icon} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/reception_rnsgue.png" alt="" />
             <div className={style.iconsText}>RECEPCION</div>
           </div>
 
           <div className={style.itemIcon}>
-            <img className={style.icon} src={people} alt="" />
+            <img className={style.icon} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/people_gqo985.png" alt="" />
             <div className={style.iconsText}>SALÓN COMUNAL</div>
           </div>
 
           <div className={style.itemIcon}>
-            <img className={style.icon} src={car} alt="" />
+            <img className={style.icon} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/car_bz2qbq.png" alt="" />
             <div className={style.iconsText}>ELEVADOR VEHICULAR</div>
           </div>
         </div>
 
         <div className={style.iconsGrid2}>
           <div className={style.itemIcon}>
-            <img className={style.icon} src={terraza} alt="" />
+            <img className={style.icon} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/terraza_xfxnf1.png" alt="" />
             <div className={style.iconsText}>TERRAZA</div>
           </div>
 
           <div className={style.itemIcon}>
-            <img className={style.iconBbq} src={bbq} alt="" />
+            <img className={style.iconBbq} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/bbq_qo1d2p.png" alt="" />
             <div className={style.iconsText}>ZONA BBQ </div>
           </div>
 
           <div className={style.itemIcon}>
-            <img className={style.icon} src={trash} alt="" />
+            <img className={style.icon} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/trash_mb6rzo.png" alt="" />
             <div className={style.iconsText}>SHUT DE BASURAS</div>
           </div>
 
           <div className={style.itemIcon}>
-            <img className={style.icon} src={trash} alt="" />
-            <div className={style.iconsText}>BICICLETERA</div>
+            <img className={style.icon} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/bicycle_uuwow3.png" alt="" />
+            <div className={style.iconsText}>BICICLETERO</div>
           </div>
         </div>
       </div>
 
       <div className={style.timeline}>
-        <img className={style.imgTimeline} src={timeline} alt="timeline" />
+        <img className={style.imgTimeline} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177153/Origin2%20Acabados/timeline2_yg1wqe.jpg" alt="timeline" />
       </div>
       <div className={style.carouselWrapperBuildings}>
         <div className={style.carouselContainerBuildings}>

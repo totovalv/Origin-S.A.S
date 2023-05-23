@@ -149,7 +149,6 @@ function Home() {
           <hr className="hrblue" />
         </div>
         <div className="imagesProjects">
-          {/* <hr className="hrYellow" /> */}
           <div style={{ display: "flex", justifyContent: "center" }}>
             <img style={{ width: "80%" }} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png" alt="" />
           </div>

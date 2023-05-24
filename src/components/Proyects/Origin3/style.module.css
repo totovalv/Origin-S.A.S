@@ -9,7 +9,9 @@
 * {
   --metropolisBold: metroBold;
   --metropolisLight: metroLight;
+ 
 }
+
 .head {
   display: grid;
   grid-template-columns: 55% 45%;
@@ -101,6 +103,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.linkStyle{
+  text-decoration: none;
+  color: white;
+}
 .apartments {
   color: white;
   margin-right: 1rem;
@@ -108,72 +114,76 @@
 .knowTheText {
   justify-self: center;
 }
-.seeMoreBtn{
+.seeMoreBtn {
   justify-self: center;
   align-self: end;
   margin-bottom: 3rem;
   width: 5.5rem;
   height: 3rem;
   font-family: var(--metropolisBold);
-color: white ;
-background: rgb(58, 172, 58);
-border: none;
-font-size: 1rem;
+  color: white;
+  background: rgb(58, 172, 58);
+  border: none;
+  font-size: 1rem;
+
+}
+.redirect{
+  text-decoration: none ;
 }
 .timeline {
   margin-top: 5vh;
   display: flex;
   justify-content: center;
 }
-.imgTimeline{
+.imgTimeline {
   width: 95vw;
 }
-.ubicationTitle{
+.ubicationTitle {
   display: flex;
   justify-content: center;
   align-content: center;
-font-size: 2.5rem;
-font-family: var(--metropolisBold);
-color: rgb(6, 102, 153);
+  font-size: 2.5rem;
+  font-family: var(--metropolisBold);
+  color: rgb(6, 102, 153);
 }
-.titleUnderline{
-  border-bottom: 3px solid  rgb(6, 102, 153);
+.titleUnderline {
+  border-bottom: 3px solid rgb(6, 102, 153);
   width: 3.5rem;
 }
-.titleContain{
+.titleContain {
   display: grid;
   justify-items: center;
 }
 
-.ubicationContainer{
+.ubicationContainer {
   display: grid;
   margin-top: 1rem;
   grid-template-columns: 40% 40%;
   justify-content: center;
-  gap:2rem
+  gap: 2rem;
 }
-.ubicationImg{
+.ubicationImg {
   width: 100%;
   height: 100%;
 }
-.availableSpacesTitle{
+.availableSpacesTitle {
   display: flex;
   justify-content: center;
   align-content: center;
-font-size: 3.5rem;
-font-family: var(--metropolisBold);
-color: rgb(6, 102, 153);
-margin-top: 2rem;
+  font-size: 3.5rem;
+  font-family: var(--metropolisBold);
+  color: rgb(6, 102, 153);
+  margin-top: 2rem;
 }
 
 .icon {
-  width:fit-content;
+  width: fit-content;
   height: fit-content;
 }
 
 .iconsText {
   margin-top: 1vh;
-  font-family:  var(--metropolisBold);
+  font-family: var(--metropolisBold);
   font-size: 1.4rem;
   width: 10rem;
   text-align: center;
@@ -183,32 +193,185 @@ margin-top: 2rem;
   justify-content: center;
   justify-items: center;
 }
-.iconsGrid{
+.iconsGrid {
   display: grid;
   grid-template-columns: 15% 15%15%15%;
   justify-content: center;
-  gap:4rem;
+  gap: 4rem;
 }
-.titleModelApartmentsContain{
+.titleModelApartmentsContain {
+  margin-top: 1.5rem;
   display: grid;
   justify-items: center;
   gap: 0.5rem;
 }
-.titleModelApartments{
+.titleModelApartments {
   font-size: 4rem;
-  font-family:  var(--metropolisBold);
-  color:  rgb(255, 178, 0);
+  font-family: var(--metropolisBold);
+  color: rgb(255, 178, 0);
   display: flex;
   justify-content: center;
   align-content: center;
 }
-.titleUnderlineModelApartments{ 
+.titleUnderlineModelApartments {
   width: 70vw;
   border: solid rgb(255, 178, 0);
-
 }
-.titleUnderlineModelApartmentsSoft{
+.titleUnderlineModelApartmentsSoft {
   border-bottom: 1px solid rgb(255, 178, 0);
   width: 70vw;
+}
+.apartmentsGrid {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
+  display: grid;
+  grid-template-columns: 40% 45%;
+  justify-content: center;
+  gap: 1rem;
+}
+.imgAptos {
+  width: 100%;
+}
+.availableLeftSideGrid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+  border: 5px solid rgb(6, 102, 153);
+  align-items: center;
+  justify-items: center;
+  height: 7rem;
+}
+.leftSideContainer {
+  display: grid;
+  gap: 1rem;
+  height: 90%;
+}
+.greenCircle {
+  background: rgb(152, 216, 87);
+  width: 1.5rem;
+  height: 1.5rem;
+  align-self: center;
+  border-radius: 50%;
+}
+.redCircle {
+  background: rgb(209, 102, 66);
+  width: 1.5rem;
+  height: 1.5rem;
+  align-self: center;
+  border-radius: 50%;
+}
+.availabilityLabelContainer{
+  display: grid;
+  gap: 1rem;
+
+}
+.availabilityLabel{
+  display: grid;
+  grid-template-columns:15%  85%;
+  gap: 0.5rem;
+  font-size: 1rem;
+  justify-content: center;
+  font-family: var(--metropolisLight);
+}
+
+.availabilityLabelApto {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: 1rem;
+  justify-content: center;
+}
+.greenCircleApto {
+  background: rgb(152, 216, 87);
+  width: 1.5rem;
+  height: 1.5rem;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.aptosContainer{
+  display: grid;
+  grid-template-rows: repeat(5,1fr);
+  gap: 1rem;
+}
+.aptoCard{
+  background: rgb(6, 102, 153);
+  display: grid;
+  grid-template-rows: 45% 55%;
+  height: 10em;
+  cursor: pointer;
+}
+.availabilityText{
+  justify-self: center;
+  align-self: center;
+  background: white;
+  font-family: var(--metropolisBold);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding:1.3rem;
+font-size: 1.5rem;
+}
+.aptoImg{
+  height: 4.9rem;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  width: 100%;
+}
+.aptoBottomGrid{
+  display: grid;
+  grid-template-columns: 25% 75%;
+gap: 0.5rem;
+}
+.numberApartmentsGrid{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: white;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+.availabilityTextApto{
+  justify-self: center;
+  align-self: center;
+  background: white;
+  font-family: var(--metropolisBold);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding:1.3rem;
+margin-left: 1.5rem;
+margin-right: 1rem;
+}
+.aptoTopGrid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.textApto{
+  color: white;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.typeApto{
+  font-family: var(--metropolisBold);
+  font-size:2rem ;
+  letter-spacing: 0.3rem;
+}
+.typeAptoDescription{
+  font-family: var(--metropolisLight);
+  
+}
+.seeMoreBtnApto{
+  width: 5.5rem;
+  height: 2.5rem;
+  font-family: var(--metropolisBold);
+  color: white;
+  background: rgb(58, 172, 58);
+  border: none;
+  font-size: 1rem;
 }

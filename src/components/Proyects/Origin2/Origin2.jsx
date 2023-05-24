@@ -2,8 +2,16 @@ import ContactUs from "../../ContactUs/ContactUs";
 import Footer from "../../Footer/Footer.tsx";
 import Navbar from "../../Navbar/Navbar";
 import style from "./style.module.css";
+import { Element, scroller } from 'react-scroll';
+
 
 function Origin2() {
+  const scrollToSection = () => {
+    scroller.scrollTo('sectionCarousel', {
+      smooth: true,
+      offset: -50, 
+    });
+  };
   return (
     <div>
       <Navbar />
@@ -17,7 +25,7 @@ function Origin2() {
             <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177148/Origin2%20Acabados/info_table2_q0bpww.png" alt="" />
           </div>
         </div>
-        <div className={style.sectionHome}>
+        <Element name="sectionCarousel" className={style.sectionHome}>
           <div>
             <div className={style.carouselHome}>
               <input type="radio" name="slides" id="slide-1" />
@@ -86,7 +94,7 @@ function Origin2() {
                   </figure>
                 </li>
               </ul>
-              <ul className={style.carousel__thumbnails}>
+              <ul onClick={scrollToSection} className={style.carousel__thumbnails}>
                 <li>
                   <label htmlFor="slide-1">
                     <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1683588779/Origin2%20Acabados/Origin2_A1_xgq5zp.jpg" alt="" />
@@ -130,7 +138,7 @@ function Origin2() {
               </ul>
             </div>
           </div>
-        </div>
+        </Element>
       </div>
 
       <div className={style.ubicacion}>

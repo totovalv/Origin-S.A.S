@@ -1,9 +1,37 @@
+import { Element, scroller } from 'react-scroll';
 import ContactUs from "../../ContactUs/ContactUs";
+import { Link } from 'react-router-dom';
 import Footer from "../../Footer/Footer.tsx";
 import Navbar from "../../Navbar/Navbar";
 import style from "./style.module.css";
+import { useState } from 'react';
 
-function Origin2() {
+function Origin3() {
+
+  let [currentPhoto,setCurrentPhoto]=useState("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-todos_oqb6ji.jpg")
+
+  const handleApto=(e)=>{
+    scrollToLeftSide()
+    if (e==1) setCurrentPhoto("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo1_nksky1.jpg")
+    if (e==2) setCurrentPhoto("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo2_kzzk45.jpg")
+    if (e==3) setCurrentPhoto("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo3_xlq4d5.jpg")
+    if (e==4) setCurrentPhoto("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo4_ewuupb.jpg")
+    if (e==5) setCurrentPhoto("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo5_oetfon.jpg")
+
+  
+  }
+  const scrollToSection = () => {
+    scroller.scrollTo('sectionRef', {
+      smooth: true,
+      offset: -50, 
+    });
+  };
+  const scrollToLeftSide = () => {
+    scroller.scrollTo('leftSideRef', {
+      smooth: true,
+      offset: -50, 
+    });
+  };
   return (
     <div>
       <Navbar />
@@ -49,7 +77,7 @@ function Origin2() {
             <p>MODELO</p>
           </div>
         </div>
-        <button className={style.seeMoreBtn}>Ver más</button>
+        <button  onClick={scrollToSection} className={style.seeMoreBtn} >Ver más</button>
       </div>
       <div className={style.timeline}>
         <img
@@ -77,17 +105,29 @@ function Origin2() {
       <p className={style.availableSpacesTitle}>ESPACIOS DISPONIBLES</p>
       <>
         <div className={style.iconsGrid}>
-        <div className={style.itemIcon}>
-            <img className={style.icon} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/p_vcv9ie.png" alt="" />
+          <div className={style.itemIcon}>
+            <img
+              className={style.icon}
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/p_vcv9ie.png"
+              alt=""
+            />
             <div className={style.iconsText}>PARQUEADEROS PRIVADOS</div>
           </div>
-          
+
           <div className={style.itemIcon}>
-            <img className={style.icon} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/reception_rnsgue.png" alt="" />
+            <img
+              className={style.icon}
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/reception_rnsgue.png"
+              alt=""
+            />
             <div className={style.iconsText}>RECEPCION</div>
           </div>
           <div className={style.itemIcon}>
-            <img className={style.icon} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/people_gqo985.png" alt="" />
+            <img
+              className={style.icon}
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/people_gqo985.png"
+              alt=""
+            />
             <div className={style.iconsText}>SALÓN COMUNAL</div>
           </div>
           <div className={style.itemIcon}>
@@ -118,7 +158,11 @@ function Origin2() {
             <div className={style.iconsText}>SÓTANO CON RAMPA LEVADIZA</div>
           </div>
           <div className={style.itemIcon}>
-            <img className={style.iconBbq} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/bbq_qo1d2p.png" alt="" />
+            <img
+              className={style.iconBbq}
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/bbq_qo1d2p.png"
+              alt=""
+            />
             <div className={style.iconsText}>ZONA BBQ </div>
           </div>
           <div className={style.itemIcon}>
@@ -131,12 +175,20 @@ function Origin2() {
           </div>
         </div>
         <div className={style.iconsGrid}>
-        <div className={style.itemIcon}>
-            <img className={style.icon} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/bicycle_uuwow3.png" alt="" />
+          <div className={style.itemIcon}>
+            <img
+              className={style.icon}
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/bicycle_uuwow3.png"
+              alt=""
+            />
             <div className={style.iconsText}>BICICLETERO</div>
           </div>
           <div className={style.itemIcon}>
-            <img className={style.icon} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/trash_mb6rzo.png" alt="" />
+            <img
+              className={style.icon}
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/trash_mb6rzo.png"
+              alt=""
+            />
             <div className={style.iconsText}>SHUT DE BASURAS</div>
           </div>
           <div className={style.itemIcon}>
@@ -158,12 +210,199 @@ function Origin2() {
         </div>
       </>
       <div className={style.titleModelApartmentsContain}>
-      <p className={style.titleModelApartments}>APARTAMENTOS MODELO</p>
-      <hr className={style.titleUnderlineModelApartments}></hr>
-      <hr className={style.titleUnderlineModelApartmentsSoft}></hr>
+        <Element className={style.titleModelApartments}  name="sectionRef" >APARTAMENTOS MODELO</Element>
+        <hr className={style.titleUnderlineModelApartments}></hr>
+        <hr className={style.titleUnderlineModelApartmentsSoft}></hr>
+      </div>
 
-      
+      <div className={style.apartmentsGrid}>
+        <div className={style.leftSideContainer}>
+          <div className={style.availableLeftSideGrid}>
+            <p className={style.availabilityText}>Disponibilidad</p>
+            <div className={style.availabilityLabelContainer}>
+              <div className={style.availabilityLabel}>
+                <p className={style.greenCircle}></p>Si esta disponible
+              </div>
+              <div className={style.availabilityLabel}> 
+                <p className={style.redCircle}></p>No esta disponible
+              </div>
+            </div>
+          </div>
+          <img  
+            className={style.imgAptos}
+            src={currentPhoto}
+            alt="aptos"
+          />
+        </div>
 
+        <div className={style.aptosContainer}>
+        <div className={style.aptoCard} onClick={()=>handleApto(1)}  >
+            <div className={style.aptoTopGrid}>
+              <div className={style.textApto}>
+                <p className={style.typeApto}>TIPO 1</p>
+                <p className={style.typeAptoDescription}>
+                45.45 M2 - Área Privada
+                </p>
+              </div>
+              <img
+                className={style.aptoImg}
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684868056/Aptos%20Origin3/Apto_Tipo1_kdzsns_u0sqyi.jpg"
+                alt=""
+              />
+            </div>
+            <div className={style.aptoBottomGrid}>
+              <p className={style.availabilityTextApto}>Disponiblidad</p>
+              <div className={style.numberApartmentsGrid}>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>201
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>301
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>401
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>501
+                </p>
+                <button  className={style.seeMoreBtnApto}><Link  className={style.linkStyle} to="/projects/Origin3/1">Ver más</Link></button>
+              </div>
+            </div>
+          </div>
+
+          <div className={style.aptoCard} onClick={()=>handleApto(2)}>
+            <div className={style.aptoTopGrid}>
+              <div className={style.textApto}>
+                <p className={style.typeApto}>TIPO 2</p>
+                <p className={style.typeAptoDescription}>
+                  61.73 M2 - Área Privada
+                </p>
+              </div>
+              <img
+                className={style.aptoImg}
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684881817/Aptos%20Origin3/Apto_Tipo2_epippg_wnnppd.jpg"
+                alt=""
+              />
+            </div>
+            <div className={style.aptoBottomGrid}>
+              <p className={style.availabilityTextApto}>Disponiblidad</p>
+              <div className={style.numberApartmentsGrid}>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>202
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>302
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>402
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>502
+                </p>
+                <button  className={style.seeMoreBtnApto}><Link  className={style.linkStyle} to="/projects/Origin3/2">Ver más</Link></button>
+              </div>
+            </div>
+          </div>
+          <div className={style.aptoCard} onClick={()=>handleApto(3)}name="leftSideRef">
+            <div className={style.aptoTopGrid}>
+              <div className={style.textApto}>
+                <p className={style.typeApto}>TIPO 3</p>
+                <p className={style.typeAptoDescription}>
+                  45.45 M2 - Área Privada
+                </p>
+              </div>
+              <img
+                className={style.aptoImg}
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684882163/Aptos%20Origin3/Apto_Tipo3_htyo7y_amqq36.jpg"
+                alt=""
+              />
+            </div>
+            <div className={style.aptoBottomGrid}>
+              <p className={style.availabilityTextApto}>Disponiblidad</p>
+              <div className={style.numberApartmentsGrid}>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>203
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>303
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>403
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>503
+                </p>
+                <button  className={style.seeMoreBtnApto}><Link  className={style.linkStyle} to="/projects/Origin3/3">Ver más</Link></button>
+              </div>
+            </div>
+          </div>
+          <div className={style.aptoCard} onClick={()=>handleApto(4)}  >
+            <div className={style.aptoTopGrid}>
+              <div className={style.textApto}>
+                <p className={style.typeApto}>TIPO 4</p>
+                <p className={style.typeAptoDescription}>
+                  32.71 M2 - Área Privada
+                </p>
+              </div>
+              <img
+                className={style.aptoImg}
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684882717/Aptos%20Origin3/Apto_Tipo4_jsjgoh_1_hpc1zs.jpg"
+                alt=""
+              />
+            </div>
+            <div className={style.aptoBottomGrid}>
+              <p className={style.availabilityTextApto}>Disponiblidad</p>
+              <div className={style.numberApartmentsGrid}>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>204
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>304
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>404
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>504
+                </p>
+                <button  className={style.seeMoreBtnApto}><Link  className={style.linkStyle} to="/projects/Origin3/4">Ver más</Link></button>
+              </div>
+            </div>
+          </div>
+          <div className={style.aptoCard} onClick={()=>handleApto(5)}>
+            <div className={style.aptoTopGrid}>
+              <div className={style.textApto}>
+                <p className={style.typeApto}>TIPO 5</p>
+                <p className={style.typeAptoDescription}>
+                  23.31 M2 - Área Privada
+                </p>
+              </div>
+              <img
+                className={style.aptoImg}
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684882935/Aptos%20Origin3/Apto_Tipo5_ovi1ye_dfmchh.jpg"
+                alt=""
+              />
+            </div>
+            <div className={style.aptoBottomGrid}>
+              <p className={style.availabilityTextApto}>Disponiblidad</p>
+              <div className={style.numberApartmentsGrid}>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>205
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>305
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>405
+                </p>
+                <p className={style.availabilityLabelApto}>
+                  <p className={style.greenCircleApto}></p>505
+                </p>
+                <button  className={style.seeMoreBtnApto}><Link  className={style.linkStyle} to="/projects/Origin3/5">Ver más</Link></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <ContactUs />
       <Footer />
@@ -171,4 +410,4 @@ function Origin2() {
   );
 }
 
-export default Origin2;
+export default Origin3;

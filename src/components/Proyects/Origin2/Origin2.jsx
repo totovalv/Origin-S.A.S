@@ -1,11 +1,33 @@
+import { useEffect, useState } from "react";
 import ContactUs from "../../ContactUs/ContactUs";
 import Footer from "../../Footer/Footer.tsx";
 import Navbar from "../../Navbar/Navbar";
 import style from "./style.module.css";
 import { Element, scroller } from 'react-scroll';
+import Loader from "../../Loader/Loader";
 
 
 function Origin2() {
+  let [data, setData] = useState({});
+  let [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    
+    setTimeout(() => {
+      setLoading(true);
+    }, 500);
+    setData({
+     default:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1683588779/Origin2%20Acabados/Origin2_A1_xgq5zp.jpg",
+     photo2:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684185276/Origin2%20Acabados/Origin2_A7_gw7jyj.jpg",
+     photo3:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A4_bz7eco.jpg",
+     photo4:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A5_ok5wyg.png",
+     photo5:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184945/Origin2%20Acabados/Origin2_A6_xdtyd0.jpg",
+     photo6:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A2_icznkh.jpg",
+     photo7:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A8_k3iwto.jpg",
+     photo8:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A3_a2wxtq.jpg"
+
+    });
+  }, []);
   const scrollToSection = () => {
     scroller.scrollTo('sectionCarousel', {
       smooth: true,
@@ -14,6 +36,7 @@ function Origin2() {
   };
   return (
     <div>
+      <Loader isLoading={loading} />
       <Navbar />
 
       <div className={style.introduction}>
@@ -40,56 +63,56 @@ function Origin2() {
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1683588779/Origin2%20Acabados/Origin2_A1_xgq5zp.jpg" alt="" />
+                      <img src={data.default} alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684185276/Origin2%20Acabados/Origin2_A7_gw7jyj.jpg" alt="" />
+                      <img src={data.photo2} alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A3_a2wxtq.jpg" alt="" />
+                      <img src={data.photo3} alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A4_bz7eco.jpg" alt="" />
+                      <img src={data.photo4} alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A5_ok5wyg.png" alt="" />
+                      <img src={data.photo5} alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184945/Origin2%20Acabados/Origin2_A6_xdtyd0.jpg" alt="" />
+                      <img src={data.photo6} alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A2_icznkh.jpg" alt="" />
+                      <img src={data.photo7} alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <div>
-                      <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A8_k3iwto.jpg" alt="" />
+                      <img src={data.photo8} alt="" />
                     </div>
                   </figure>
                 </li>
@@ -97,42 +120,42 @@ function Origin2() {
               <ul onClick={scrollToSection} className={style.carousel__thumbnails}>
                 <li>
                   <label htmlFor="slide-1">
-                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1683588779/Origin2%20Acabados/Origin2_A1_xgq5zp.jpg" alt="" />
+                    <img src={data.default} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-2">
-                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684185276/Origin2%20Acabados/Origin2_A7_gw7jyj.jpg" alt="" />
+                    <img src={data.photo2}  alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-3">
-                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A3_a2wxtq.jpg" alt="" />
+                    <img  src={data.photo3} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-4">
-                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A4_bz7eco.jpg" alt="" />
+                    <img  src={data.photo4} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-5">
-                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A5_ok5wyg.png" alt="" />
+                    <img src={data.photo5} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-6">
-                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184945/Origin2%20Acabados/Origin2_A6_xdtyd0.jpg" alt="" />
+                    <img src={data.photo6} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-7">
-                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A2_icznkh.jpg" alt="" />
+                    <img src={data.photo7} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-8">
-                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684184944/Origin2%20Acabados/Origin2_A8_k3iwto.jpg" alt="" />
+                    <img src={data.photo8} alt="" />
                   </label>
                 </li>
               </ul>

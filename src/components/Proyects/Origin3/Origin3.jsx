@@ -1,46 +1,79 @@
-import { Element, scroller } from 'react-scroll';
+import { Element, scroller } from "react-scroll";
 import ContactUs from "../../ContactUs/ContactUs";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Footer from "../../Footer/Footer.tsx";
 import Navbar from "../../Navbar/Navbar";
 import style from "./style.module.css";
-import { useState } from 'react';
+import { useEffect, useState } from "react";
+import Loader from "../../Loader/Loader";
 
 function Origin3() {
+  let [data, setData] = useState({});
+  let [currentPhoto, setCurrentPhoto] = useState(
+    "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-todos_oqb6ji.jpg"
+  );
+  let [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(true);
+    }, 500);
+    setData({
+      renderOrigin3:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png",
+        type1:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo1_nksky1.jpg",
+        type2:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo2_kzzk45.jpg",
+        type3:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo3_xlq4d5.jpg",
+        type4:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo4_ewuupb.jpg",
+        type5:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo5_oetfon.jpg",
+        porcentage:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684795382/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/45__u6hmcy.png",
+        buildingLogo:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684794554/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/building_logo_biztci.png",
+        timeline:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684795405/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/linea_de_tiempo-origin3_x8fnvi.jpg",
+        map:"https://res.cloudinary.com/dxajrtcwk/image/upload/v1684797331/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/MAPAlugares_1_estge7.jpg"
 
-  let [currentPhoto,setCurrentPhoto]=useState("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-todos_oqb6ji.jpg")
+    });
+  }, []);
 
-  const handleApto=(e)=>{
-    scrollToLeftSide()
-    if (e==1) setCurrentPhoto("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo1_nksky1.jpg")
-    if (e==2) setCurrentPhoto("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo2_kzzk45.jpg")
-    if (e==3) setCurrentPhoto("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo3_xlq4d5.jpg")
-    if (e==4) setCurrentPhoto("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo4_ewuupb.jpg")
-    if (e==5) setCurrentPhoto("https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo5_oetfon.jpg")
-
-  
-  }
+  const handleApto = (e) => {
+    scrollToLeftSide();
+    if (e == 1)
+      setCurrentPhoto(
+        data.type1
+      );
+    if (e == 2)
+      setCurrentPhoto(
+        data.type2
+      );
+    if (e == 3)
+      setCurrentPhoto(
+        data.type3
+      );
+    if (e == 4)
+      setCurrentPhoto(
+        data.type4
+      );
+    if (e == 5)
+      setCurrentPhoto(
+        data.type5
+      );
+  };
   const scrollToSection = () => {
-    scroller.scrollTo('sectionRef', {
+    scroller.scrollTo("sectionRef", {
       smooth: true,
-      offset: -50, 
+      offset: -50,
     });
   };
   const scrollToLeftSide = () => {
-    scroller.scrollTo('leftSideRef', {
+    scroller.scrollTo("leftSideRef", {
       smooth: true,
-      offset: -50, 
+      offset: -50,
     });
   };
   return (
     <div>
+       <Loader isLoading={loading} />
       <Navbar />
       <div className={style.head}>
-        <img
-          className={style.renderImg}
-          src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png"
-          alt=""
-        />
+        <img className={style.renderImg} src={data.renderOrigin3} alt="" />
         <div>
           <div className={style.title}>
             <p className={style.textTitle}>ORIGIN 3</p>
@@ -56,7 +89,7 @@ function Origin3() {
               <p className={style.buildingPart}>1er. piso</p>
               <img
                 className={style.porcentageBarImg}
-                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684795382/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/45__u6hmcy.png"
+                src={data.porcentage}
                 alt=""
               />
             </div>
@@ -67,7 +100,7 @@ function Origin3() {
         {" "}
         <img
           className={style.buildingLogo}
-          src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684794554/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/building_logo_biztci.png"
+          src={data.buildingLogo}
           alt=""
         />
         <div className={style.containTitleBlueBar}>
@@ -77,12 +110,14 @@ function Origin3() {
             <p>MODELO</p>
           </div>
         </div>
-        <button  onClick={scrollToSection} className={style.seeMoreBtn} >Ver más</button>
+        <button onClick={scrollToSection} className={style.seeMoreBtn}>
+          Ver más
+        </button>
       </div>
       <div className={style.timeline}>
         <img
           className={style.imgTimeline}
-          src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684795405/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/linea_de_tiempo-origin3_x8fnvi.jpg"
+          src={data.timeline}
           alt="timeline"
         />
       </div>
@@ -93,12 +128,12 @@ function Origin3() {
       <div className={style.ubicationContainer}>
         <img
           className={style.ubicationImg}
-          src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684797331/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/MAPAlugares_1_estge7.jpg"
+          src={data.map}
           alt=""
         />
         <img
           className={style.ubicationImg}
-          src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684797331/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/MAPAlugares_1_estge7.jpg"
+          src={data.map}
           alt=""
         />
       </div>
@@ -210,7 +245,9 @@ function Origin3() {
         </div>
       </>
       <div className={style.titleModelApartmentsContain}>
-        <Element className={style.titleModelApartments}  name="sectionRef" >APARTAMENTOS MODELO</Element>
+        <Element className={style.titleModelApartments} name="sectionRef">
+          APARTAMENTOS MODELO
+        </Element>
         <hr className={style.titleUnderlineModelApartments}></hr>
         <hr className={style.titleUnderlineModelApartmentsSoft}></hr>
       </div>
@@ -223,25 +260,21 @@ function Origin3() {
               <div className={style.availabilityLabel}>
                 <p className={style.greenCircle}></p>Si esta disponible
               </div>
-              <div className={style.availabilityLabel}> 
+              <div className={style.availabilityLabel}>
                 <p className={style.redCircle}></p>No esta disponible
               </div>
             </div>
           </div>
-          <img  
-            className={style.imgAptos}
-            src={currentPhoto}
-            alt="aptos"
-          />
+          <img className={style.imgAptos} src={currentPhoto} alt="aptos" />
         </div>
 
         <div className={style.aptosContainer}>
-        <div className={style.aptoCard} onClick={()=>handleApto(1)}  >
+          <div className={style.aptoCard} onClick={() => handleApto(1)}>
             <div className={style.aptoTopGrid}>
               <div className={style.textApto}>
                 <p className={style.typeApto}>TIPO 1</p>
                 <p className={style.typeAptoDescription}>
-                45.45 M2 - Área Privada
+                  45.45 M2 - Área Privada
                 </p>
               </div>
               <img
@@ -265,12 +298,16 @@ function Origin3() {
                 <p className={style.availabilityLabelApto}>
                   <p className={style.greenCircleApto}></p>501
                 </p>
-                <button  className={style.seeMoreBtnApto}><Link  className={style.linkStyle} to="/projects/Origin3/1">Ver más</Link></button>
+                <button className={style.seeMoreBtnApto}>
+                  <Link className={style.linkStyle} to="/projects/Origin3/1">
+                    Ver más
+                  </Link>
+                </button>
               </div>
             </div>
           </div>
 
-          <div className={style.aptoCard} onClick={()=>handleApto(2)}>
+          <div className={style.aptoCard} onClick={() => handleApto(2)}>
             <div className={style.aptoTopGrid}>
               <div className={style.textApto}>
                 <p className={style.typeApto}>TIPO 2</p>
@@ -299,11 +336,19 @@ function Origin3() {
                 <p className={style.availabilityLabelApto}>
                   <p className={style.greenCircleApto}></p>502
                 </p>
-                <button  className={style.seeMoreBtnApto}><Link  className={style.linkStyle} to="/projects/Origin3/2">Ver más</Link></button>
+                <button className={style.seeMoreBtnApto}>
+                  <Link className={style.linkStyle} to="/projects/Origin3/2">
+                    Ver más
+                  </Link>
+                </button>
               </div>
             </div>
           </div>
-          <div className={style.aptoCard} onClick={()=>handleApto(3)}name="leftSideRef">
+          <div
+            className={style.aptoCard}
+            onClick={() => handleApto(3)}
+            name="leftSideRef"
+          >
             <div className={style.aptoTopGrid}>
               <div className={style.textApto}>
                 <p className={style.typeApto}>TIPO 3</p>
@@ -332,11 +377,15 @@ function Origin3() {
                 <p className={style.availabilityLabelApto}>
                   <p className={style.greenCircleApto}></p>503
                 </p>
-                <button  className={style.seeMoreBtnApto}><Link  className={style.linkStyle} to="/projects/Origin3/3">Ver más</Link></button>
+                <button className={style.seeMoreBtnApto}>
+                  <Link className={style.linkStyle} to="/projects/Origin3/3">
+                    Ver más
+                  </Link>
+                </button>
               </div>
             </div>
           </div>
-          <div className={style.aptoCard} onClick={()=>handleApto(4)}  >
+          <div className={style.aptoCard} onClick={() => handleApto(4)}>
             <div className={style.aptoTopGrid}>
               <div className={style.textApto}>
                 <p className={style.typeApto}>TIPO 4</p>
@@ -365,11 +414,15 @@ function Origin3() {
                 <p className={style.availabilityLabelApto}>
                   <p className={style.greenCircleApto}></p>504
                 </p>
-                <button  className={style.seeMoreBtnApto}><Link  className={style.linkStyle} to="/projects/Origin3/4">Ver más</Link></button>
+                <button className={style.seeMoreBtnApto}>
+                  <Link className={style.linkStyle} to="/projects/Origin3/4">
+                    Ver más
+                  </Link>
+                </button>
               </div>
             </div>
           </div>
-          <div className={style.aptoCard} onClick={()=>handleApto(5)}>
+          <div className={style.aptoCard} onClick={() => handleApto(5)}>
             <div className={style.aptoTopGrid}>
               <div className={style.textApto}>
                 <p className={style.typeApto}>TIPO 5</p>
@@ -398,7 +451,11 @@ function Origin3() {
                 <p className={style.availabilityLabelApto}>
                   <p className={style.greenCircleApto}></p>505
                 </p>
-                <button  className={style.seeMoreBtnApto}><Link  className={style.linkStyle} to="/projects/Origin3/5">Ver más</Link></button>
+                <button className={style.seeMoreBtnApto}>
+                  <Link className={style.linkStyle} to="/projects/Origin3/5">
+                    Ver más
+                  </Link>
+                </button>
               </div>
             </div>
           </div>

@@ -54,7 +54,7 @@
   display: flex;
   justify-content: center;
 }
-.imgTimeline{
+.imgTimeline {
   width: 95vw;
 }
 
@@ -74,9 +74,6 @@
   margin-bottom: 5rem;
   height: 80vh;
   width: 100%;
-  /* padding-right: 2rem;
-  padding-left: 2rem; */
-  /* border: solid 1px; */
 }
 
 /* ----------------------------------------------------------------- */
@@ -85,7 +82,6 @@
   width: 50%;
   height: 100%;
   margin: 0;
-  /* border: solid 1px; */
 }
 
 .principalTitle {
@@ -386,7 +382,6 @@
   height: 90vh;
   margin-bottom: 5rem;
   margin-top: 7rem;
-  
 }
 
 .titleUbicacion {
@@ -427,17 +422,17 @@
   margin: 1.5rem;
 }
 
-.carouselBuildings {
-  display: flex;
-  width: 162.5rem;
-  animation: sliding 8s infinite;
-}
 .carouselBuildings div {
   width: 162.5rem;
   height: 20rem;
 
   background-size: cover;
   background-position: center;
+}
+.carouselBuildings {
+  display: flex;
+  width: 162.5rem;
+  animation: sliding 8s infinite;
 }
 .carouselBuildings:hover {
   animation-play-state: paused;
@@ -467,5 +462,233 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+@media (width<=1280px) {
+  .introduction {
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    height: 65vh;
+    width: 98%;
+  }
+}
+@media (width<=1024px) {
+  .carouselWrapperBuildings {
+    width: 78vw;
+    height: 41vh;
+  }
+
+  .carouselContainerBuildings {
+    width: 47rem;
+    height: 11rem;
+    margin: 1.5rem;
+  }
+
+  .carouselBuildings div {
+    width: 257rem;
+    height: 11.5rem;
+    background-size: contain;
+  }
+  .carouselBuildings {
+    display: flex;
+    width: 162.5rem;
+    margin-left: -17rem;
+  }
+}
+@media (width<=912px) {
+  .principalTitle {
+    height: 13%;
+  }
+  .principalTitle h1 {
+    font-family: myFirstFont;
+    font-size: 3rem;
+  }
+  .introduction {
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    height: 35vh;
+    width: 98%;
+  }
+  .ubicacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 5rem;
+    margin-top: 0rem;
+  }
+  .map {
+    width: 100vw;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .titleEspaciosDisp {
+    margin-top: 3rem;
+  }
+  .iconsText {
+    text-align: center;
+  }
+  .carouselWrapperBuildings {
+    width: 86vw;
+    height: 16vh;
+    margin-top: 2rem;
+  }
+}
+@media (width<=820px) {
+  .carouselWrapperBuildings {
+    width: 95vw;
+    height: 17vh;
+    margin-top: 2rem;
+  }
+  .carouselContainerBuildings {
+    margin: 0rem;
+  }
+}
+@media (width<=540px) {
+  .introduction {
+    margin-top: 1rem;
+  }
+  .principalTitle h1 {
+    font-family: myFirstFont;
+    font-size: 1rem;
+  }
+  .titleUbicacion {
+    font-size: 1.5rem;
+  }
+  .map {
+    width: 100vw;
+    height: 50vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .titleEspaciosDisp {
+    margin-top: 23vh;
+    font-size: 1.5rem;
+  }
+  .iconsText {
+    margin-top: 2vh;
+    font-family: MetropolisBold;
+    font-size: 0.6rem;
+  }
+
+  .carouselBuildings div {
+    width: 257rem;
+    height: 6.5rem;
+    background-size: contain;
+  }
+  .carouselBuildings {
+    display: flex;
+    width: 162.5rem;
+    margin-left: -27rem;
+  }
+
+  .carouselWrapperBuildings {
+    width: 86vw;
+    height: 20vh;
+    margin-top: 2rem;
+  }
+  .carouselContainerBuildings {
+    height: fit-content;
+    margin: 1rem;
+  }
+}
+
+@media (width<=414px) {
+  .introduction {
+    height: 25vh;
+  }
+  .map {
+    width: 100vw;
+    height: 29vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .titleEspaciosDisp {
+    margin-top: 3vh;
+  }
+  .carouselBuildings div {
+    width: 257rem;
+    height: 5.1rem;
+    background-size: contain;
+  }
+  .carouselBuildings {
+    display: flex;
+    width: 162.5rem;
+    margin-left: -30rem;
+  }
+
+  .carouselWrapperBuildings {
+    width: 89vw;
+    height: 15vh;
+    margin-top: 2rem;
+  }
+  .carouselContainerBuildings {
+    height: fit-content;
+    margin: 1rem;
+  }
+}
+@media (width<=412px) {
+
+
+  .carouselWrapperBuildings {
+    width: 89vw;
+    height: 14vh;
+    margin-top: 2rem;
+  }
+
+}
+@media (width<=393px) {
+  .carouselBuildings div {
+    width: 257rem;
+    height: 4.9rem;
+    background-size: contain;
+  }
+  .carouselBuildings {
+    display: flex;
+    width: 162.5rem;
+    margin-left: -30.5rem;
+  }
+
+  .carouselWrapperBuildings {
+    width: 91vw;
+    height: 15vh;
+    margin-top: 2rem;
+  }
+  .carouselContainerBuildings {
+    height: fit-content;
+    margin: 1rem;
+  }
+}
+@media (width<=375px) {
+  .map {
+    width: 100vw;
+    height: 45vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .titleEspaciosDisp {
+    margin-top: 0vh;
+  }
+  .titleUbicacion {
+    font-size:1rem;
+
+    margin-top: 1.5rem;
+  }
+
+  .carouselWrapperBuildings {
+    width: 93vw;
+    height: 15vh;
+    margin-top: 2rem;
+  }
+}
+@media (width<=360px) {
+  .titleEspaciosDisp {
+    margin-top: 28vh;
+    font-size:1rem;
+  }
+  .iconsText{
+    font-size: 0.5rem;
   }
 }

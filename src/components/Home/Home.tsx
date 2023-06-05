@@ -3,19 +3,19 @@ import ContactUs from "../ContactUs/ContactUs";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar.jsx";
 import { BsFillPeopleFill } from "react-icons/bs";
-import "./home.css";
+import style from "./style.module.css";
 
 function Home() {
   return (
     <div>
       <Navbar />
-      <div className="barra3"></div>
+      <div className={style.barra3}></div>
 
-      <div className="positionHome">
-        <div className="yellowBack">
-          <div className="ft-recipe">
-            <div className="ft-recipe__thumb">
-              <div className="slider">
+      <div className={style.positionHome}>
+        <div className={style.yellowBack}>
+          <div className={style.ftRecipe}>
+            <div className={style.ftRecipeThumb}>
+              <div className={style.slider}>
                 <ul>
                   <li>
                     <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177148/Origin2%20Acabados/imgHome_czivcr.jpg" alt="fachadaOrigin2" />
@@ -30,14 +30,14 @@ function Home() {
                 </ul>
               </div>
             </div>
-            <div className="ft-recipe__content">
-              <header className="content__header">
-                <div className="row-wrapper">
-                  <h2 className="recipe-title">Origin Holdings S.A.S</h2>
-                  <div className="user-rating"></div>
+            <div className={style.ftRecipeContent}>
+              <header className={style.content__header}>
+                <div className={style.rowWrapper}>
+                  <h2 className={style.recipeTitle}>Origin Holdings S.A.S</h2>
+                  <div ></div>
                 </div>
               </header>
-              <p className="description">
+              <p className={style.description}>
                 Nit. 9007589604
                 <br />
                 Somos una empresa privada dedicada a la construcción de
@@ -48,23 +48,23 @@ function Home() {
                 prima la calidad, el buen gusto y costos asequibles en
                 excelentes sectores de la ciudad.
               </p>
-              <div className="buttonNosotrosPosition">
-                <button className="buttonNosotros">
+              <div className={style.buttonNosotrosPosition}>
+                <button className={style.buttonNosotros}>
                   Nosotros{" "}
-                  <BsFillPeopleFill className="iconB"></BsFillPeopleFill>
+                  <BsFillPeopleFill className={style.iconB}></BsFillPeopleFill>
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="selectionPosition">
-          <div className="container">
-            <div className="container__text">
+        <div className={style.selectionPosition}>
+          <div className={style.container}>
+            <div className={style.container__text}>
               <h1>Conoce nuestro nuevo proyecto</h1>
-              <div className="positionContainer">
+              <div className={style.positionContainer}>
                 <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png" alt="FachadaOrigin3 " />
-                <p>
+                <p >
                   <h4>Edificio Origin III</h4>
                   Es un proyecto de apartamentos y apartaestudios desde 23.3m2
                   hasta 61.7m2 de área privada. <br />
@@ -75,27 +75,27 @@ function Home() {
                 </p>
               </div>
               <div style={{ display: "flex", justifyContent: "end" }}>
-                <button className="btn">Ver Mas</button>¿
+                <button className={style.btn}>Ver Mas</button>
               </div>
             </div>
           </div>
 
-          <div className="positionCarouselAuto">
-            <div className="contentCarousel">
+          <div className={style.positionCarouselAuto}>
+            <div className={style.contentCarousel}>
               <p>
                 <b>Edificio Origin III</b> se localiza al noroccidente de la
                 Ciudad De Bogotá, excelente ubicación y en un sector de fácil
                 acceso rodeado por importantes vías como:
               </p>
-              <ul>
+              <ul >
                 <li>La Avenida Ciudad de Cali</li>
                 <li>Calle 80</li>
                 <li>Av. Boyacá</li>
                 <li>Calle 72.</li>
               </ul>
             </div>
-            <div className="slider2">
-              <ul>
+            <div className={style.slider2}>
+              <ul >
                 <li>
                   <img
                     src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177155/Origin3%20Aleda%C3%B1os/titan2_svbocm.jpg"
@@ -126,41 +126,38 @@ function Home() {
         </div>
       </div>
 
-      <div className="dividerBlue">
+      <div className={style.dividerBlue}>
         <h1>CONOCE NUESTROS</h1>
       </div>
 
-      <div className="titleProyects">
+      <div className={style.titleProyects}>
         <h1>PROYECTOS</h1>
         <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177147/Logos/IconEdificio_tp9u7o.png" alt="icon" />
       </div>
 
-      <div className="allProjects">
-        <div className="imagesProjects">
+      <div className={style.allProjects}>
+        <div className={style.imagesProjects}>
           <hr />
-          {/* <hr className="hrYellow" /> */}
           <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177147/Origin1%20Acabados/Fachada3_Origin3_uosf5q.jpg" alt="" />
           <h1>ORIGIN I</h1>
-          <hr className="hrYellow" />
+          <hr className={style.hrYellow} />
         </div>
-        <div className="imagesProjects">
+        <div className={style.imagesProjects}>
           <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177148/Origin2%20Acabados/imgHome_czivcr.jpg" alt="" />
           <h1>ORIGIN II</h1>
-          <hr className="hrblue" />
+          <hr className={style.hrblue} />
         </div>
-        <div className="imagesProjects">
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <img style={{ width: "80%" }} src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png" alt="" />
-          </div>
-          <h1 style={{ marginTop: "-290px" }}>
+        <div className={style.imagesProjects}>
+            <img  src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png" alt="" />
+          <h1 >
             ORIGIN III <p>(En proceso)</p>
           </h1>
-          <hr className="hrYellow" style={{ marginTop: "1rem" }} />
+          <hr className={style.hrYellow}  />
         </div>
       </div>
 
-      <div className="decoration">
-        <div className="decoration2"></div>
+      <div className={style.decoration}>
+        <div className={style.decoration2}></div>
       </div>
 
       <Footer />

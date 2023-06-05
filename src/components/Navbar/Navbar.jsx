@@ -1,15 +1,15 @@
-import { AiOutlineDown } from 'react-icons/ai';
+import { AiOutlineDown } from "react-icons/ai";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography"
+import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { alpha, createTheme, styled } from "@mui/material/styles";
-import Maindra from '../../fonts/Maiandra GD Regular.ttf'
+import Maindra from "../../fonts/Maiandra GD Regular.ttf";
 import { Box } from "@mui/system";
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Navbar.css";
-import CssBaseline from '@mui/material/CssBaseline';
+import style from "./style.module.css";
+import CssBaseline from "@mui/material/CssBaseline";
 const StyledMenu = styled((props) => (
   <Menu
     elevation={0}
@@ -54,20 +54,40 @@ const StyledMenu = styled((props) => (
 }));
 const theme = createTheme({
   typography: {
-    fontFamily: ['"Open Sans"', 'TitilliumWeb', 'Roboto'].join(','),
-   },
-   overrides: {
+    fontFamily: ['"Open Sans"', "TitilliumWeb", "Roboto"].join(","),
+  },
+  overrides: {
     MuiCssBaseline: {
-      '@global': {
-        '@font-face': [Maindra],
+      "@global": {
+        "@font-face": [Maindra],
       },
-    }
-  }
- })
+    },
+  },
+});
 function Navbar() {
+  const [sizeFont, setSizeFont] = React.useState('h5');
+  const [sizeIcon, setSizeIcon] = React.useState();
+
+  
+  const mediaQuery1062px = window.matchMedia("(width<=1062px)");
+  const mediaQuery828px = window.matchMedia("(width<=828px)");
+  const mediaQuery629px = window.matchMedia("(width<=629px)");
+  const mediaQuery414px = window.matchMedia("(width<=414px)");
+
+  const mediaQuery375px = window.matchMedia("(width<=375px)");
+
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+  useEffect(() => { 
+  if(mediaQuery1062px.matches) setSizeFont("h6")
+  if(mediaQuery629px.matches) setSizeFont('subtitle1')
+
+  if(mediaQuery414px.matches) {setSizeFont(10);setSizeIcon(10)}
+  if(mediaQuery375px.matches){ setSizeFont(9)
+    setSizeIcon(9)}}
+  
+  , []);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -90,71 +110,212 @@ function Navbar() {
 
   return (
     <>
-      <header className="header">
       <CssBaseline />
-          <img className="logoNavbar" src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177149/Logos/LOGOborde_hmuzyc.png" alt="logo" />
-          <div className="titulo">ORIGIN HOLDINGS S.A.S</div>
-        <Box sx={{ alignSelf:'start', justifySelf: "end", fontFamily: "Segoe UI Symbol",mt:1 }}>
-          <Button sx={{ color: "#fff" , ":hover":{
-             color: "#FFB200"
-          } }}  theme={theme} onClick={handleGoHome}>
-            <Typography variant="h5"  >         INICIO</Typography>
+      {mediaQuery828px.matches ? (
+        <header className={style.header}>
+          <div className={style.parent}>
+            <div className={style.materialBox}>
+              <Box
+                sx={{
+                  alignSelf: "start",
+                  fontFamily: "Segoe UI Symbol",
+                  mt: 1.5,
+                }}
+              >
+                <Button
+                  sx={{
+                    color: "#fff",
+                    ":hover": {
+                      color: "#FFB200",
+                    },
+                  }}
+                  theme={theme}
+                  onClick={handleGoHome}
+                >
+                  <Typography sx={{ fontSize: sizeFont }} >
+                    {" "}
+                    INICIO
+                  </Typography>
+                </Button>
 
-          </Button>
+                <Button
+                  id="demo-customized-button"
+                  aria-controls={open ? "demo-customized-menu" : undefined}
+                  aria-haspopup="true"
+                  aria-expanded={open ? "true" : undefined}
+                  sx={{
+                    color: "#fff",
+                    ":hover": {
+                      color: "#FFB200",
+                    },
+                  }}
+                  disableElevation
+                  onClick={handleClick}
+                  endIcon={<AiOutlineDown size={sizeIcon} />}
+                >
+                  <Typography sx={{ fontSize: sizeFont }}>
+                    {" "}
+                    PROYECTOS
+                  </Typography>
+                </Button>
+                <StyledMenu
+                  id="demo-customized-menu"
+                  MenuListProps={{
+                    "aria-labelledby": "demo-customized-button",
+                  }}
+                  anchorEl={anchorEl}
+                  open={open}
+                  onClose={handleClose}
+                >
+                  {" "}
+                  <MenuItem onClick={handleNavigateOrigin3} disableRipple>
+                    <Typography> ORIGIN 3</Typography>
+                  </MenuItem>
+                  <MenuItem onClick={handleNavigateOrigin2} disableRipple>
+                    <Typography>ORIGIN 2</Typography>
+                  </MenuItem>
+                  <MenuItem onClick={handleNavigateOrigin1} disableRipple>
+                    <Typography>ORIGIN 1</Typography>
+                  </MenuItem>
+                </StyledMenu>
+                <Button
+                  sx={{
+                    color: "#fff",
+                    ":hover": {
+                      color: "#FFB200",
+                    },
+                  }}
+                >
+                  <Typography sx={{ fontSize: sizeFont }}>
+                    SOBRE NOSOTROS
+                  </Typography>
+                </Button>
+                <Button
+                  sx={{
+                    color: "#fff",
+                    ":hover": {
+                      color: "#FFB200",
+                    },
+                  }}
+                >
+                  <Typography sx={{ fontSize: sizeFont }}>
+                    CONTÁCTENOS
+                  </Typography>
+                </Button>
+              </Box>
+            </div>
+          </div>
+          <div className={style.gridMedia828}>
+            <img
+              className={style.logoNavbar}
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177149/Logos/LOGOborde_hmuzyc.png"
+              alt="logo"
+            />
+            <div className={style.title}>ORIGIN HOLDINGS S.A.S</div>
+          </div>
+        </header>
+      ) : (
+        <header className={style.header}>
+          <img
+            className={style.logoNavbar}
+            src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177149/Logos/LOGOborde_hmuzyc.png"
+            alt="logo"
+          />
+          <div className={style.parent}>
+            <div className={style.materialBox}>
+              <Box
+                sx={{
+                  alignSelf: "start",
+                  fontFamily: "Segoe UI Symbol",
+                  mt: 1.5,
+                }}
+              >
+                <Button
+                  sx={{
+                    color: "#fff",
+                    ":hover": {
+                      color: "#FFB200",
+                    },
+                  }}
+                  theme={theme}
+                  onClick={handleGoHome}
+                >
+                  <Typography sx={{ fontSize: sizeFont }}>
+                    {" "}
+                    INICIO
+                  </Typography>
+                </Button>
 
-
-          <Button
-            id="demo-customized-button"
-            aria-controls={open ? "demo-customized-menu" : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? "true" : undefined}
-            sx={{ color: "#fff" , ":hover":{
-              color: "#FFB200"
-           } }}
-            disableElevation
-            onClick={handleClick}
-            endIcon={<AiOutlineDown />}
-          >
-            <Typography variant="h5" >    PROYECTOS</Typography>
-
-          </Button>
-          <StyledMenu
-            id="demo-customized-menu"
-            MenuListProps={{
-              "aria-labelledby": "demo-customized-button",
-            }}
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-          >      <MenuItem onClick={handleNavigateOrigin3} disableRipple>
-              <Typography  > ORIGIN 3</Typography>
-
-
-
-
-            </MenuItem>
-            <MenuItem onClick={handleNavigateOrigin2} disableRipple>
-              <Typography  >ORIGIN 2</Typography>
-
-            </MenuItem>
-            <MenuItem onClick={handleNavigateOrigin1} disableRipple>
-              <Typography  >ORIGIN 1</Typography>
-
-            </MenuItem>
-
-
-          </StyledMenu>
-          <Button   sx={{ color: "#fff" , ":hover":{
-             color: "#FFB200"
-          } }}>
-            <Typography variant="h5"  >SOBRE NOSOTROS</Typography></Button>
-            <Button   sx={{ color: "#fff" , ":hover":{
-             color: "#FFB200"
-          } }}>
-            <Typography variant="h5"  >CONTÁCTENOS</Typography></Button>
-        </Box>
-   
-      </header>
+                <Button
+                  id="demo-customized-button"
+                  aria-controls={open ? "demo-customized-menu" : undefined}
+                  aria-haspopup="true"
+                  aria-expanded={open ? "true" : undefined}
+                  sx={{
+                    color: "#fff",
+                    ":hover": {
+                      color: "#FFB200",
+                    },
+                  }}
+                  disableElevation
+                  onClick={handleClick}
+                  endIcon={<AiOutlineDown size={sizeIcon} />}
+                >
+                  <Typography sx={{ fontSize: sizeFont }}>
+                    {" "}
+                    PROYECTOS
+                  </Typography>
+                </Button>
+                <StyledMenu
+                  id="demo-customized-menu"
+                  MenuListProps={{
+                    "aria-labelledby": "demo-customized-button",
+                  }}
+                  anchorEl={anchorEl}
+                  open={open}
+                  onClose={handleClose}
+                >
+                  {" "}
+                  <MenuItem onClick={handleNavigateOrigin3} disableRipple>
+                    <Typography> ORIGIN 3</Typography>
+                  </MenuItem>
+                  <MenuItem onClick={handleNavigateOrigin2} disableRipple>
+                    <Typography>ORIGIN 2</Typography>
+                  </MenuItem>
+                  <MenuItem onClick={handleNavigateOrigin1} disableRipple>
+                    <Typography>ORIGIN 1</Typography>
+                  </MenuItem>
+                </StyledMenu>
+                <Button
+                  sx={{
+                    color: "#fff",
+                    ":hover": {
+                      color: "#FFB200",
+                    },
+                  }}
+                >
+                  <Typography sx={{ fontSize: sizeFont }}>
+                    SOBRE NOSOTROS
+                  </Typography>
+                </Button>
+                <Button
+                  sx={{
+                    color: "#fff",
+                    ":hover": {
+                      color: "#FFB200",
+                    },
+                  }}
+                >
+                  <Typography sx={{ fontSize: sizeFont }}>
+                    CONTÁCTENOS
+                  </Typography>
+                </Button>
+              </Box>
+            </div>
+            <div className={style.title}>ORIGIN HOLDINGS S.A.S</div>
+          </div>
+        </header>
+      )}
     </>
   );
 }

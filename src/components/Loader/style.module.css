@@ -35,3 +35,89 @@
   display: none;
   visibility: hidden;
 }
+
+@media (width<=912px) {
+  .logo{width: 60rem;height: 40rem;
+    animation: taadaa 3s infinite;
+    position: absolute;
+   top: 20rem;
+  }
+
+}
+@media (width<=820px) {
+  .logo{width: 60rem;height: 40rem;
+    animation: taadaa 3s infinite;
+    position: absolute;
+   top: 18rem;
+   left: -3rem;
+   
+  }
+
+}
+@media (width<=768px) {
+  .logo{width: 60rem;height: 40rem;
+    animation: taadaa 3s infinite;
+    position: absolute;
+   top: 10rem;
+   left: -6rem;
+   
+  }
+}
+@media (width<=540px) {
+  .logo{width: 50rem;height: 30rem;
+    animation: taadaa 3s infinite;
+    position: absolute;
+   top: 5rem;
+   left: -9rem;
+   
+  }
+}
+
+@media (width<=414px) {
+  .logo{width: 30rem;height: 20rem;
+    animation: taadaa 3s infinite;
+    position: absolute;
+   top: 15rem;
+   left: -2rem;
+   
+  }
+}
+@media (width<=412px) {
+  .logo{width: 30rem;height: 20rem;
+    animation: taadaa 3s infinite;
+    position: absolute;
+   top: 15rem;
+   left: -2rem;
+   
+  }
+
+
+
+}
+@media (width<=393px) {
+  .logo{width: 30rem;height: 20rem;
+    animation: taadaa 3s infinite;
+    position: absolute;
+   top: 15rem;
+   left: -3rem;
+   
+  }
+}
+@media (width<=375px) {
+  .logo{width: 30rem;height: 20rem;
+    animation: taadaa 3s infinite;
+    position: absolute;
+   top: 10rem;
+   left: -3rem;
+   
+  }
+}
+@media (width<=360px) {
+  .logo{width: 30rem;height: 20rem;
+    animation: taadaa 3s infinite;
+    position: absolute;
+   top: 15rem;
+   left: -4rem;
+   
+  }
+}

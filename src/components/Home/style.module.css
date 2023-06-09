@@ -570,6 +570,15 @@ justify-items: center;
     height: 70vh;
   }
 }
+@media (width<=720px) {
+  .slider{
+    width: 200%;
+  }
+  .yellowBack{
+    width: 37vh;
+    height: 50vh;
+  }
+}
 
 
 @media (width<=672px) {

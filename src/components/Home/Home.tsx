@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar.jsx";
 import { BsFillPeopleFill } from "react-icons/bs";
 import style from "./style.module.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -136,24 +137,24 @@ function Home() {
       </div>
 
       <div className={style.allProjects}>
-        <div className={style.imagesProjects}>
+        <Link to='/projects/Origin1' className={style.imagesProjects}>
           <hr />
           <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177147/Origin1%20Acabados/Fachada3_Origin3_uosf5q.jpg" alt="" />
           <h1>ORIGIN I</h1>
           <hr className={style.hrYellow} />
-        </div>
-        <div className={style.imagesProjects}>
+        </Link>
+        <Link to='/projects/Origin2' className={style.imagesProjects}>
           <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177148/Origin2%20Acabados/imgHome_czivcr.jpg" alt="" />
           <h1>ORIGIN II</h1>
           <hr className={style.hrblue} />
-        </div>
-        <div className={style.imagesProjects}>
+        </Link>
+        <Link to='/projects/Origin3' className={style.imagesProjects}>
             <img  src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png" alt="" />
           <h1 >
             ORIGIN III <p>(En proceso)</p>
           </h1>
           <hr className={style.hrYellow}  />
-        </div>
+        </Link>
       </div>
 
       <div className={style.decoration}>

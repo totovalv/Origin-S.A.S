@@ -168,7 +168,7 @@ function Origin3() {
                 <li className={style.carousel__slide}>
                   <figure>
                     <figcaption>
-                      <h1>Sitios de interés: </h1>
+                      <h1 className={style.interestSites}>Sitios de interés: </h1>
                       <ul>
                         <label htmlFor="slide-2">
                           <li className={style.unorderList}>
@@ -446,8 +446,8 @@ function Origin3() {
         <img className={style.ubicationImg} src={data.map} alt="" />
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=1Es9h5eKHodOCCr0z35MtOwX_TR_ogJQ&ehbc=2E312F"
-          width="640"
-          height="480"
+        
+          className={style.mapOrigin3}
         ></iframe>
       </div>
       <p className={style.availableSpacesTitle}>ESPACIOS DISPONIBLES</p>

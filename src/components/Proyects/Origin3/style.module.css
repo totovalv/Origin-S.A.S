@@ -84,6 +84,7 @@
   background: rgb(6, 102, 153);
   justify-content: center;
   height: 20rem;
+  margin-top: 13rem;
 }
 .buildingLogo {
   width: 15rem;
@@ -156,9 +157,14 @@
 .ubicationContainer {
   display: grid;
   margin-top: 1rem;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 45% 45%;
   justify-content: center;
   gap: 2rem;
+  height: 30rem;
+}
+.mapOrigin3 {
+  width: 100%;
+  height: 30rem;
 }
 .ubicationImg {
   width: 100%;
@@ -375,20 +381,19 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 80vh;
   margin-top: 7rem;
   margin-bottom: 7rem;
 }
 
 .informationBox {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: 15% 25% 20% 40%;
   width: 35%;
   box-shadow: 0px 0px 15px black;
 }
 
 .informationBox h5 {
-  font-size: 0.95rem;
+  font-size: 82%;
   color: rgb(6, 102, 153);
   font-family: var(--metropolisBold);
 }
@@ -396,11 +401,9 @@
 .firstBox {
   display: flex;
   justify-content: center;
+  justify-self: center;
   align-items: center;
-  width: 100%;
-  height: 15%;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: 90%;
   border: solid rgb(172, 169, 169) 1px;
   border-left-color: #fff;
   border-right-color: #fff;
@@ -411,10 +414,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 25%;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: 90%;
+
+  justify-self: center;
   border: solid rgb(172, 169, 169) 1px;
   border-left-color: #fff;
   border-right-color: #fff;
@@ -425,10 +427,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 15%;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: 90%;
+
+  justify-self: center;
   border: solid rgb(172, 169, 169) 1px;
   border-left-color: #fff;
   border-right-color: #fff;
@@ -439,10 +440,9 @@
 .fourthBox {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  height: 43%;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: 90%;
+
+  justify-self: center;
   margin-bottom: 2%;
 }
 
@@ -514,6 +514,7 @@
 
 .sliderComponent {
   width: 55%;
+  padding: 1rem;
   box-shadow: 0px 0px 20px rgb(58, 59, 59);
   border: solid 3px rgb(9, 9, 155);
 }
@@ -527,66 +528,6 @@
 .containerHome h1 {
   color: rgb(6, 102, 153);
   font-family: var(--metropolisBold);
-}
-
-@media (max-width: 914px) {
-  .containerHome {
-    position: absolute;
-    max-width: 650px;
-    margin-left: 20px;
-    padding: 1px 2px 2px 2px;
-    position: relative;
-    z-index: 1;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .sectionHome {
-    width: 300px;
-  }
-}
-@media (max-width: 630px) {
-  .sectionHome {
-    width: 400px;
-  }
-}
-
-@media (max-width: 575px) {
-  .sectionHome {
-    width: 400px;
-  }
-}
-
-@media (max-width: 500px) {
-  .sectionHome {
-    width: 450px;
-  }
-}
-
-@media (max-width: 460px) {
-  .sectionHome {
-    width: 400px;
-  }
-}
-
-@media (max-width: 414px) {
-  .sectionHome {
-    width: 380px;
-  }
-  .containerHome {
-    margin-left: -20px;
-    margin-right: 10px;
-  }
-  .barra {
-    height: 200px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 325px) {
-  .sectionHome {
-    width: 210px;
-  }
 }
 
 .carouselHome {
@@ -709,6 +650,7 @@
   white-space: nowrap;
   box-sizing: border-box;
   display: flex;
+  align-items: center;
 }
 
 .carousel__slide {
@@ -801,62 +743,6 @@ p:hover {
   transition: all 300ms ease-in-out;
 }
 
-@media (min-width: 355px) {
-  .carousel__thumbnails {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-    margin: 1px 2px 1px;
-  }
-  .carousel__thumbnails li {
-    /* max-width: calc((80% / 1) - 60px); */
-    max-width: none;
-    width: 80px;
-    margin: 5px;
-    transition: all 300ms ease-in-out;
-  }
-  .carousel__slides + .carousel__thumbnails {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 250px) {
-  .carousel__thumbnails {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-    margin: 1px 1px 1px;
-  }
-  .carousel__thumbnails li {
-    /* max-width: calc((80% / 1) - 60px); */
-    max-width: none;
-    width: 60px;
-    margin: 2px;
-    transition: all 300ms ease-in-out;
-  }
-  .carousel__slides + .carousel__thumbnails {
-    margin-top: 10px;
-  }
-
-  .carousel__slide .credit {
-    margin-top: 1rem;
-    color: rgba(0, 0, 0, 0.5);
-    display: block;
-    margin-left: 5px;
-  }
-
-  .carousel__slide figcaption {
-    align-self: flex-end;
-    padding: 2px 2px 0 2px;
-    flex: none;
-    /* width: 30px; */
-    min-width: 100px;
-    margin-left: 130px;
-  }
-}
-
 .carousel__thumbnails label {
   display: block;
   position: relative;
@@ -890,5 +776,86 @@ p:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border-radius: 10px; */
+}
+@media (width<=1280px) {
+}
+@media (width<=1024px) {
+  .informationBox h5 {
+    font-size: 0.6rem;
+  }
+  .head {
+    height: 35rem;
+  }
+  .containTitleBlueBar {
+    font-size: 3.5rem;
+  }
+  .knowOurBuildings {
+    grid-template-columns: 25% 65% 10%;
+    margin-top: 5rem;
+  }
+  .apartmentsGrid {
+    grid-template-columns: 40% 60%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .porcentageBarImg {
+    position: relative;
+    bottom: 13.3rem;
+    right: 0rem;
+  }
+  .seeMoreBtn {
+    margin-bottom: 1rem;
+  }
+  .interestSites {
+    font-size: 1.5rem;
+  }
+  .mapOrigin3 {
+    height: 100%;
+  }
+  .ubicationContainer {
+    height: 20rem;
+  }
+  .textTitle {
+    font-size: 6rem;
+  }
+  .new {
+    font-size: 2rem;
+  }
+  .project {
+    font-size: 2rem;
+  }
+  .weGolikeThis {
+    font-size: 2rem;
+  }
+}
+@media (width<=912px) {
+  .detailSection {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+  .sliderComponent {
+    justify-self: center;
+  }
+  .informationBox {
+    justify-self: center;
+  }
+}
+@media (width<=820px) {
+}
+@media (width<=540px) {
+}
+
+@media (width<=414px) {
+}
+@media (width<=412px) {
+}
+@media (width<=393px) {
+}
+@media (width<=375px) {
+}
+@media (width<=360px) {
 }

@@ -168,9 +168,15 @@
   font-weight: bold;
   font-family: var(--metropolisLight);
 }
+@media (width<=1440px) {
+  .bodyFooter {
+    height: 45vh;
+    padding-top: 1rem;
+  }
+}
 @media (width<=1340px) {
   .bodyFooter {
-    height: 25vh;
+    height: 35vh;
     padding-top: 1rem;
   }
 }

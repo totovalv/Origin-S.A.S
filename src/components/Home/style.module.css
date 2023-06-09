@@ -215,6 +215,7 @@ justify-items: center;
 }
 .positionContainer {
   display: grid;
+  min-height: fit-content;
   grid-template-columns: 50% 50%;
   justify-content: center;
   gap: 1.5rem;
@@ -271,6 +272,7 @@ justify-items: center;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.897);
   border-radius: 2rem;
   width: 41.875rem;
+  min-height: fit-content;
   height: 22.688rem;
 }
 

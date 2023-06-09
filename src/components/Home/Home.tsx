@@ -19,7 +19,10 @@ function Home() {
               <div className={style.slider}>
                 <ul>
                   <li>
-                    <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177148/Origin2%20Acabados/imgHome_czivcr.jpg" alt="fachadaOrigin2" />
+                    <img
+                      src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177148/Origin2%20Acabados/imgHome_czivcr.jpg"
+                      alt="fachadaOrigin2"
+                    />
                   </li>
 
                   <li>
@@ -35,7 +38,7 @@ function Home() {
               <header className={style.content__header}>
                 <div className={style.rowWrapper}>
                   <h2 className={style.recipeTitle}>Origin Holdings S.A.S</h2>
-                  <div ></div>
+                  <div></div>
                 </div>
               </header>
               <p className={style.description}>
@@ -64,8 +67,11 @@ function Home() {
             <div className={style.container__text}>
               <h1>Conoce nuestro nuevo proyecto</h1>
               <div className={style.positionContainer}>
-                <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png" alt="FachadaOrigin3 " />
-                <p >
+                <img
+                  src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png"
+                  alt="FachadaOrigin3 "
+                />
+                <p>
                   <h4>Edificio Origin III</h4>
                   Es un proyecto de apartamentos y apartaestudios desde 23.3m2
                   hasta 61.7m2 de área privada. <br />
@@ -88,7 +94,7 @@ function Home() {
                 Ciudad De Bogotá, excelente ubicación y en un sector de fácil
                 acceso rodeado por importantes vías como:
               </p>
-              <ul >
+              <ul>
                 <li>La Avenida Ciudad de Cali</li>
                 <li>Calle 80</li>
                 <li>Av. Boyacá</li>
@@ -96,7 +102,7 @@ function Home() {
               </ul>
             </div>
             <div className={style.slider2}>
-              <ul >
+              <ul>
                 <li>
                   <img
                     src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177155/Origin3%20Aleda%C3%B1os/titan2_svbocm.jpg"
@@ -133,27 +139,39 @@ function Home() {
 
       <div className={style.titleProyects}>
         <h1>PROYECTOS</h1>
-        <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177147/Logos/IconEdificio_tp9u7o.png" alt="icon" />
+        <img
+          src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177147/Logos/IconEdificio_tp9u7o.png"
+          alt="icon"
+        />
       </div>
 
       <div className={style.allProjects}>
-        <Link to='/projects/Origin1' className={style.imagesProjects}>
+        <Link to="/projects/Origin1" className={style.imagesProjects}>
           <hr />
-          <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177147/Origin1%20Acabados/Fachada3_Origin3_uosf5q.jpg" alt="" />
+          <img
+            src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177147/Origin1%20Acabados/Fachada3_Origin3_uosf5q.jpg"
+            alt=""
+          />
           <h1>ORIGIN I</h1>
           <hr className={style.hrYellow} />
         </Link>
-        <Link to='/projects/Origin2' className={style.imagesProjects}>
-          <img src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177148/Origin2%20Acabados/imgHome_czivcr.jpg" alt="" />
+        <Link to="/projects/Origin2" className={style.imagesProjects}>
+          <img
+            src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177148/Origin2%20Acabados/imgHome_czivcr.jpg"
+            alt=""
+          />
           <h1>ORIGIN II</h1>
           <hr className={style.hrblue} />
         </Link>
-        <Link to='/projects/Origin3' className={style.imagesProjects}>
-            <img  src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png" alt="" />
-          <h1 >
+        <Link to="/projects/Origin3" className={style.imagesProjects}>
+          <img
+            src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png"
+            alt=""
+          />
+          <h1>
             ORIGIN III <p>(En proceso)</p>
           </h1>
-          <hr className={style.hrYellow}  />
+          <hr className={style.hrYellow} />
         </Link>
       </div>
 

@@ -31,7 +31,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-around;
-  align-items: center;
 }
 .icon {
   width: 14vw;

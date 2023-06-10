@@ -126,7 +126,7 @@ function Navbar() {
                   sx={{
                     color: "#fff",
                     ":hover": {
-                      color: "#FFB200",
+                      color: "#fff",
                     },
                   }}
                   theme={theme}
@@ -146,7 +146,7 @@ function Navbar() {
                   sx={{
                     color: "#fff",
                     ":hover": {
-                      color: "#FFB200",
+                      color: "#fff",
                     },
                   }}
                   disableElevation
@@ -182,7 +182,7 @@ function Navbar() {
                   sx={{
                     color: "#fff",
                     ":hover": {
-                      color: "#FFB200",
+                      color: "#fff",
                     },
                   }}
                 >
@@ -194,7 +194,7 @@ function Navbar() {
                   sx={{
                     color: "#fff",
                     ":hover": {
-                      color: "#FFB200",
+                      color: "#fff",
                     },
                   }}
                 >
@@ -234,7 +234,7 @@ function Navbar() {
                   sx={{
                     color: "#fff",
                     ":hover": {
-                      color: "#FFB200",
+                      color: "#fff",
                     },
                   }}
                   theme={theme}
@@ -254,7 +254,7 @@ function Navbar() {
                   sx={{
                     color: "#fff",
                     ":hover": {
-                      color: "#FFB200",
+                      color: "#fff",
                     },
                   }}
                   disableElevation
@@ -290,7 +290,7 @@ function Navbar() {
                   sx={{
                     color: "#fff",
                     ":hover": {
-                      color: "#FFB200",
+                      color: "#fff",
                     },
                   }}
                 >
@@ -302,7 +302,7 @@ function Navbar() {
                   sx={{
                     color: "#fff",
                     ":hover": {
-                      color: "#FFB200",
+                      color: "#fff",
                     },
                   }}
                 >

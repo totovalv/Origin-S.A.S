@@ -165,7 +165,7 @@ function Origin2() {
       </div>
 
       <div className={style.ubicacion}>
-        <h1 className={style.titleUbicacion}>UBICACION </h1>
+        <h1 className={style.titleUbicacion}>UBICACIÓN </h1>
 
         <div className={style.map}>
           <iframe

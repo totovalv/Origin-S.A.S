@@ -13,6 +13,7 @@
  
 }
 .title{
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: 10%90%;
   align-items: center;
@@ -37,12 +38,24 @@
 
   border-radius: 0.5rem;
 }
+.selectOption{
+  
+  color:  rgb(6, 102, 153);
+}
 .type{
+width: 75%;
+  border-radius: 0.8rem;
+  border: 2px solid rgba(0, 0, 0, 0.613);
   color:rgb(255, 178, 0);
   font-family: var(--metropolisBold);
-  font-size: 4rem;
+  font-size: 4.1rem;
 }
+
 .textData{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
 }
 .descriptionData{

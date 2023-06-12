@@ -66,7 +66,7 @@ function Origin3() {
   const scrollToLeftSide = () => {
     scroller.scrollTo("leftSideRef", {
       smooth: true,
-      offset: -50,
+      offset: -100,
     });
   };
   return (
@@ -77,17 +77,18 @@ function Origin3() {
         <img className={style.renderImg} src={data.renderOrigin3} alt="" />
         <div>
           <div className={style.title}>
-            <p className={style.textTitle}>ORIGIN 3</p>
+            <div className={style.textTitle}>ORIGIN 3</div>
           </div>
           <div className={style.newContent}>
-            <p className={style.new}>Nuevo </p>
-            <p className={style.project}>proyecto</p>
+            <div className={style.new}>Nuevo </div>
+            <div className={style.project}>proyecto</div>
           </div>
           <div className={style.porcentage}>
-            <p className={style.weGolikeThis}>Así vamos</p>
-            <div>
-              <p className={style.porcentageNumber}>45%</p>
-              <p className={style.buildingPart}>1er. piso</p>
+            <div className={style.weGolikeThis}>Así vamos</div>
+            <div className={style.porcentageContainer}>
+              <div className={style.porcentageNumber}>45%</div>
+              <div className={style.buildingPart}>1er. piso</div>
+
               <img
                 className={style.porcentageBarImg}
                 src={data.porcentage}
@@ -101,10 +102,10 @@ function Origin3() {
         {" "}
         <img className={style.buildingLogo} src={data.buildingLogo} alt="" />
         <div className={style.containTitleBlueBar}>
-          <p className={style.knowTheText}>CONOCE LOS</p>
+          <div className={style.knowTheText}>CONOCE LOS</div>
           <div className={style.gridtextBlueBar}>
-            <p className={style.apartments}>APARTAMENTOS</p>
-            <p>MODELO</p>
+            <div className={style.apartments}>APARTAMENTOS</div>
+            <div>MODELO</div>
           </div>
         </div>
         <button onClick={scrollToSection} className={style.seeMoreBtn}>
@@ -168,7 +169,9 @@ function Origin3() {
                 <li className={style.carousel__slide}>
                   <figure>
                     <figcaption>
-                      <h1 className={style.interestSites}>Sitios de interés: </h1>
+                      <h1 className={style.interestSites}>
+                        Sitios de interés:{" "}
+                      </h1>
                       <ul>
                         <label htmlFor="slide-2">
                           <li className={style.unorderList}>
@@ -226,7 +229,7 @@ function Origin3() {
                       </ul>
                       <span className={style.credit}>
                         <label htmlFor="slide-1">
-                          <p>Volver</p>
+                          <div>Volver</div>
                         </label>
                       </span>
                     </figcaption>
@@ -265,7 +268,7 @@ function Origin3() {
                       <span className={style.credit}>
                         <label htmlFor="slide-1">
                           {" "}
-                          <p>Volver</p>
+                          <div>Volver</div>
                         </label>
                       </span>
                     </figcaption>
@@ -303,7 +306,7 @@ function Origin3() {
                       </ul>
                       <span className={style.credit}>
                         <label htmlFor="slide-1">
-                          <p>Volver</p>
+                          <div>Volver</div>
                         </label>
                       </span>
                     </figcaption>
@@ -344,7 +347,7 @@ function Origin3() {
                       </ul>
                       <span className={style.credit}>
                         <label htmlFor="slide-1">
-                          <p>Volver</p>
+                          <div>Volver</div>
                         </label>
                       </span>
                     </figcaption>
@@ -385,7 +388,7 @@ function Origin3() {
                       </ul>
                       <span className={style.credit}>
                         <label htmlFor="slide-1">
-                          <p>Volver</p>
+                          <div>Volver</div>
                         </label>
                       </span>
                     </figcaption>
@@ -439,18 +442,17 @@ function Origin3() {
         <img className={style.imgTimeline} src={data.timeline} alt="timeline" />
       </div>
       <div className={style.titleContain}>
-        <p className={style.ubicationTitle}>UBICACIÓN</p>
+        <div className={style.ubicationTitle}>UBICACIÓN</div>
         <hr className={style.titleUnderline}></hr>
       </div>
       <div className={style.ubicationContainer}>
         <img className={style.ubicationImg} src={data.map} alt="" />
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=1Es9h5eKHodOCCr0z35MtOwX_TR_ogJQ&ehbc=2E312F"
-        
           className={style.mapOrigin3}
         ></iframe>
       </div>
-      <p className={style.availableSpacesTitle}>ESPACIOS DISPONIBLES</p>
+      <div className={style.availableSpacesTitle}>ESPACIOS DISPONIBLES</div>
       <>
         <div className={style.iconsGrid}>
           <div className={style.itemIcon}>
@@ -568,13 +570,13 @@ function Origin3() {
       <div className={style.apartmentsGrid}>
         <div className={style.leftSideContainer}>
           <div className={style.availableLeftSideGrid}>
-            <p className={style.availabilityText}>Disponibilidad</p>
+            <div className={style.availabilityText}>Disponibilidad</div>
             <div className={style.availabilityLabelContainer}>
               <div className={style.availabilityLabel}>
-                <p className={style.greenCircle}></p>Si esta disponible
+                <div className={style.greenCircle}></div>Si esta disponible
               </div>
               <div className={style.availabilityLabel}>
-                <p className={style.redCircle}></p>No esta disponible
+                <div className={style.redCircle}></div>No esta disponible
               </div>
             </div>
           </div>
@@ -582,13 +584,13 @@ function Origin3() {
         </div>
 
         <div className={style.aptosContainer}>
-          <div className={style.aptoCard} onClick={() => handleApto(1)}>
+          <div className={style.aptoCard}>
             <div className={style.aptoTopGrid}>
               <div className={style.textApto}>
-                <p className={style.typeApto}>TIPO 1</p>
-                <p className={style.typeAptoDescription}>
+                <div className={style.typeApto}>TIPO 1</div>
+                <div className={style.typeAptoDescription}>
                   45.45 M2 - Área Privada
-                </p>
+                </div>
               </div>
               <img
                 className={style.aptoImg}
@@ -597,20 +599,25 @@ function Origin3() {
               />
             </div>
             <div className={style.aptoBottomGrid}>
-              <p className={style.availabilityTextApto}>Disponiblidad</p>
+              <button
+                className={style.availabilityTextApto}
+                onClick={() => handleApto(1)}
+              >
+                Ver en Mapa
+              </button>
               <div className={style.numberApartmentsGrid}>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>201
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>301
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>401
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>501
-                </p>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>201
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>301
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>401
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>501
+                </div>
                 <button className={style.seeMoreBtnApto}>
                   <Link className={style.linkStyle} to="/projects/Origin3/1">
                     Ver más
@@ -620,13 +627,13 @@ function Origin3() {
             </div>
           </div>
 
-          <div className={style.aptoCard} onClick={() => handleApto(2)}>
+          <div className={style.aptoCard}>
             <div className={style.aptoTopGrid}>
               <div className={style.textApto}>
-                <p className={style.typeApto}>TIPO 2</p>
-                <p className={style.typeAptoDescription}>
+                <div className={style.typeApto}>TIPO 2</div>
+                <div className={style.typeAptoDescription}>
                   61.73 M2 - Área Privada
-                </p>
+                </div>
               </div>
               <img
                 className={style.aptoImg}
@@ -635,20 +642,25 @@ function Origin3() {
               />
             </div>
             <div className={style.aptoBottomGrid}>
-              <p className={style.availabilityTextApto}>Disponiblidad</p>
+              <button
+                className={style.availabilityTextApto}
+                onClick={() => handleApto(2)}
+              >
+                Ver en Mapa
+              </button>
               <div className={style.numberApartmentsGrid}>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>202
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>302
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>402
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>502
-                </p>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>202
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>302
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>402
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>502
+                </div>
                 <button className={style.seeMoreBtnApto}>
                   <Link className={style.linkStyle} to="/projects/Origin3/2">
                     Ver más
@@ -657,17 +669,13 @@ function Origin3() {
               </div>
             </div>
           </div>
-          <div
-            className={style.aptoCard}
-            onClick={() => handleApto(3)}
-            name="leftSideRef"
-          >
+          <div className={style.aptoCard} name="leftSideRef">
             <div className={style.aptoTopGrid}>
               <div className={style.textApto}>
-                <p className={style.typeApto}>TIPO 3</p>
-                <p className={style.typeAptoDescription}>
+                <div className={style.typeApto}>TIPO 3</div>
+                <div className={style.typeAptoDescription}>
                   45.45 M2 - Área Privada
-                </p>
+                </div>
               </div>
               <img
                 className={style.aptoImg}
@@ -676,20 +684,25 @@ function Origin3() {
               />
             </div>
             <div className={style.aptoBottomGrid}>
-              <p className={style.availabilityTextApto}>Disponiblidad</p>
+              <button
+                className={style.availabilityTextApto}
+                onClick={() => handleApto(3)}
+              >
+                Ver en Mapa
+              </button>
               <div className={style.numberApartmentsGrid}>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>203
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>303
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>403
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>503
-                </p>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>203
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>303
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>403
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>503
+                </div>
                 <button className={style.seeMoreBtnApto}>
                   <Link className={style.linkStyle} to="/projects/Origin3/3">
                     Ver más
@@ -698,13 +711,13 @@ function Origin3() {
               </div>
             </div>
           </div>
-          <div className={style.aptoCard} onClick={() => handleApto(4)}>
+          <div className={style.aptoCard}>
             <div className={style.aptoTopGrid}>
               <div className={style.textApto}>
-                <p className={style.typeApto}>TIPO 4</p>
-                <p className={style.typeAptoDescription}>
+                <div className={style.typeApto}>TIPO 4</div>
+                <div className={style.typeAptoDescription}>
                   32.71 M2 - Área Privada
-                </p>
+                </div>
               </div>
               <img
                 className={style.aptoImg}
@@ -713,20 +726,25 @@ function Origin3() {
               />
             </div>
             <div className={style.aptoBottomGrid}>
-              <p className={style.availabilityTextApto}>Disponiblidad</p>
+              <button
+                className={style.availabilityTextApto}
+                onClick={() => handleApto(4)}
+              >
+                Ver en Mapa
+              </button>
               <div className={style.numberApartmentsGrid}>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>204
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>304
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>404
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>504
-                </p>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>204
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>304
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>404
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>504
+                </div>
                 <button className={style.seeMoreBtnApto}>
                   <Link className={style.linkStyle} to="/projects/Origin3/4">
                     Ver más
@@ -735,13 +753,13 @@ function Origin3() {
               </div>
             </div>
           </div>
-          <div className={style.aptoCard} onClick={() => handleApto(5)}>
+          <div className={style.aptoCard}>
             <div className={style.aptoTopGrid}>
               <div className={style.textApto}>
-                <p className={style.typeApto}>TIPO 5</p>
-                <p className={style.typeAptoDescription}>
+                <div className={style.typeApto}>TIPO 5</div>
+                <div className={style.typeAptoDescription}>
                   23.31 M2 - Área Privada
-                </p>
+                </div>
               </div>
               <img
                 className={style.aptoImg}
@@ -750,20 +768,25 @@ function Origin3() {
               />
             </div>
             <div className={style.aptoBottomGrid}>
-              <p className={style.availabilityTextApto}>Disponiblidad</p>
+              <button
+                className={style.availabilityTextApto}
+                onClick={() => handleApto(5)}
+              >
+                Ver en Mapa
+              </button>
               <div className={style.numberApartmentsGrid}>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>205
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>305
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>405
-                </p>
-                <p className={style.availabilityLabelApto}>
-                  <p className={style.greenCircleApto}></p>505
-                </p>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>205
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>305
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>405
+                </div>
+                <div className={style.availabilityLabelApto}>
+                  <div className={style.greenCircleApto}></div>505
+                </div>
                 <button className={style.seeMoreBtnApto}>
                   <Link className={style.linkStyle} to="/projects/Origin3/5">
                     Ver más

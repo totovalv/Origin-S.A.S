@@ -41,7 +41,7 @@ function Origin1() {
       offset: -50,
     });
   };
-  // console.log(loading);
+
   return (
     <div >
        <Loader isLoading={loading} />
@@ -197,7 +197,7 @@ function Origin1() {
                   src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/p_vcv9ie.png"
                   alt=""
                 />
-                <div className={style.iconsText}>PARQUEADEROS PRIVADOS</div>
+                <div className={style.iconsText}>PARQUEADEROS COMUNALES</div>
               </div>
 
               <div className={style.itemIcon}>

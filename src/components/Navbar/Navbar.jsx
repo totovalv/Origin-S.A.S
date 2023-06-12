@@ -49,6 +49,12 @@ const StyledMenu = styled((props) => (
           theme.palette.action.selectedOpacity
         ),
       },
+      "&:hover": {
+        backgroundColor: alpha(
+          theme.palette.primary.main,
+          theme.palette.action.selectedOpacity
+        ),
+      },
     },
   },
 }));
@@ -65,10 +71,9 @@ const theme = createTheme({
   },
 });
 function Navbar() {
-  const [sizeFont, setSizeFont] = React.useState('h5');
+  const [sizeFont, setSizeFont] = React.useState("h5");
   const [sizeIcon, setSizeIcon] = React.useState();
 
-  
   const mediaQuery1062px = window.matchMedia("(width<=1062px)");
   const mediaQuery828px = window.matchMedia("(width<=828px)");
   const mediaQuery629px = window.matchMedia("(width<=629px)");
@@ -79,15 +84,19 @@ function Navbar() {
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-  useEffect(() => { 
-  if(mediaQuery1062px.matches) setSizeFont("h6")
-  if(mediaQuery629px.matches) setSizeFont('subtitle1')
+  useEffect(() => {
+    if (mediaQuery1062px.matches) setSizeFont("h6");
+    if (mediaQuery629px.matches) setSizeFont("subtitle1");
 
-  if(mediaQuery414px.matches) {setSizeFont(10);setSizeIcon(10)}
-  if(mediaQuery375px.matches){ setSizeFont(9)
-    setSizeIcon(9)}}
-  
-  , []);
+    if (mediaQuery414px.matches) {
+      setSizeFont(10);
+      setSizeIcon(10);
+    }
+    if (mediaQuery375px.matches) {
+      setSizeFont(9);
+      setSizeIcon(9);
+    }
+  }, []);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -132,10 +141,7 @@ function Navbar() {
                   theme={theme}
                   onClick={handleGoHome}
                 >
-                  <Typography sx={{ fontSize: sizeFont }} >
-                    {" "}
-                    INICIO
-                  </Typography>
+                  <Typography sx={{ fontSize: sizeFont }}> INICIO</Typography>
                 </Button>
 
                 <Button
@@ -186,7 +192,15 @@ function Navbar() {
                     },
                   }}
                 >
-                  <Typography sx={{ fontSize: sizeFont }}>
+                  <Typography
+                    sx={{
+                      fontSize: sizeFont,
+                      ":hover": {
+                        color: "#fff",
+                        textDecoration: "none",
+                      },
+                    }}
+                  >
                     SOBRE NOSOTROS
                   </Typography>
                 </Button>
@@ -240,7 +254,15 @@ function Navbar() {
                   theme={theme}
                   onClick={handleGoHome}
                 >
-                  <Typography sx={{ fontSize: sizeFont }}>
+                  <Typography
+                    sx={{
+                      fontSize: sizeFont,
+                      ":hover": {
+                        color: "#ffffffa5",
+                        textDecoration: "none",
+                      },
+                    }}
+                  >
                     {" "}
                     INICIO
                   </Typography>
@@ -261,7 +283,15 @@ function Navbar() {
                   onClick={handleClick}
                   endIcon={<AiOutlineDown size={sizeIcon} />}
                 >
-                  <Typography sx={{ fontSize: sizeFont }}>
+                  <Typography
+                    sx={{
+                      fontSize: sizeFont,
+                      ":hover": {
+                        color: "#ffffffa5",
+                        textDecoration: "none",
+                      },
+                    }}
+                  >
                     {" "}
                     PROYECTOS
                   </Typography>
@@ -277,13 +307,44 @@ function Navbar() {
                 >
                   {" "}
                   <MenuItem onClick={handleNavigateOrigin3} disableRipple>
-                    <Typography> ORIGIN 3</Typography>
+                    <Typography
+                      sx={{
+                        fontSize: sizeFont,
+                        ":hover": {
+                          color: "#000",
+                          textDecoration: "none",
+                        },
+                      }}
+                    >
+                      {" "}
+                      ORIGIN 3
+                    </Typography>
                   </MenuItem>
                   <MenuItem onClick={handleNavigateOrigin2} disableRipple>
-                    <Typography>ORIGIN 2</Typography>
+                    <Typography
+                      sx={{
+                        fontSize: sizeFont,
+                        ":hover": {
+                          color: "#000",
+                          textDecoration: "none",
+                        },
+                      }}
+                    >
+                      ORIGIN 2
+                    </Typography>
                   </MenuItem>
                   <MenuItem onClick={handleNavigateOrigin1} disableRipple>
-                    <Typography>ORIGIN 1</Typography>
+                    <Typography
+                      sx={{
+                        fontSize: sizeFont,
+                        ":hover": {
+                          color: "#000",
+                          textDecoration: "none",
+                        },
+                      }}
+                    >
+                      ORIGIN 1
+                    </Typography>
                   </MenuItem>
                 </StyledMenu>
                 <Button
@@ -294,7 +355,15 @@ function Navbar() {
                     },
                   }}
                 >
-                  <Typography sx={{ fontSize: sizeFont }}>
+                  <Typography
+                    sx={{
+                      fontSize: sizeFont,
+                      ":hover": {
+                        color: "#ffffffa5",
+                        textDecoration: "none",
+                      },
+                    }}
+                  >
                     SOBRE NOSOTROS
                   </Typography>
                 </Button>
@@ -306,7 +375,15 @@ function Navbar() {
                     },
                   }}
                 >
-                  <Typography sx={{ fontSize: sizeFont }}>
+                  <Typography
+                    sx={{
+                      fontSize: sizeFont,
+                      ":hover": {
+                        color: "#ffffffa5",
+                        textDecoration: "none",
+                      },
+                    }}
+                  >
                     CONTÁCTENOS
                   </Typography>
                 </Button>

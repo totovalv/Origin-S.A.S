@@ -71,11 +71,11 @@ function Home() {
                   src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png"
                   alt="FachadaOrigin3 "
                 />
-                <p>
+                <p className={style.blueSpaceTxt}>
                   <h4>Edificio Origin III</h4>
                   Es un proyecto de apartamentos y apartaestudios desde 23.3m2
                   hasta 61.7m2 de área privada. <br />
-                  <b>Dirección:</b> Calle 77a #83-31/39 <br />
+                  <b>Dirección:</b> Calle 77a   83-31/39 <br />
                   <b>Barrio:</b> Soledad Norte
                   <br />
                   <b>Localidad:</b> Engativá (Bogotá)
@@ -89,7 +89,7 @@ function Home() {
 
           <div className={style.positionCarouselAuto}>
             <div className={style.contentCarousel}>
-              <p>
+              <p className={style.contentTextCarousel}>
                 <b>Edificio Origin III</b> se localiza al noroccidente de la
                 Ciudad De Bogotá, excelente ubicación y en un sector de fácil
                 acceso rodeado por importantes vías como:
@@ -154,6 +154,8 @@ function Home() {
           />
           <h1>ORIGIN I</h1>
           <hr className={style.hrYellow} />
+          <div  className={style.addressOrigin}>Barrio La Asunción. Bogota.
+</div>
         </Link>
         <Link to="/projects/Origin2" className={style.imagesProjects}>
           <img
@@ -162,6 +164,8 @@ function Home() {
           />
           <h1>ORIGIN II</h1>
           <hr className={style.hrblue} />
+          <div  className={style.addressOrigin}>Barrio Veraguas. Bogotá.</div>
+
         </Link>
         <Link to="/projects/Origin3" className={style.imagesProjects}>
           <img
@@ -172,6 +176,8 @@ function Home() {
             ORIGIN III <p>(En proceso)</p>
           </h1>
           <hr className={style.hrYellow} />
+          <div  className={style.addressOrigin}>Barrio La Granja - Soledad Norte. Bogotá.</div>
+
         </Link>
       </div>
 

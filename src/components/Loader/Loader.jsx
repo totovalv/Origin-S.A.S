@@ -12,7 +12,6 @@ const Loader = (props) => {
       body.style.overflow = 'scroll';
     }
   }, [isLoading]);
-  console.log(isLoading);
   return (
     <div className={isLoading === false ? style.container : style.containerOut}>
       <img

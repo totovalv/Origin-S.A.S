@@ -18,13 +18,62 @@ function Origin3() {
       setLoading(true);
     }, 500);
     setData({
-      mall: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686010990/Aptos%20Origin3/1_home_G2-1_valbwr.jpg",
+      soledadNorte:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688094493/760x501_La-Soledad-Norte_bak2mj.jpg",
+      mallTitan:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686010990/Aptos%20Origin3/1_home_G2-1_valbwr.jpg",
+      mallDiverPlaza:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687026899/Origin3%20Aleda%C3%B1os/entro_Comercial_Diver_Plaza_skeo74.jpg",
+      mallPortal:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687027869/Origin3%20Aleda%C3%B1os/portal_80_t35ytb.jpg",
       parks:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686010990/Aptos%20Origin3/4_home_G2-1_xjw8lk.jpg",
-      market:
+      marketJumbo:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686010622/Aptos%20Origin3/JUMBO_fafvom.jpg",
+      marketMakro:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687030404/Origin3%20Aleda%C3%B1os/Makro_dj49ww.jpg",
+      marketD1:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687056669/d1_kpp9vq.jpg",
+      marketAra:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687033054/Origin3%20Aleda%C3%B1os/ara_gvff1i.jpg",
+      marketDollarCity:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687055744/dollarcity_isagmi.jpg",
+      marketFerias:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687057295/feriasw_fsdnfy.jpg",
+      marketQuirigua:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687057282/qur_miezmg.jpg",
       education:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686011161/Aptos%20Origin3/uniminuto_bog_cop_n2vmaw.jpg",
+      schoolPalestina:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687058642/colegio_p_v1bsiw.jpg",
+      schoolTabora:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687058933/tabora_pehqf1.jpg",
+      schoolTurbai:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687059144/turbai_itr5x8.jpg",
+      schoolIsaac:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688085245/colegioisaa_uo1uul.jpg",
+      schoolSanJose:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688085254/colegio_san_jose_ghgqey.jpg",
+      othersCai:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688086383/Captura_de_pantalla_2023-06-29_195230_kgibmt.png",
+      othersUnidad:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688086497/uri-unidad-de-reaccion-inmediata_oejzeb.jpg",
+      othersAlcaldia:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688086702/ALCALDIA_rjvfgl.jpg",
+      parkTabora:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686010990/Aptos%20Origin3/5_home_G2-1_o5rbpl.jpg",
+      parkLaGranja:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688089843/parque_la_granja_ue3l0g.jpg",
+      parkLaAlmeria:
+        "https://res.cloudinary.com/civico/image/upload/c_fit,f_auto,fl_lossy,h_1200,q_auto:low,w_1200/v1508812174/entity/image/file/55e/000/59eea58d9d2683ce3500055e.jpg",
+      parkLiga:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688091310/liga_egdyqw.jpg",
+      hospitalSantaMaria:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688093507/clinica_0_lrlqvn.jpg",
+      hospitalEngativa:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688093682/E0PeGUqWYAIJcfw_c7ya2s.jpg",
+      hospitalShaio:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688093424/Shaio-min_pjz7fs.jpg",
       sportsCenters:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686010990/Aptos%20Origin3/5_home_G2-1_o5rbpl.jpg",
       renderOrigin3:
@@ -45,8 +94,75 @@ function Origin3() {
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684794554/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/building_logo_biztci.png",
       timeline:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684795405/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/linea_de_tiempo-origin3_x8fnvi.jpg",
+
       map: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684797331/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/MAPAlugares_1_estge7.jpg",
     });
+  }, []);
+
+  const imagesMallMarkert = [
+    data.marketQuirigua,
+    data.mallDiverPlaza,
+    data.marketAra,
+    data.mallTitan,
+    data.mallPortal,
+    data.marketJumbo,
+    data.marketD1,
+    data.marketDollarCity,
+    data.marketMakro,
+    data.marketFerias,
+  ];
+
+  const imagesEducation = [
+    data.education,
+    data.schoolPalestina,
+    data.schoolTabora,
+    data.schoolTurbai,
+    data.schoolIsaac,
+    data.schoolSanJose,
+  ];
+
+  const imagesParks = [
+    data.parkTabora,
+    data.parkLaGranja,
+    data.parkLaAlmeria,
+    data.parkLiga,
+  ];
+
+  const imagesOthers = [data.othersAlcaldia, data.othersCai, data.othersUnidad];
+
+  const imagesHospital = [
+    data.hospitalSantaMaria,
+    data.hospitalEngativa,
+    data.hospitalShaio,
+  ];
+
+  const [currentImageIndexMarket, setCurrentImageIndexMarket] = useState(0);
+  const [currentImageIndexEducation, setCurrentImageIndexEducation] =
+    useState(0);
+
+  const [currentImageIndexOthers, setCurrentImageIndexOthers] = useState(0);
+  const [currentImageIndexParks, setCurrentImageIndexParks] = useState(0);
+  const [currentImageIndexHospital, setCurrentImageIndexHospital] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndexMarket((prevIndex) =>
+        prevIndex === imagesMallMarkert.length - 1 ? 0 : prevIndex + 1
+      );
+      setCurrentImageIndexEducation((prevIndex) =>
+        prevIndex === imagesEducation.length - 1 ? 0 : prevIndex + 1
+      );
+      setCurrentImageIndexOthers((prevIndex) =>
+        prevIndex === imagesOthers.length - 1 ? 0 : prevIndex + 1
+      );
+      setCurrentImageIndexParks((prevIndex) =>
+        prevIndex === imagesParks.length - 1 ? 0 : prevIndex + 1
+      );
+      setCurrentImageIndexHospital((prevIndex) =>
+        prevIndex === imagesHospital.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+    return () => clearInterval(interval);
   }, []);
 
   const handleApto = (e) => {
@@ -175,105 +291,28 @@ function Origin3() {
                       <ul>
                         <label htmlFor="slide-2">
                           <li className={style.unorderList}>
-                            Centros Comerciales
+                            Centros Comerciales y comercio
                           </li>
                         </label>
                         <label htmlFor="slide-3">
                           <li className={style.unorderList}>Educación</li>
                         </label>
 
-                        <label htmlFor="slide-4">
-                          <li className={style.unorderList}>Comercio</li>
-                        </label>
                         <label htmlFor="slide-5">
-                          <li className={style.unorderList}>Parques</li>
-                        </label>
-                        <label htmlFor="slide-6">
                           <li className={style.unorderList}>
-                            Sitios Deportivos
+                            Parques y Gimnasios
                           </li>
                         </label>
-                      </ul>
-                    </figcaption>
-                    <div>
-                      <img
-                        src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684797331/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/MAPAlugares_1_estge7.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </figure>
-                </li>
-                <li className={style.carousel__slide}>
-                  <figure>
-                    <figcaption>
-                      <h1>Centros Comerciales </h1>
-                      <ul>
-                        <li className={style.unorderList}>
-                          <a href="https://www.titanplaza.com/" target="blank">
-                            Centro Comercial Titan Plaza{" "}
-                          </a>
-                        </li>
-                        <li className={style.unorderList}>
-                          <a
-                            href="https://www.diverplaza.com/nosotros"
-                            target="blank"
-                          >
-                            Centro Comercial Diverplaza
-                          </a>
-                        </li>
-                        <li className={style.unorderList}>
-                          <a href="https://www.portal80.com.co/" target="blank">
-                            Centro Comercial Portal 80
-                          </a>
-                        </li>
-                      </ul>
-                      <span className={style.credit}>
-                        <label htmlFor="slide-1">
-                          <div>Volver</div>
+                        <label htmlFor="slide-6">
+                          <li className={style.unorderList}>Salud</li>
                         </label>
-                      </span>
-                    </figcaption>
-                    <div>
-                      <img src={data.mall} alt="" />
-                    </div>
-                  </figure>
-                </li>
-                <li className={style.carousel__slide}>
-                  <figure>
-                    <figcaption>
-                      <h1>Eduación </h1>
-                      <ul>
-                        <li className={style.unorderList}>
-                          <a href="https://www.uniminuto.edu/" target="blank">
-                            Universidad Minuto de Dios{" "}
-                          </a>
-                        </li>
-                        <li className={style.unorderList}>
-                          <a
-                            href="https://www.colegiolapalestina.edu.co/"
-                            target="blank"
-                          >
-                            Colegio La Palestina
-                          </a>
-                        </li>
-                        <li className={style.unorderList}>
-                          <a
-                            href="https://www.redacademica.edu.co/colegios/colegio-tabora-ied"
-                            target="blank"
-                          >
-                            Colegio Tabora - Sede A
-                          </a>
-                        </li>
-                      </ul>
-                      <span className={style.credit}>
-                        <label htmlFor="slide-1">
-                          {" "}
-                          <div>Volver</div>
+                        <label htmlFor="slide-4">
+                          <li className={style.unorderList}>Otras</li>
                         </label>
-                      </span>
+                      </ul>
                     </figcaption>
                     <div>
-                      <img src={data.education} alt="" />
+                      <img src={data.soledadNorte} alt="" />
                     </div>
                   </figure>
                 </li>
@@ -283,117 +322,423 @@ function Origin3() {
                       <h1>Comercio </h1>
                       <ul>
                         <li className={style.unorderList}>
-                          <a
-                            href="https://www.tiendasjumbo.co/?utm_source=google&utm_medium=cpa&utm_campaign=Jumbo_aon_nonfood_performance&utm_content=Searchintereses-Almacenes_Jumbo&gclid=Cj0KCQjwj_ajBhCqARIsAA37s0wBPziGt8BHaMfyaEkjMzFNuQBOEP6eC071nXu56LdmxDWl2q1NGcoaAr9HEALw_wcB"
-                            target="blank"
-                          >
-                            Jumbo{" "}
+                          <a href="https://www.titanplaza.com/" target="blank">
+                            Titan Plaza (1.9 km)
                           </a>
                         </li>
                         <li className={style.unorderList}>
                           <a
-                            href="https://www.makro.com.co/ofertas?gclid=Cj0KCQjwj_ajBhCqARIsAA37s0w3vUGuBdyAspUaTXjB3QR-FijF8HSR684B7V4WVjsn6xok8SyQyY8aAtqKEALw_wcB#modal"
+                            href="https://www.diverplaza.com/nosotros"
                             target="blank"
                           >
-                            Makro
+                            Diver Plaza (2.3 km)
                           </a>
                         </li>
                         <li className={style.unorderList}>
-                          <a href="https://d1.com.co/" target="blank">
-                            D1
+                          <a href="https://www.portal80.com.co/" target="blank">
+                            Portal 80 (2.4 km)
                           </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="http://www.primaveraplaza.com/home"
+                            target="blank"
+                          >
+                            Primavera Plaza Comercial (850 mts)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a href="https://www.tiendasjumbo.co/" target="blank">
+                            Jumbo Calle 80 (2.2 Km)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a href="https://tienda.makro.com.co/" target="blank">
+                            Makro (2.2 Km)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://domicilios.tiendasd1.com/"
+                            target="blank"
+                          >
+                            Tiendas D1 La Granja (650 y 750 mts)
+                          </a>
+                        </li>
+                        {/* <li className={style.unorderList}>
+                          <a href="https://aratiendas.com/" target="blank">
+                            Tienda ARA La granja (550 mt)
+                          </a>
+                        </li> */}
+                        <li className={style.unorderList}>
+                          <a href="https://dollarcity.com/" target="blank">
+                            Dollar City: (450 mt)
+                          </a>
+                        </li>
+                        <li
+                          style={{
+                            textDecoration: "none",
+                            color: "black",
+                            cursor: "default",
+                          }}
+                          className={style.unorderList}
+                        >
+                          Comercio Calle 72
+                        </li>
+                        <li
+                          style={{
+                            textDecoration: "none",
+                            color: "black",
+                            cursor: "default",
+                          }}
+                          className={style.unorderList}
+                        >
+                          Plaza Las Ferias (2.4 Km)
+                        </li>
+                        <li
+                          style={{
+                            textDecoration: "none",
+                            color: "black",
+                            cursor: "default",
+                          }}
+                          className={style.unorderList}
+                        >
+                          Plaza Quirigua (2.4 Km)
                         </li>
                       </ul>
                       <span className={style.credit}>
                         <label htmlFor="slide-1">
-                          <div>Volver</div>
+                          <div>
+                            {" "}
+                            <p>Volver</p>{" "}
+                          </div>
                         </label>
                       </span>
                     </figcaption>
                     <div>
-                      <img src={data.market} alt="" />
+                      <img
+                        src={imagesMallMarkert[currentImageIndexMarket]}
+                        alt=""
+                      />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <figcaption>
-                      <h1>Parques </h1>
+                      <h1>Educación </h1>
+                      <ul>
+                        <li className={style.unorderList}>
+                          <a href="https://www.uniminuto.edu/" target="blank">
+                            Universidad Minuto de Dios (1.7 km)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://www.colegiolapalestina.edu.co/"
+                            target="blank"
+                          >
+                            Colegio Palestina Zona A (1.0 km)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://www.redacademica.edu.co/colegios/colegio-tabora-ied"
+                            target="blank"
+                          >
+                            Colegio Tabora (1.1 Km)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://colegionydiaquintero.jimdofree.com/"
+                            target="blank"
+                          >
+                            Colegio Nydia Quintero de Turbay (1.1 Km)
+                          </a>
+                        </li>
+                        <li
+                          style={{
+                            textDecoration: "none",
+                            color: "black",
+                            cursor: "default",
+                          }}
+                          className={style.unorderList}
+                        >
+                          Colegio Jorge Isaacs I.E.D (1.3 Km)
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://www.redacademica.edu.co/colegios/colegio-san-jose-norte-ied"
+                            target="blank"
+                          >
+                            Colegio San Jose Norte (500 mt)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://www.colegiosminutodedios.edu.co/cemid/index.php"
+                            target="blank"
+                          >
+                            Colegio Minuto De Dios (1.4 Km)
+                          </a>
+                        </li>
+                      </ul>
+                      <span className={style.credit}>
+                        <label htmlFor="slide-1">
+                          {" "}
+                          <div>
+                            {" "}
+                            <p>Volver </p>{" "}
+                          </div>
+                        </label>
+                      </span>
+                    </figcaption>
+                    <div>
+                      <img
+                        src={imagesEducation[currentImageIndexEducation]}
+                        alt=""
+                      />
+                    </div>
+                  </figure>
+                </li>
+                <li className={style.carousel__slide}>
+                  <figure>
+                    <figcaption>
+                      <h1>Otras </h1>
                       <ul>
                         <li className={style.unorderList}>
                           <a
-                            href="https://humedalesbogota.com/2012/06/20/parque-ecologico-distrital-de-humedal-santa-maria-del-lago-parque-o-humedal/"
+                            href="https://co.todosnegocios.com/cai-de-santa-mar%C3%ADa-del-lago-5-2247211"
                             target="blank"
                           >
-                            Parque Santa Maria del Lago{" "}
+                            CAI Santa Maria del Lago (1.1 Km)
                           </a>
                         </li>
                         <li className={style.unorderList}>
                           <a
-                            href="https://www.civico.com/lugar/parque-almeria-bogota/"
+                            href="https://bogota.gov.co/servicios/puntos-de-atencion/unidades-de-reaccion-inmediata-uri-granja-engativa-penal-ii"
                             target="blank"
                           >
-                            Parque La Almeria
+                            Unidad de Reacción Inmediata (URI) Engativá (500 mt)
                           </a>
                         </li>
                         <li className={style.unorderList}>
+                          <a
+                            href="https://www.notariasytramites.co/notaria-67-de-bogota/"
+                            target="blank"
+                          >
+                            Notaria 67 (900 mt)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a href="https://notaria70bogota.com/" target="blank">
+                            Notaria 70 (2.1 Km)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://www.notaria51bogota.com/presentation"
+                            target="blank"
+                          >
+                            Notaria 51 (1.9 Km)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a href="http://www.engativa.gov.co/" target="blank">
+                            Alcaldía Local Engativá (2.0 Km)
+                          </a>
+                        </li>
+                      </ul>
+                      <span className={style.credit}>
+                        <label htmlFor="slide-1">
+                          <div>
+                            {" "}
+                            <p>Volver </p>{" "}
+                          </div>
+                        </label>
+                      </span>
+                    </figcaption>
+                    <div>
+                      <img src={imagesOthers[currentImageIndexOthers]} alt="" />
+                    </div>
+                  </figure>
+                </li>
+                <li className={style.carousel__slide}>
+                  <figure>
+                    <figcaption>
+                      <h1>Parques y Gimnasios </h1>
+                      <ul>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://www.zonabogotadc.com/2020/03/parque-estadio-tabora-engativa-bogota.html"
+                            target="blank"
+                          >
+                            Parque Tabora (1.2 Km)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://www.ambientebogota.gov.co/parque-ecologico-distrital-humedal-santa-maria-del-lago"
+                            target="blank"
+                          >
+                            Parque Humedal Santa Maria del Lago (1.4 Km)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://co.latinoplaces.com/bogota/parque-barrio-la-granja-304888"
+                            target="blank"
+                          >
+                            Parque Barrio La Granja (450 mt)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-Parque_P%C3%BAblico_San_Jose_de_la_Granja-Bogota-site_25122045-762"
+                            target="blank"
+                          >
+                            Parque San Jose La Granja (650 mts)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://soundcloud.com/user-305883303/paisaje-sonoro-parque-aguas-claras-localidad-de-engativa-bogota"
+                            target="blank"
+                          >
+                            Parque Aguas Claras (750 mt)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-Parque_Almer%C3%ADa-Medellin-site_30416199-1642"
+                            target="blank"
+                          >
+                            Parque La Almeria (750 mts)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://www.ligagimnasiabogota.com.co/"
+                            target="blank"
+                          >
+                            Liga De Gimnasia De Bogotá (450 mt)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a
+                            href="https://gimnasios.guiabbb.co/Quind%C3%ADo/Parque_de_La_Soledad/"
+                            target="blank"
+                          >
+                            Gimnasios, ver mas...
+                          </a>
+                        </li>
+                        {/* <li className={style.unorderList}>
                           <a
                             href="https://www.google.com/maps/place/La+Granja+Public+Park/@4.6979802,-74.1010539,19.08z/data=!4m6!3m5!1s0x8e3f9b37e176bb6f:0xc7ae941226a07276!8m2!3d4.6978674!4d-74.1005495!16s%2Fg%2F11b7hfpbyq?entry=ttu"
                             target="blank"
                           >
-                            Parque Público La Granja
+                            Spirit (700 mt)
                           </a>
-                        </li>
+                        </li> */}
+                        {/* <li className={style.unorderList}>
+                          <a
+                            href="https://www.google.com/maps/place/La+Granja+Public+Park/@4.6979802,-74.1010539,19.08z/data=!4m6!3m5!1s0x8e3f9b37e176bb6f:0xc7ae941226a07276!8m2!3d4.6978674!4d-74.1005495!16s%2Fg%2F11b7hfpbyq?entry=ttu"
+                            target="blank"
+                          >
+                            Smart Fit Calle 80 (2.2 Km)
+                          </a>
+                        </li> */}
+                        {/* <li className={style.unorderList}>
+                          <a
+                            href="https://www.google.com/maps/place/La+Granja+Public+Park/@4.6979802,-74.1010539,19.08z/data=!4m6!3m5!1s0x8e3f9b37e176bb6f:0xc7ae941226a07276!8m2!3d4.6978674!4d-74.1005495!16s%2Fg%2F11b7hfpbyq?entry=ttu"
+                            target="blank"
+                          >
+                            FIT360 (1.1 Km)
+                          </a>
+                        </li> */}
+                        {/* <li className={style.unorderList}>
+                          <a
+                            href="https://www.google.com/maps/place/La+Granja+Public+Park/@4.6979802,-74.1010539,19.08z/data=!4m6!3m5!1s0x8e3f9b37e176bb6f:0xc7ae941226a07276!8m2!3d4.6978674!4d-74.1005495!16s%2Fg%2F11b7hfpbyq?entry=ttu"
+                            target="blank"
+                          >
+                            BHB GYM (1.2 Km)
+                          </a>
+                        </li> */}
                       </ul>
                       <span className={style.credit}>
                         <label htmlFor="slide-1">
-                          <div>Volver</div>
+                          <div>
+                            {" "}
+                            <p>Volver </p>{" "}
+                          </div>
                         </label>
                       </span>
                     </figcaption>
                     <div>
-                      <img src={data.parks} alt="" />
+                      <img src={imagesParks[currentImageIndexParks]} alt="" />
                     </div>
                   </figure>
                 </li>
                 <li className={style.carousel__slide}>
                   <figure>
                     <figcaption>
-                      <h1>Sitios Deportivos </h1>
+                      <h1>Salud </h1>
                       <ul>
                         <li className={style.unorderList}>
                           <a
-                            href="https://centro20182.ascundeportes.org/escenario/escenario/259"
+                            href="https://www.clinicacolsanitas.com/web/clinica-infantil-santa-maria-del-lago/urgencias"
                             target="blank"
                           >
-                            Estadio Tabora{" "}
+                            Clínica Santa Maria del Lago (1.3 Km)
                           </a>
                         </li>
                         <li className={style.unorderList}>
                           <a
-                            href="https://empresite.eleconomistaamerica.co/SPIRIT-GYM-CENTER-SAS-BOGOTA.html"
+                            href="https://bogota.gov.co/servicios/puntos-de-atencion/unidad-medica-hospitalaria-especializada-en-salud-engativa-calle-80"
                             target="blank"
                           >
-                            Spirit
+                            Hospital Engativá (2.4 Km)
                           </a>
                         </li>
                         <li className={style.unorderList}>
                           <a
-                            href="https://vymaps.com/CO/BEAST-GYM-590831988099399/"
+                            href="https://enbogota.com.co/sitios/hospital-engativa-cami-ferias"
                             target="blank"
                           >
-                            BEAST Gym
+                            Hospital Engativá CAMI Ferias (2.6 Km)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a href="https://www.nuevaeps.com.co/" target="blank">
+                            Nueva EPS (1.3 Km)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a href="https://medimas.com.co/" target="blank">
+                            Medimas EPS (750 mt Km)
+                          </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          <a href="https://www.shaio.org/" target="blank">
+                            Clínica SHAIO (4.2 Km)
                           </a>
                         </li>
                       </ul>
                       <span className={style.credit}>
                         <label htmlFor="slide-1">
-                          <div>Volver</div>
+                          <div>
+                            {" "}
+                            <p>Volver </p>{" "}
+                          </div>
                         </label>
                       </span>
                     </figcaption>
                     <div>
-                      <img src={data.sportsCenters} alt="" />
+                      <img
+                        src={imagesHospital[currentImageIndexHospital]}
+                        alt=""
+                      />
                     </div>
                   </figure>
                 </li>
@@ -401,15 +746,12 @@ function Origin3() {
               <ul className={style.carousel__thumbnails}>
                 <li>
                   <label htmlFor="slide-1">
-                    <img
-                      src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684797331/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/MAPAlugares_1_estge7.jpg"
-                      alt=""
-                    />
+                    <img src={data.soledadNorte} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-2">
-                    <img src={data.mall} alt="" />
+                    <img src={data.mallTitan} alt="" />
                   </label>
                 </li>
                 <li>
@@ -419,17 +761,17 @@ function Origin3() {
                 </li>
                 <li>
                   <label htmlFor="slide-4">
-                    <img src={data.market} alt="" />
+                    <img src={data.othersAlcaldia} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-5">
-                    <img src={data.parks} alt="" />
+                    <img src={data.parkTabora} alt="" />
                   </label>
                 </li>
                 <li>
                   <label htmlFor="slide-6">
-                    <img src={data.sportsCenters} alt="" />
+                    <img src={data.hospitalSantaMaria} alt="" />
                   </label>
                 </li>
               </ul>

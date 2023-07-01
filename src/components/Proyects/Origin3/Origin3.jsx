@@ -594,7 +594,7 @@ function Origin3() {
               </div>
               <img
                 className={style.aptoImg}
-                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684868056/Aptos%20Origin3/Apto_Tipo1_kdzsns_u0sqyi.jpg"
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1688170206/Aptos%20Origin3/Apto_Tipo1-recorte_txe0jj.jpg"
                 alt=""
               />
             </div>
@@ -637,7 +637,7 @@ function Origin3() {
               </div>
               <img
                 className={style.aptoImg}
-                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684881817/Aptos%20Origin3/Apto_Tipo2_epippg_wnnppd.jpg"
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1688170206/Aptos%20Origin3/Apto_Tipo2-recorte_znczp1.jpg"
                 alt=""
               />
             </div>
@@ -679,7 +679,7 @@ function Origin3() {
               </div>
               <img
                 className={style.aptoImg}
-                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684882163/Aptos%20Origin3/Apto_Tipo3_htyo7y_amqq36.jpg"
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1688170206/Aptos%20Origin3/Apto_Tipo3-recorte_lcancf.jpg"
                 alt=""
               />
             </div>
@@ -721,7 +721,7 @@ function Origin3() {
               </div>
               <img
                 className={style.aptoImg}
-                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684882717/Aptos%20Origin3/Apto_Tipo4_jsjgoh_1_hpc1zs.jpg"
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1688170206/Aptos%20Origin3/Apto_Tipo4-recorte_tlosfp.jpg"
                 alt=""
               />
             </div>
@@ -763,7 +763,7 @@ function Origin3() {
               </div>
               <img
                 className={style.aptoImg}
-                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684882935/Aptos%20Origin3/Apto_Tipo5_ovi1ye_dfmchh.jpg"
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1688170206/Aptos%20Origin3/Apto_Tipo5-recorte_jagxld.jpg"
                 alt=""
               />
             </div>

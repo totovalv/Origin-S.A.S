@@ -231,7 +231,7 @@ function Origin1() {
           <div className={style.timeline}>
             <img
               className={style.imgTimeline}
-              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177153/Origin1%20Acabados/timeline_tfbnym.jpg"
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1688170756/Origin1%20Acabados/linea_de_tiempo_origin_I_cowept.png"
               alt="timeline"
             />
           </div>

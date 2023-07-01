@@ -323,7 +323,7 @@ border-radius: 0.3rem;
   font-size: 1.5rem;
 }
 .aptoImg {
-  height: 4.9rem;
+  height: 5.3rem;
   padding-top: 0.5rem;
   padding-right: 0.5rem;
   width: 100%;
@@ -364,7 +364,7 @@ font-family: var(--metropolisBold);
 }
 .aptoTopGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 60% 40%;
 }
 .textApto {
   color: white;

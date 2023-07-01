@@ -9,7 +9,6 @@
 * {
   --metropolisBold: metroBold;
   --metropolisLight: metroLight;
-
 }
 
 .head {
@@ -63,7 +62,7 @@
   margin-top: 4rem;
   justify-self: center;
 }
-.porcentageContainer{
+.porcentageContainer {
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -75,14 +74,13 @@
   text-align: center;
 }
 .buildingPart {
-
   font-size: 1.5rem;
   font-family: var(--metropolisBold);
   text-align: center;
 }
 .porcentageBarImg {
-position: relative;
-bottom: 14rem;
+  position: relative;
+  bottom: 14rem;
 }
 .knowOurBuildings {
   display: grid;
@@ -170,7 +168,7 @@ bottom: 14rem;
 }
 .mapOrigin3 {
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 .ubicationImg {
   width: 100%;
@@ -310,7 +308,7 @@ bottom: 14rem;
   display: grid;
   grid-template-rows: 45% 55%;
   height: 11em;
-border-radius: 0.3rem;
+  border-radius: 0.3rem;
 }
 .availabilityText {
   justify-self: center;
@@ -353,9 +351,9 @@ border-radius: 0.3rem;
   -webkit-text-shadow: 0 0 10px #000;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  margin-right:0.4rem;
+  margin-right: 0.4rem;
   margin-left: 1rem;
-font-family: var(--metropolisBold);
+  font-family: var(--metropolisBold);
   padding: 0.5rem;
   border: none;
   cursor: pointer;
@@ -393,6 +391,7 @@ font-family: var(--metropolisBold);
   display: flex;
   justify-content: space-around;
   width: 100%;
+  height: 600px;
   margin-top: 7rem;
   margin-bottom: 7rem;
 }
@@ -529,7 +528,6 @@ font-family: var(--metropolisBold);
   padding: 1rem;
   box-shadow: 0px 0px 20px rgb(58, 59, 59);
   border: solid 3px rgb(6, 102, 153);
-  ;
 }
 
 /* ------------------------------------------------------------------- */
@@ -552,6 +550,7 @@ font-family: var(--metropolisBold);
 
 .unorderList {
   margin-bottom: 10px;
+  font-size: 11.5px;
 }
 
 .unorderList:hover {
@@ -570,6 +569,33 @@ font-family: var(--metropolisBold);
   padding: 0;
   position: absolute;
 }
+
+/* Dynamic Images------------------------------------------------------------------------------------ */
+.slider3 {
+  justify-self: center;
+  width: 85%;
+  height: 100%;
+  overflow: hidden;
+}
+.slider3 ul {
+  margin-top: 1rem;
+  display: flex;
+  align-self: center;
+  animation: cambio2 15s infinite alternate linear;
+  width: 400%;
+  height: fit-content;
+}
+.slider3 li {
+  width: 100%;
+  list-style: none;
+}
+.slider3 img {
+  padding: 1rem;
+  width: 100%;
+  height: 90%;
+}
+/* -------------------------------s-------- */
+
 .carouselHome
   > input:nth-of-type(6):checked
   ~ .carousel__slides
@@ -663,7 +689,8 @@ font-family: var(--metropolisBold);
   white-space: nowrap;
   box-sizing: border-box;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  height: 450px;
 }
 
 .carousel__slide {
@@ -709,6 +736,7 @@ font-family: var(--metropolisBold);
   bottom: 0;
   width: 100%;
   height: 100%;
+  /* height: fit-content; */
   /* border-radius: 20px; */
 }
 .carousel__slide img {
@@ -717,18 +745,23 @@ font-family: var(--metropolisBold);
   object-fit: cover;
 }
 .carousel__slide figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   align-self: flex-end;
   padding: 20px 20px 0 20px;
   flex: 0 0 auto;
   width: 30%;
   min-width: 150px;
+  height: 400px;
 }
 
 .carousel__slide .credit {
-  margin-top: 1rem;
+  margin-top: -20px;
   color: rgba(0, 0, 0, 0.5);
   display: block;
 }
+
 p:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -747,7 +780,7 @@ p:hover {
   margin: 0 -10px;
 }
 .carousel__slides + .carousel__thumbnails {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .carousel__thumbnails li {
   flex: 1 1 auto;

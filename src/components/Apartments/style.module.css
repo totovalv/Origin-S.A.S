@@ -12,6 +12,14 @@
   --metropolisLight: metroLight;
  
 }
+.optionSelect{
+  font-size: 2rem;
+  color:  rgb(6, 102, 153);
+}
+.optionDefault{
+  font-size: 2rem;
+color: gray;
+}
 .title{
   margin-top: 1rem;
   display: grid;
@@ -48,7 +56,8 @@ width: 75%;
   border: 2px solid rgba(0, 0, 0, 0.613);
   color:rgb(255, 178, 0);
   font-family: var(--metropolisBold);
-  font-size: 4.1rem;
+  font-size: 2.8rem;
+  text-align: center;
 }
 
 .textData{
@@ -87,6 +96,12 @@ gap: 0.5rem;
   justify-content: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.688);
 }
+.dataContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 .dataSection{
   border:3px solid rgb(6, 102, 153);
@@ -100,6 +115,18 @@ gap: 0.5rem;
   text-align: center;
   justify-content: center; 
 
+}
+.dataSection2{
+  border:3px solid rgb(6, 102, 153);
+  display: flex;
+  flex-direction: column;
+  height:fit-content;
+  width: 100%;
+  font-family: var(--metropolisBold);
+  gap: 1rem;
+  align-self: center;
+  text-align: center;
+  justify-content: center; 
 }
 .ulSection{
   justify-items: center; 

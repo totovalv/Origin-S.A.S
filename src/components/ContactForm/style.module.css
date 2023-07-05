@@ -1,0 +1,44 @@
+@font-face {
+  font-family: metroBold;
+  src: url("../../../src/fonts/Metropolis-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: metroLight;
+  src: url("../../../src/fonts/metropolis.thin.otf") format("opentype");
+}
+* {
+  --metropolisBold: metroBold;
+  --metropolisLight: metroLight;
+ 
+}
+.titleContainer{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+align-items: center;
+height: 20rem;
+}
+.hrTop{
+  justify-self: center;
+  height: 0.2rem;
+  align-self: center;
+  background-color: #ffb200;
+  border: 0rem;
+  margin-bottom: 1rem;
+}
+.hrBottom{
+  justify-self: center;
+  height: 0.1rem;
+  align-self: center;
+  background-color: #ffb200;
+  border: 0rem;
+}
+.contactContain{
+  display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.contactTitle{
+  color: #066699;
+  font-size: 3.4rem;
+  font-family: var(--metropolisBold);
+}

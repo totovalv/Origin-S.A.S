@@ -79,23 +79,27 @@ function Origin3() {
       renderOrigin3:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684187694/Origin3%20Aleda%C3%B1os/vectorOrigin3_uqspta.png",
       type1:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo1_nksky1.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688333587/tipo-1_sg0hst.jpg",
       type2:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo2_kzzk45.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688333587/tipo-2_u6uvhv.jpg",
       type3:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo3_xlq4d5.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688333587/tipo-3_sxggq8.jpg",
       type4:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo4_ewuupb.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688333587/tipo-4_tsa72q.jpg",
       type5:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684800020/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/Aptos/MAPA-Tipo5_oetfon.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688333587/tipo-5_zr0fa9.jpg",
       porcentage:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684795382/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/45__u6hmcy.png",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688334981/5_wacorj.png",
       buildingLogo:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684794554/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/building_logo_biztci.png",
       timeline:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684795405/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/linea_de_tiempo-origin3_x8fnvi.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688334981/origin-III-1_uhkqvt.png",
 
-      map: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684797331/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/MAPAlugares_1_estge7.jpg",
+      map: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688334981/MAPA-sitioscercanos_flqmet.jpg",
+      reception:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688511195/RECEPCION_udayan.png",
+      cellar:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688511194/SOTANO_Y_PRIMER_NIVEL_ozyxr9.png",
     });
   }, []);
 
@@ -202,8 +206,8 @@ function Origin3() {
           <div className={style.porcentage}>
             <div className={style.weGolikeThis}>Así vamos</div>
             <div className={style.porcentageContainer}>
-              <div className={style.porcentageNumber}>45%</div>
-              <div className={style.buildingPart}>1er. piso</div>
+              <div className={style.porcentageNumber}>5%</div>
+              <div className={style.buildingPart}>Demolición</div>
 
               <img
                 className={style.porcentageBarImg}
@@ -245,9 +249,7 @@ function Origin3() {
               UPZ Boyacá Real
             </h5>
           </div>
-          <div className={style.thirdBox}>
-            <h5>Área del lote: 300 mt2(14*23.6mts)</h5>
-          </div>
+
           <div className={style.fourthBox}>
             <div className={style.spaceOne}>
               <h5>
@@ -268,7 +270,7 @@ function Origin3() {
               <h5>No. Pisos: 5</h5>
             </div>
             <div className={style.sapaceSix}>
-              <h5></h5>
+              <h5>Área del lote: 300 mt2(14*23.6mts)</h5>
             </div>
           </div>
         </div>
@@ -822,14 +824,6 @@ function Origin3() {
             />
             <div className={style.iconsText}>SALÓN COMUNAL</div>
           </div>
-          <div className={style.itemIcon}>
-            <img
-              className={style.icon}
-              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/terraza_xfxnf1.png"
-              alt=""
-            />
-            <div className={style.iconsText}>TERRAZA</div>
-          </div>
         </div>
 
         <div className={style.iconsGrid}>
@@ -844,7 +838,7 @@ function Origin3() {
           <div className={style.itemIcon}>
             <img
               className={style.icon}
-              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684798482/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/person_o4pvnv.png"
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1688489485/carCellar_tc7skq.png"
               alt=""
             />
             <div className={style.iconsText}>SÓTANO CON RAMPA LEVADIZA</div>
@@ -856,14 +850,6 @@ function Origin3() {
               alt=""
             />
             <div className={style.iconsText}>ZONA BBQ </div>
-          </div>
-          <div className={style.itemIcon}>
-            <img
-              className={style.icon}
-              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/terraza_xfxnf1.png"
-              alt=""
-            />
-            <div className={style.iconsText}>TERRAZA</div>
           </div>
         </div>
         <div className={style.iconsGrid}>
@@ -883,14 +869,7 @@ function Origin3() {
             />
             <div className={style.iconsText}>SHUT DE BASURAS</div>
           </div>
-          <div className={style.itemIcon}>
-            <img
-              className={style.icon}
-              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/terraza_xfxnf1.png"
-              alt=""
-            />
-            <div className={style.iconsText}>TERRAZA</div>
-          </div>
+
           <div className={style.itemIcon}>
             <img
               className={style.icon}
@@ -945,10 +924,12 @@ function Origin3() {
                 className={style.availabilityTextApto}
                 onClick={() => handleApto(1)}
               >
-                Ver en Mapa
+                Ver Ubicación
               </button>
+              {/* SI SE CAMBIA LA CLASE "style.greenCircleApto" POR "style.redCircle" SE MODIFICARA EL COLOR A ROJO */}
               <div className={style.numberApartmentsGrid}>
                 <div className={style.availabilityLabelApto}>
+                  
                   <div className={style.greenCircleApto}></div>201
                 </div>
                 <div className={style.availabilityLabelApto}>
@@ -988,7 +969,7 @@ function Origin3() {
                 className={style.availabilityTextApto}
                 onClick={() => handleApto(2)}
               >
-                Ver en Mapa
+                Ver Ubicación
               </button>
               <div className={style.numberApartmentsGrid}>
                 <div className={style.availabilityLabelApto}>
@@ -1030,7 +1011,7 @@ function Origin3() {
                 className={style.availabilityTextApto}
                 onClick={() => handleApto(3)}
               >
-                Ver en Mapa
+                Ver Ubicación
               </button>
               <div className={style.numberApartmentsGrid}>
                 <div className={style.availabilityLabelApto}>
@@ -1072,7 +1053,7 @@ function Origin3() {
                 className={style.availabilityTextApto}
                 onClick={() => handleApto(4)}
               >
-                Ver en Mapa
+                Ver Ubicación
               </button>
               <div className={style.numberApartmentsGrid}>
                 <div className={style.availabilityLabelApto}>
@@ -1114,7 +1095,7 @@ function Origin3() {
                 className={style.availabilityTextApto}
                 onClick={() => handleApto(5)}
               >
-                Ver en Mapa
+                Ver Ubicación
               </button>
               <div className={style.numberApartmentsGrid}>
                 <div className={style.availabilityLabelApto}>
@@ -1139,6 +1120,26 @@ function Origin3() {
           </div>
         </div>
       </div>
+      <div className={style.parking}>
+        <div className={style.parkingItem}>
+          <div className={style.parkingTitle}>Recepción y primer piso</div>
+          <img
+            src={data.reception}
+            className={style.parkingPhotos}
+            alt="reception"
+          />
+        </div>
+      
+        <div className={style.parkingItem}>
+          <div className={style.parkingTitle}>Terraza, zona verde y BBQ 2D-3D</div>
+          <img src={data.cellar} className={style.roofPhoto} alt="" />
+        </div>
+        <div className={style.parkingItem}>
+          <div className={style.parkingTitle}>Semisotano</div>
+          <img src={data.cellar} className={style.parkingPhotos} alt="" />
+        </div>
+      </div>
+      
       <ContactUs />
       <Footer />
     </div>

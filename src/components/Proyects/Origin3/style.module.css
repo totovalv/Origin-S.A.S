@@ -77,10 +77,40 @@
   font-size: 1.5rem;
   font-family: var(--metropolisBold);
   text-align: center;
+  word-break: break-all;
 }
 .porcentageBarImg {
   position: relative;
   bottom: 14rem;
+}
+
+.parking{
+  margin-top:4rem;
+  display: grid;
+ grid-template-columns: 25% 25% 25%;
+justify-items: center;
+text-align: center;
+height: 40rem;
+gap: 4rem;
+justify-content: center;
+}
+.parkingPhotos{
+  margin-top: 2rem;
+  width:100%;
+  height:60%;
+}
+.parkingTitle{
+text-transform: uppercase;
+font-weight: bolder;
+}
+.parkingItem{
+  font-family: var(--metropolisBold);
+  font-size: 1.4rem;
+}
+.roofPhoto{
+  margin-top: 3rem;
+  width:80%;
+  height:50%;
 }
 .knowOurBuildings {
   display: grid;
@@ -185,27 +215,34 @@
 }
 
 .icon {
+
   width: fit-content;
+  height: fit-content;
+}
+.iconBbq{
+  width: 40%;
   height: fit-content;
 }
 
 .iconsText {
-  margin-top: 1vh;
+  margin-top: 3vh;
   font-family: var(--metropolisBold);
   font-size: 1.4rem;
-  width: 10rem;
+  width: 18rem;
   text-align: center;
 }
 .itemIcon {
-  display: grid;
+  display: flex;
+flex-direction: column;
   justify-content: center;
   justify-items: center;
+  align-items: center;
 }
 .iconsGrid {
   display: grid;
-  grid-template-columns: 15% 15%15%15%;
+  grid-template-columns: repeat(3,1fr);
   justify-content: center;
-  gap: 4rem;
+  margin-top: 4vh;
 }
 .titleModelApartmentsContain {
   margin-top: 1.5rem;
@@ -236,7 +273,7 @@
   display: grid;
   grid-template-columns: 40% 45%;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
 }
 .imgAptos {
   width: 100%;
@@ -398,7 +435,7 @@
 
 .informationBox {
   display: grid;
-  grid-template-rows: 15% 25% 20% 40%;
+  grid-template-rows: 15% 25% 60%;
   width: 35%;
   box-shadow: 0px 0px 15px black;
 }
@@ -521,6 +558,7 @@
   border: solid rgb(216, 215, 215) 1px;
   border-right-color: #fff;
   border-bottom-color: #fff;
+  text-align: center;
 }
 
 .sliderComponent {

@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const Apartment = () => {
   let { id } = useParams();
   let navigate = useNavigate();
-  let [orderSelect, setOrderSelect] = useState([2, 3, 4, 5]);
+  let [orderSelect, setOrderSelect] = useState([]);
   let types = [
     {
       name: 1,
@@ -17,6 +17,8 @@ const Apartment = () => {
       rooms: " 2 alcobas",
       bath: " 1 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
+      parqueadero:"Parqueadero Privado para Automovil",
+      deposite:"Deposito opcional"
     },
     {
       name: 2,
@@ -24,6 +26,8 @@ const Apartment = () => {
       rooms: " 3 alcobas",
       bath: " 2 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
+      parqueadero:"Parqueadero Privado para Automovil",
+      deposite:"Deposito opcional"
     },
     {
       name: 3,
@@ -31,20 +35,25 @@ const Apartment = () => {
       rooms: " 2 alcobas",
       bath: " 1 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
+      parqueadero:"Parqueadero Privado para Automovil",
+      deposite:"Deposito opcional"
     },
     {
       name: 4,
       area: "32.71 M2 - Área Privada",
-      rooms: " 1 alcobas",
+      rooms: " 1 alcoba",
       bath: " 1 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
+      parqueadero:"Parqueadero Privado para Moto"
     },
     {
       name: 5,
       area: "(23.31 M2 - Área Privada)",
-      rooms: " 1 alcobas",
+      rooms: " 1 alcoba",
       bath: " 1 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
+      parqueadero:"Parqueadero Privado para Moto"
+
     },
   ];
 
@@ -79,9 +88,9 @@ const Apartment = () => {
   onChange={handleSelectChange}
   value={id}
 >
-  <option >TIPO {id}</option>
+  <option className={style.optionDefault} selected >TIPO {id}</option>
   {orderSelect.map((option, index) => (
-    <option key={index} value={option}>
+    <option className={style.optionSelect} key={index} value={option}>
       TIPO {option}
     </option>
   ))}
@@ -135,6 +144,9 @@ const Apartment = () => {
               allowfullscreen
             ></iframe>
           </div>
+          <div className={style.dataContainer}>
+
+
           <div className={style.dataSection}>
             <div className={style.dataSectionTitle}>Áreas disponibles</div>
             <ul className={style.ulSection}>
@@ -143,7 +155,16 @@ const Apartment = () => {
               <li> {types.map((e) => e.name == id && e.bath)}</li>
               <li> Cocina </li>
               <li> Área de ropas</li>
+
             </ul>
+
+          </div>
+          <div className={style.dataSection2}> 
+            <div>{types.map((e) => e.name == id && e.parqueadero)} </div> 
+            {types.map((e,index) => e.name == id && e.deposite !=null?(<div key={index}> {e.deposite}</div>) : null)}
+      
+          </div>
+
           </div>
         </div>
       </>

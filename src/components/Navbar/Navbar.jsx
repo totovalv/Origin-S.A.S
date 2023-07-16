@@ -116,7 +116,8 @@ function Navbar() {
   const handleGoHome = () => {
     navigate("/");
   };
-
+const handleNavigateContact=()=>{ 
+  navigate("/contactus");}
   return (
     <>
       <CssBaseline />
@@ -212,7 +213,7 @@ function Navbar() {
                     },
                   }}
                 >
-                  <Typography sx={{ fontSize: sizeFont }}>
+                  <Typography  sx={{ fontSize: sizeFont }}>
                     CONTÁCTENOS
                   </Typography>
                 </Button>
@@ -367,7 +368,7 @@ function Navbar() {
                     SOBRE NOSOTROS
                   </Typography>
                 </Button>
-                <Button
+                <Button  onClick={handleNavigateContact}
                   sx={{
                     color: "#fff",
                     ":hover": {

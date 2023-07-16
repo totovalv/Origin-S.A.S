@@ -24,7 +24,7 @@ const Apartment = () => {
       name: 2,
       area: "(61.73 M2 - Área Privada)",
       rooms: " 3 alcobas",
-      bath: " 2 baño",
+      bath: " 2 baños",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
       parqueadero:"Parqueadero Privado para Automovil",
       deposite:"Deposito opcional"
@@ -118,7 +118,7 @@ const Apartment = () => {
             ) : id == 3 ? (
               <img
                 className={style.imgApto}
-                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1686598925/Aptos%20Origin3/Final%20Aptos/APARTAMENTO_TIPO_3_l2tdkj.png"
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1686598925/Aptos%20Origin3/Final%20Aptos/APARTAMENTO_TIPO_5_alsqr8.png"
                 alt=""
               />
             ) : id == 4 ? (
@@ -130,7 +130,8 @@ const Apartment = () => {
             ) : (
               <img
                 className={style.imgApto}
-                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1686598925/Aptos%20Origin3/Final%20Aptos/APARTAMENTO_TIPO_5_alsqr8.png"
+               
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1686598925/Aptos%20Origin3/Final%20Aptos/APARTAMENTO_TIPO_3_l2tdkj.png"
                 alt=""
               />
             )}

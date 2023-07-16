@@ -926,7 +926,8 @@ function Origin3() {
               >
                 Ver Ubicación
               </button>
-              {/* SI SE CAMBIA LA CLASE "style.greenCircleApto" POR "style.redCircle" SE MODIFICARA EL COLOR A ROJO */}
+              {/* SI SE CAMBIA LA CLASE "style.greenCircleApto" POR "style.redCircle" SE MODIFICARA EL COLOR A ROJO 
+              COLOR DISPONIBILIDAD DE APARTAMENTOS*/}
               <div className={style.numberApartmentsGrid}>
                 <div className={style.availabilityLabelApto}>
                   

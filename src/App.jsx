@@ -7,9 +7,8 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import Origin1 from "./components/Proyects/Origin1/Origin1.jsx";
 import Origin2 from "./components/Proyects/Origin2/Origin2";
 import Origin3 from "./components/Proyects/Origin3/Origin3.jsx";
-import Apartment from "./components/Apartments/Apartment.jsx"
+import Apartment from "./components/Apartments/Apartment.jsx";
 import ContactForm from "./components/ContactForm/ContactForm.jsx";
-
 
 export default function App() {
   return (
@@ -25,8 +24,7 @@ export default function App() {
           <Route exact path="projects/Origin2" element={<Origin2 />} />
           <Route exact path="projects/Origin3" element={<Origin3 />} />
           <Route exact path="projects/Origin3/:id" element={<Apartment />} />
-
-
+          <Route exact path="/aboutus" element={<About />} />
         </Routes>
       </Router>
     </div>

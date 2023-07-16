@@ -116,8 +116,12 @@ function Navbar() {
   const handleGoHome = () => {
     navigate("/");
   };
-const handleNavigateContact=()=>{ 
-  navigate("/contactus");}
+  const handleNavigateContact = () => {
+    navigate("/contactus");
+  };
+  const handleNavigateAbout = () => {
+    navigate("/aboutus");
+  };
   return (
     <>
       <CssBaseline />
@@ -213,7 +217,7 @@ const handleNavigateContact=()=>{
                     },
                   }}
                 >
-                  <Typography  sx={{ fontSize: sizeFont }}>
+                  <Typography sx={{ fontSize: sizeFont }}>
                     CONTÁCTENOS
                   </Typography>
                 </Button>
@@ -349,6 +353,7 @@ const handleNavigateContact=()=>{
                   </MenuItem>
                 </StyledMenu>
                 <Button
+                  onClick={handleNavigateAbout}
                   sx={{
                     color: "#fff",
                     ":hover": {
@@ -368,7 +373,8 @@ const handleNavigateContact=()=>{
                     SOBRE NOSOTROS
                   </Typography>
                 </Button>
-                <Button  onClick={handleNavigateContact}
+                <Button
+                  onClick={handleNavigateContact}
                   sx={{
                     color: "#fff",
                     ":hover": {

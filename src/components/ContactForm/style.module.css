@@ -10,9 +10,11 @@
   font-family: metroUltraBold;
   src: url("../../../src/fonts/metropolis.black.otf") format("opentype");
 }
+
 * {
   --metropolisBold: metroBold;
   --metropolisLight: metroLight;
+  --metroUltraBold:metroUltraBold;
 }
 .titleContainer {
   display: grid;

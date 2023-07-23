@@ -1,0 +1,244 @@
+@font-face {
+  font-family: metroBold;
+  src: url("../../../src/fonts/Metropolis-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: metroLight;
+  src: url("../../../src/fonts/metropolis.thin.otf") format("opentype");
+}
+@font-face {
+  font-family: metroUltraBold;
+  src: url("../../../src/fonts/metropolis.black.otf") format("opentype");
+}
+@font-face {
+  font-family: metroUltraBold;
+  src: url("../../../src/fonts/metropolis.black.otf") format("opentype");
+}
+@font-face {
+  font-family: lulo;
+  src: url("../../../src/fonts/Lulo\ Clean\ One\ Bold.otf") format("opentype");
+}
+
+* {
+  --metropolisBold: metroBold;
+  --metropolisLight: metroLight;
+  --metroUltraBold: metroUltraBold;
+  --lulo: lulo;
+}
+.blockWhoAreWe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.descriptionTxt {
+  width: 45rem;
+  font-family: var(--metropolisLight);
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+.title {
+  font-family: var(--lulo);
+  font-size: 3rem;
+  color: #066699;
+}
+.ourCompany {
+  font-size: 1.2rem;
+  font-family: var(--lulo);
+  color: #066699;
+}
+.teamworkTitle {
+  color: #066699;
+}
+.ourHistoryTitle {
+  margin-left: 6rem;
+}
+.teamWork {
+  margin-top: 2rem;
+  height: 80vh;
+  background-color: #02346e18;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.teamWork h1 {
+  text-align: center;
+  width: 100%;
+  max-height: 10%;
+  font-family: var(--metroUltraBold);
+  color: #066699;
+  font-size: 2.5rem;
+}
+.ourHistory {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.bgTxtHistory {
+  background: #ffb200;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.678);
+  border-top-left-radius: 30rem;
+  border-bottom-left-radius: 30rem;
+}
+.textHistory {
+  width: 45rem;
+  font-weight: 600;
+  padding: 7rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: var(--metropolisLight);
+  margin-left: 5rem;
+}
+.MVcontainer {
+  margin-bottom: 5rem; 
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8rem;
+  text-align: center;
+  height: 25rem;
+  align-items: center;
+  font-family: var(--metropolisLight);
+}
+.misionVisionTitles{
+font-family: var(--metroUltraBold);
+font-size: 1.8rem;
+letter-spacing: 0.32rem;
+}
+.blueLineTop{
+  margin-top: 5rem;
+  background: #066699;
+  width: 35rem;
+  color: #066699;
+  height: 1rem;
+  border-bottom-right-radius:100% ;
+  font-size: 0.1rem;
+}
+.blueLineBottom{
+  position: relative;
+  bottom: 0;
+  left: 49.3rem;
+  margin-top: 5rem;
+  background: #066699;
+  width: 35rem;
+  color: #066699;
+  height: 1rem;
+  border-top-left-radius:100% ;
+  font-size: 0.1rem;
+  margin-bottom: 2rem;
+}
+.misionContain {
+  font-size: 0.9rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30rem;
+  border: 2px solid #ffb200;
+  padding: 5rem;
+  box-shadow: 0px 0px 30px #ffb200;
+  font-size: 0.9rem;
+}
+.visionContain {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30rem;
+  font-size: 0.9rem;
+  height: 25rem;
+  border: 2px solid #ffb200;
+  padding: 5rem;
+  box-shadow: 0px 0px 30px #ffb200;
+}
+
+.our {
+  color: #ffb200;
+  font-size: 4rem;
+  font-family: var(--metropolisBold);
+}
+.history {
+  color: #066699;
+  font-size: 4rem;
+  font-family: var(--metropolisBold);
+}
+.pictures {
+  width: 100%;
+  height: 85%;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  caret-color: transparent;
+}
+
+.carousel__images {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.carousel__image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.modal__image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.arrow {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.arrow :hover {
+  transform: scale(1.4);
+  color: #0b55aa;
+}
+
+.arrow :active {
+  color: rgb(17, 231, 17);
+}
+
+.arrow_left {
+  margin-right: 10px;
+}
+
+.arrow_right {
+  margin-left: 10px;
+}

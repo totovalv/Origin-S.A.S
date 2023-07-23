@@ -1,6 +1,9 @@
 // import React from 'react';
 import { useState } from "react";
-import style from "./about.module.css";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer.tsx";
+
+import style from "./style.module.css";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const Carousel = () => {
@@ -78,15 +81,58 @@ const Carousel = () => {
 function About() {
   return (
     <div>
-      <div>
-        <h1>QUIENES SOMPOS?</h1>
+      <Navbar />
+      <div className={style.blockWhoAreWe}>
+        <h1 className={style.title}>¿QUIENES SOMOS?</h1>
+        <div className={style.ourCompany}>NUESTRA EMPRESA</div>
+        <div className={style.descriptionTxt}>
+          Origin Holdings S.A.S Nit.9007589604 es una empresa privada dedicada a
+          la construcción de inmuebles y prestación de servicios de obras
+          civiles e inmobiliarios como son venta, arriendo y remodelación.
+        </div>
+      </div>
+      <div className={style.ourHistory}>
+        <div className={style.ourHistoryTitle}>
+          <div className={style.our}>NUESTRA</div>
+          <div className={style.history}>HISTORIA</div>
+        </div>
+        <div className={style.bgTxtHistory}>
+          <div className={style.textHistory}>
+            {" "}
+            Surgió en el año 2014 bajo una iniciativa de emprendimiento familiar
+            con un concepto de brindar opciones de vivienda para población de
+            estratos medios en donde prime la calidad, el buen gusto y costos
+            asequibles que les permita a los compradores una vivienda digna
+            ubicada en excelentes sectores de la ciudad. Es así que el año 2016
+            se construyó Origin I y en el año 2020 Origin II con éxito en
+            ventas.
+          </div>
+        </div>
       </div>
       <div className={style.teamWork}>
-        <h1>EQUIPO DE TRABAJO</h1>
+        <h1 className={style.teamworkTitle}>EQUIPO DE TRABAJO</h1>
         <div className={style.pictures}>
           <Carousel />
         </div>
       </div>
+<div className={style.blueLineTop}>line</div>
+      <div className={style.MVcontainer}>
+        <div className={style.misionContain}>
+        <div className={style.misionVisionTitles}>MISIÓN</div>
+          <div>Ofrecer a la población de Bogotá inmuebles de alta calidad y diseño, inigualable localización y precios competitivos, siempre comprometida con la satisfacción, desarrollo y mejoramiento del estilo de vida de sus clientes, colaboradores y accionistas.</div>
+        </div>
+        <div  className={style.visionContain}>
+          <div className={style.misionVisionTitles}>VISIÓN</div>
+          <div> Al año 2028 Origin Holdings S.A.S será reconocida en Bogotá
+          especialmente en las localidades de Puente Aranda y Engativá por
+          brindar a la población de estrato 3, alternativas inmobiliarias
+          altamente competitivas y con una relación costo beneficio atractiva.</div>
+          
+        </div>
+      </div>
+<div className={style.blueLineBottom}>line</div>
+
+      <Footer />
     </div>
   );
 }

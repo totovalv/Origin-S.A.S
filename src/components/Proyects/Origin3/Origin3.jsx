@@ -21,7 +21,7 @@ function Origin3() {
       soledadNorte:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688094493/760x501_La-Soledad-Norte_bak2mj.jpg",
       mallTitan:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686010990/Aptos%20Origin3/1_home_G2-1_valbwr.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690657813/Principal%20Place/Titan_1_o3qysp.jpg",
       mallDiverPlaza:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687026899/Origin3%20Aleda%C3%B1os/entro_Comercial_Diver_Plaza_skeo74.jpg",
       mallPortal:
@@ -29,21 +29,21 @@ function Origin3() {
       parks:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686010990/Aptos%20Origin3/4_home_G2-1_xjw8lk.jpg",
       marketJumbo:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686010622/Aptos%20Origin3/JUMBO_fafvom.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690654143/Principal%20Place/jumbo_bx83zz.jpg",
       marketMakro:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687030404/Origin3%20Aleda%C3%B1os/Makro_dj49ww.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690654162/Principal%20Place/makro_sh7xes.jpg",
       marketD1:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687056669/d1_kpp9vq.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690654025/Principal%20Place/D1_necyc7.jpg",
       marketAra:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687033054/Origin3%20Aleda%C3%B1os/ara_gvff1i.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690653985/Principal%20Place/Ara_q9k6hp.jpg",
       marketDollarCity:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687055744/dollarcity_isagmi.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690654074/Principal%20Place/dollar_qf5e5y.jpg",
       marketFerias:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687057295/feriasw_fsdnfy.jpg",
       marketQuirigua:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687057282/qur_miezmg.jpg",
       education:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686011161/Aptos%20Origin3/uniminuto_bog_cop_n2vmaw.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690654804/Principal%20Place/uniminuto_x529yj.jpg",
       schoolPalestina:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1687058642/colegio_p_v1bsiw.jpg",
       schoolTabora:
@@ -55,11 +55,17 @@ function Origin3() {
       schoolSanJose:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688085254/colegio_san_jose_ghgqey.jpg",
       othersCai:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688086383/Captura_de_pantalla_2023-06-29_195230_kgibmt.png",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690655496/Principal%20Place/cai_eia2d0.jpg",
       othersUnidad:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688086497/uri-unidad-de-reaccion-inmediata_oejzeb.jpg",
-      othersAlcaldia:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688086702/ALCALDIA_rjvfgl.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690655414/Principal%20Place/URI_v09evq.jpg",
+      othersMuseo:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690655652/Principal%20Place/museo_contempor%C3%A1neo_lsf125.jpg",
+      othersNotaria:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690655710/Principal%20Place/notaria_gohikx.jpg",
+      othersEstacionCali:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690655556/Principal%20Place/estacion_cali_kflirj.jpg",
+      othersEstacion:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690655601/Principal%20Place/estacion_hw5uhf.jpg",
       parkTabora:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686010990/Aptos%20Origin3/5_home_G2-1_o5rbpl.jpg",
       parkLaGranja:
@@ -69,11 +75,11 @@ function Origin3() {
       parkLiga:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688091310/liga_egdyqw.jpg",
       hospitalSantaMaria:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688093507/clinica_0_lrlqvn.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690656570/Principal%20Place/6_home_G2-1_qx3y0x.jpg",
       hospitalEngativa:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688093682/E0PeGUqWYAIJcfw_c7ya2s.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690656433/Principal%20Place/hospital_engativa_cgt62u.jpg",
       hospitalShaio:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688093424/Shaio-min_pjz7fs.jpg",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690656460/Principal%20Place/shaio_ecptl4.jpg",
       sportsCenters:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1686010990/Aptos%20Origin3/5_home_G2-1_o5rbpl.jpg",
       renderOrigin3:
@@ -97,9 +103,9 @@ function Origin3() {
 
       map: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688334981/MAPA-sitioscercanos_flqmet.jpg",
       reception:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688511195/RECEPCION_udayan.png",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690653570/Aptos%20Origin3/PRIMER_NIVEL_xzoizv.png",
       cellar:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688511194/SOTANO_Y_PRIMER_NIVEL_ozyxr9.png",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690653613/Aptos%20Origin3/SEMISOTANO_hzzc88.png",
     });
   }, []);
 
@@ -118,10 +124,10 @@ function Origin3() {
 
   const imagesEducation = [
     data.education,
-    data.schoolPalestina,
+    // data.schoolPalestina,
     data.schoolTabora,
     data.schoolTurbai,
-    data.schoolIsaac,
+    // data.schoolIsaac,
     data.schoolSanJose,
   ];
 
@@ -132,7 +138,14 @@ function Origin3() {
     data.parkLiga,
   ];
 
-  const imagesOthers = [data.othersAlcaldia, data.othersCai, data.othersUnidad];
+  const imagesOthers = [
+    data.othersMuseo,
+    data.othersCai,
+    data.othersUnidad,
+    data.othersNotaria,
+    data.othersEstacion,
+    data.othersEstacionCali,
+  ];
 
   const imagesHospital = [
     data.hospitalSantaMaria,
@@ -236,7 +249,7 @@ function Origin3() {
       <div className={style.detailSection}>
         <div className={style.informationBox}>
           <div className={style.firstBox}>
-            <h5> Direccion: Carrera 77A #83-31, Bogotá,Colombia</h5>
+            <h5> Direccion: Calle 77A #83-31, Bogotá,Colombia</h5>
           </div>
           <div className={style.secondBox}>
             <h5>
@@ -763,7 +776,7 @@ function Origin3() {
                 </li>
                 <li>
                   <label htmlFor="slide-4">
-                    <img src={data.othersAlcaldia} alt="" />
+                    <img src={data.othersMuseo} alt="" />
                   </label>
                 </li>
                 <li>
@@ -930,7 +943,6 @@ function Origin3() {
               COLOR DISPONIBILIDAD DE APARTAMENTOS*/}
               <div className={style.numberApartmentsGrid}>
                 <div className={style.availabilityLabelApto}>
-                  
                   <div className={style.greenCircleApto}></div>201
                 </div>
                 <div className={style.availabilityLabelApto}>
@@ -1130,9 +1142,11 @@ function Origin3() {
             alt="reception"
           />
         </div>
-      
+
         <div className={style.parkingItem}>
-          <div className={style.parkingTitle}>Terraza, zona verde y BBQ 2D-3D</div>
+          <div className={style.parkingTitle}>
+            Terraza, zona verde y BBQ 2D-3D
+          </div>
           <img src={data.cellar} className={style.roofPhoto} alt="" />
         </div>
         <div className={style.parkingItem}>
@@ -1140,7 +1154,7 @@ function Origin3() {
           <img src={data.cellar} className={style.parkingPhotos} alt="" />
         </div>
       </div>
-      
+
       <ContactUs />
       <Footer />
     </div>

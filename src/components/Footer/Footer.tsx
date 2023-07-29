@@ -41,19 +41,19 @@ function Footer() {
           <h4 className={style.ContactUs}>Contáctenos</h4>
           <div className={style.correo}>
                 <div className={style.titleCorreo}>Correo:</div>
-                <div className={style.direccionCorreo}>origin_holdings_sas@hotmail.com</div>
+                <div className={style.direccionCorreo}> Origin.holdings.sas@gmail.com</div>
               </div>
           <div className={style.contactIconsFooter}>
 
             <a
               className={style.iconsFooter}
-              href="mailto:origin_holdings_sas@hotmail.com?Subject=Contact%20me!"
+              href="mailto: Origin.holdings.sas@gmail.com?Subject=Contact%20me!"
             >
               <AiOutlineMail size={40}  />
             </a>
             <a
               className={style.iconsFooter}
-              href="mailto:origin_holdings_sas@hotmail.com?Subject=Contact%20me!"
+              href="https://www.facebook.com/profile.php?id=100095422713723"
             >
               <BsFacebook size={40} />
             </a>

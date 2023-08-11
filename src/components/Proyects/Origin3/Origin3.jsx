@@ -106,6 +106,8 @@ function Origin3() {
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690653570/Aptos%20Origin3/PRIMER_NIVEL_xzoizv.png",
       cellar:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690653613/Aptos%20Origin3/SEMISOTANO_hzzc88.png",
+      terrace:
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1691718765/CUBIERTAO_kgqllr.png",
     });
   }, []);
 
@@ -1147,7 +1149,7 @@ function Origin3() {
           <div className={style.parkingTitle}>
             Terraza, zona verde y BBQ 2D-3D
           </div>
-          <img src={data.cellar} className={style.roofPhoto} alt="" />
+          <img src={data.terrace} className={style.roofPhoto} alt="" />
         </div>
         <div className={style.parkingItem}>
           <div className={style.parkingTitle}>Semisotano</div>

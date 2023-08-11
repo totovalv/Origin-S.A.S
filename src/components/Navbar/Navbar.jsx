@@ -190,6 +190,7 @@ function Navbar() {
                   </MenuItem>
                 </StyledMenu>
                 <Button
+                  onClick={handleNavigateAbout}
                   sx={{
                     color: "#fff",
                     ":hover": {
@@ -210,6 +211,7 @@ function Navbar() {
                   </Typography>
                 </Button>
                 <Button
+                  onClick={handleNavigateContact}
                   sx={{
                     color: "#fff",
                     ":hover": {
@@ -225,21 +227,33 @@ function Navbar() {
             </div>
           </div>
           <div className={style.gridMedia828}>
-            <img
-              className={style.logoNavbar}
-              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177149/Logos/LOGOborde_hmuzyc.png"
-              alt="logo"
-            />
+            <a
+              href="https://www.originholdingssas.com.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className={style.logoNavbar}
+                src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177149/Logos/LOGOborde_hmuzyc.png"
+                alt="logo"
+              />
+            </a>
             <div className={style.title}>ORIGIN HOLDINGS S.A.S</div>
           </div>
         </header>
       ) : (
         <header className={style.header}>
-          <img
-            className={style.logoNavbar}
-            src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177149/Logos/LOGOborde_hmuzyc.png"
-            alt="logo"
-          />
+          <a
+            href="https://www.originholdingssas.com.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className={style.logoNavbar}
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177149/Logos/LOGOborde_hmuzyc.png"
+              alt="logo"
+            />
+          </a>
           <div className={style.parent}>
             <div className={style.materialBox}>
               <Box

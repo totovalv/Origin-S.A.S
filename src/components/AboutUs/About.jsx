@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer.tsx";
 import style from "./style.module.css";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ContactUs from "../ContactUs/ContactUs";
 const Carousel = () => {
   const images = [
     "https://res.cloudinary.com/dxajrtcwk/image/upload/v1689530158/AboutUs/a1_ben0px.jpg",
@@ -115,24 +116,32 @@ function About() {
           <Carousel />
         </div>
       </div>
-<div className={style.blueLineTop}>line</div>
+      <div className={style.blueLineTop}>line</div>
       <div className={style.MVcontainer}>
         <div className={style.misionContain}>
-        <div className={style.misionVisionTitles}>MISIÓN</div>
-          <div>Ofrecer a la población de Bogotá inmuebles de alta calidad y diseño, inigualable localización y precios competitivos, siempre comprometida con la satisfacción, desarrollo y mejoramiento del estilo de vida de sus clientes, colaboradores y accionistas.</div>
+          <div className={style.misionVisionTitles}>MISIÓN</div>
+          <div>
+            Ofrecer a la población de Bogotá inmuebles de alta calidad y diseño,
+            inigualable localización y precios competitivos, siempre
+            comprometida con la satisfacción, desarrollo y mejoramiento del
+            estilo de vida de sus clientes, colaboradores y accionistas.
+          </div>
         </div>
-        <div  className={style.visionContain}>
+        <div className={style.visionContain}>
           <div className={style.misionVisionTitles}>VISIÓN</div>
-          <div> Al año 2028 Origin Holdings S.A.S será reconocida en Bogotá
-          especialmente en las localidades de Puente Aranda y Engativá por
-          brindar a la población de estrato 3, alternativas inmobiliarias
-          altamente competitivas y con una relación costo beneficio atractiva.</div>
-          
+          <div>
+            {" "}
+            Al año 2028 Origin Holdings S.A.S será reconocida en Bogotá
+            especialmente en las localidades de Puente Aranda y Engativá por
+            brindar a la población de estrato 3, alternativas inmobiliarias
+            altamente competitivas y con una relación costo beneficio atractiva.
+          </div>
         </div>
       </div>
-<div className={style.blueLineBottom}>line</div>
+      <div className={style.blueLineBottom}>line</div>
 
       <Footer />
+      <ContactUs />
     </div>
   );
 }

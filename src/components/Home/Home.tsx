@@ -4,9 +4,11 @@ import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar.jsx";
 import { BsFillPeopleFill } from "react-icons/bs";
 import style from "./style.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <Navbar />
@@ -53,7 +55,10 @@ function Home() {
                 excelentes sectores de la ciudad.
               </p>
               <div className={style.buttonNosotrosPosition}>
-                <button className={style.buttonNosotros}>
+                <button
+                  className={style.buttonNosotros}
+                  onClick={() => navigate("/aboutus")}
+                >
                   Nosotros{" "}
                   <BsFillPeopleFill className={style.iconB}></BsFillPeopleFill>
                 </button>
@@ -75,14 +80,19 @@ function Home() {
                   <h4>Edificio Origin III</h4>
                   Es un proyecto de apartamentos y apartaestudios desde 23.3m2
                   hasta 61.7m2 de área privada. <br />
-                  <b>Dirección:</b> Calle 77a   83-31/39 <br />
+                  <b>Dirección:</b> Calle 77a 83-31/39 <br />
                   <b>Barrio:</b> Soledad Norte
                   <br />
                   <b>Localidad:</b> Engativá (Bogotá)
                 </p>
               </div>
               <div style={{ display: "flex", justifyContent: "end" }}>
-                <button className={style.btn}>Ver Mas</button>
+                <button
+                  className={style.btn}
+                  onClick={() => navigate("projects/Origin3")}
+                >
+                  Ver Mas
+                </button>
               </div>
             </div>
           </div>
@@ -154,8 +164,7 @@ function Home() {
           />
           <h1>ORIGIN I</h1>
           <hr className={style.hrYellow} />
-          <div  className={style.addressOrigin}>Barrio La Asunción. Bogota.
-</div>
+          <div className={style.addressOrigin}>Barrio La Asunción. Bogota.</div>
         </Link>
         <Link to="/projects/Origin2" className={style.imagesProjects}>
           <img
@@ -164,8 +173,7 @@ function Home() {
           />
           <h1>ORIGIN II</h1>
           <hr className={style.hrblue} />
-          <div  className={style.addressOrigin}>Barrio Veraguas. Bogotá.</div>
-
+          <div className={style.addressOrigin}>Barrio Veraguas. Bogotá.</div>
         </Link>
         <Link to="/projects/Origin3" className={style.imagesProjects}>
           <img
@@ -176,8 +184,9 @@ function Home() {
             ORIGIN III <p>(En proceso)</p>
           </h1>
           <hr className={style.hrYellow} />
-          <div  className={style.addressOrigin}>Barrio La Granja - Soledad Norte. Bogotá.</div>
-
+          <div className={style.addressOrigin}>
+            Barrio La Granja - Soledad Norte. Bogotá.
+          </div>
         </Link>
       </div>
 

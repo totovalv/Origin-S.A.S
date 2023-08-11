@@ -4,10 +4,12 @@ import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import style from "./style.module.css";
 import { CiLocationOn } from "react-icons/ci";
-import { BsTelephone } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTelephone } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
 import { BiLike } from "react-icons/bi";
 import { useState } from "react";
+import { AiOutlineMail } from "react-icons/ai";
+import ContactUs from "../ContactUs/ContactUs";
 
 const ContactForm = () => {
   const [inputs, setInputs] = useState({
@@ -27,9 +29,9 @@ const ContactForm = () => {
     e.preventDefault();
     const messageCopy = `Nombre y apellido: ${inputs.user_name} ${inputs.user_surname}\nEmail: ${inputs.user_email}\nPhone: ${inputs.phone}\nMensaje: ${inputs.message}`;
     const element = document.getElementById("messageId");
-    console.log("firstValue",element.value);
+    console.log("firstValue", element.value);
 
-    element.value=messageCopy
+    element.value = messageCopy;
     console.log(element.value);
     emailjs
       .sendForm(
@@ -41,19 +43,18 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
-      
         },
         (error) => {
           console.log(error.text);
         }
       );
-      setInputs({
-        user_name: "",
-        user_surname: "",
-        message: "",
-        phone: "",
-        user_email: "",
-      });
+    setInputs({
+      user_name: "",
+      user_surname: "",
+      message: "",
+      phone: "",
+      user_email: "",
+    });
   };
 
   return (
@@ -92,7 +93,7 @@ const ContactForm = () => {
             <div className={style.phoneContactBox}>
               <BsTelephone size={25} />
               <div className={style.contactInfoTitle}>TELEFONO</div>
-              <div>3005635245</div>
+              <div>300 5635245 - 322 8795258 </div>
             </div>
           </div>
           <div>
@@ -104,7 +105,32 @@ const ContactForm = () => {
               </div>
 
               <div className={style.socialMediaBox}>
-                <BiLike size={30} />
+                <div>
+                  <a
+                    className={style.iconsFooter}
+                    href="mailto: Origin.holdings.sas@gmail.com?Subject=Contact%20me!"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AiOutlineMail className={style.icon} size={30} />
+                  </a>
+                  <a
+                    className={style.iconsFooter}
+                    href="https://www.facebook.com/profile.php?id=100095422713723"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <BsFacebook className={style.icon} size={30} />
+                  </a>
+                  <a
+                    className={style.iconsFooter}
+                    href="https://www.instagram.com/originholdingssas/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <BsInstagram className={style.icon} size={30} />
+                  </a>
+                </div>
                 <div className={style.contactInfoTitle}>REDES SOCIALES</div>
               </div>
             </div>
@@ -144,7 +170,7 @@ const ContactForm = () => {
             />
             <label>MENSAJE</label>
             <textarea
-            id="messageId"
+              id="messageId"
               value={inputs.message}
               name="message"
               onChange={handlerChange}
@@ -181,6 +207,7 @@ const ContactForm = () => {
         </div>
       </div>
       <Footer />
+      <ContactUs />
     </div>
   );
 };

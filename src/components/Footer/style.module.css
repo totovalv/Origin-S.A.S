@@ -46,7 +46,7 @@
 }
 .ContactNavigateFooter {
   display: grid;
-  grid-template-rows: 18% 40% 28%;
+  grid-template-rows: 25% 35% 20%;
   justify-items: center;
   align-items: center;
   font-size: 1rem;
@@ -88,6 +88,10 @@
   color: black;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.icon:hover {
+  transform: scale(1.2);
 }
 
 .sliderFooter {
@@ -154,12 +158,11 @@
 .correo {
   display: flex;
   flex-direction: column;
-
   font-size: 1.1rem;
   font-family: var(--metropolisBold);
 }
 .titleCorreo {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   font-family: var(--metropolisBold);
 }
@@ -167,6 +170,7 @@
   font-size: 1rem;
   font-weight: bold;
   font-family: var(--metropolisLight);
+  margin-bottom: 0.5rem;
 }
 @media (width<=1440px) {
   .bodyFooter {

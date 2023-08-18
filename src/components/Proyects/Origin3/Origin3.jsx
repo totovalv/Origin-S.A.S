@@ -110,7 +110,7 @@ function Origin3() {
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1691718765/CUBIERTAO_kgqllr.png",
     });
   }, []);
-
+  const mediaQuery1062px = window.matchMedia("(width<=768px)");
   const imagesMallMarkert = [
     data.marketQuirigua,
     data.mallDiverPlaza,
@@ -192,17 +192,33 @@ function Origin3() {
     if (e == 4) setCurrentPhoto(data.type4);
     if (e == 5) setCurrentPhoto(data.type5);
   };
+  const mediaQuery768px = window.matchMedia("(width<=768px)");
+  const mediaQuery414px = window.matchMedia("(width<=414px)");
+
+
   const scrollToSection = () => {
     scroller.scrollTo("sectionRef", {
       smooth: true,
       offset: -50,
     });
   };
+    const scrollToSectionCarousel = () => {
+    scroller.scrollTo("carousel", {
+      smooth: true,
+      offset: -50,
+    });
+  };
   const scrollToLeftSide = () => {
+      if(mediaQuery768px.matches){ scroller.scrollTo("topSideView", {
+    smooth: true,
+    offset: -100,
+  });} else{
+
     scroller.scrollTo("leftSideRef", {
       smooth: true,
       offset: -100,
     });
+    }
   };
   return (
     <div>
@@ -298,33 +314,33 @@ function Origin3() {
               <input type="radio" name="slides" id="slide-4" />
               <input type="radio" name="slides" id="slide-5" />
               <input type="radio" name="slides" id="slide-6" />
-              <ul className={style.carousel__slides}>
+              <ul className={style.carousel__slides}  >
                 <li className={style.carousel__slide}>
                   <figure>
-                    <figcaption>
+                    <figcaption >
                       <h1 className={style.interestSites}>
                         Sitios de interés:{" "}
                       </h1>
                       <ul>
                         <label htmlFor="slide-2">
-                          <li className={style.unorderList}>
+                          <li className={style.unorderListMenu}>
                             Centros Comerciales y comercio
                           </li>
                         </label>
                         <label htmlFor="slide-3">
-                          <li className={style.unorderList}>Educación</li>
+                          <li className={style.unorderListMenu}>Educación</li>
                         </label>
 
                         <label htmlFor="slide-5">
-                          <li className={style.unorderList}>
+                          <li className={style.unorderListMenu}>
                             Parques y Gimnasios
                           </li>
                         </label>
                         <label htmlFor="slide-6">
-                          <li className={style.unorderList}>Salud</li>
+                          <li className={style.unorderListMenu}>Salud</li>
                         </label>
                         <label htmlFor="slide-4">
-                          <li className={style.unorderList}>Otras</li>
+                          <li className={style.unorderListMenu}>Otras</li>
                         </label>
                       </ul>
                     </figcaption>
@@ -427,7 +443,7 @@ function Origin3() {
                         <label htmlFor="slide-1">
                           <div>
                             {" "}
-                            <p>Volver</p>{" "}
+                            <p name="carousel">Volver</p>{" "}
                           </div>
                         </label>
                       </span>
@@ -506,7 +522,7 @@ function Origin3() {
                           {" "}
                           <div>
                             {" "}
-                            <p>Volver </p>{" "}
+                            <p name="carousel">Volver </p>{" "}
                           </div>
                         </label>
                       </span>
@@ -571,7 +587,7 @@ function Origin3() {
                         <label htmlFor="slide-1">
                           <div>
                             {" "}
-                            <p>Volver </p>{" "}
+                            <p name="carousel">Volver </p>{" "}
                           </div>
                         </label>
                       </span>
@@ -687,7 +703,7 @@ function Origin3() {
                         <label htmlFor="slide-1">
                           <div>
                             {" "}
-                            <p>Volver </p>{" "}
+                            <p name="carousel"> Volver </p>{" "}
                           </div>
                         </label>
                       </span>
@@ -746,7 +762,7 @@ function Origin3() {
                         <label htmlFor="slide-1">
                           <div>
                             {" "}
-                            <p>Volver </p>{" "}
+                            <p name="carousel">Volver </p>{" "}
                           </div>
                         </label>
                       </span>
@@ -760,7 +776,7 @@ function Origin3() {
                   </figure>
                 </li>
               </ul>
-              <ul className={style.carousel__thumbnails}>
+              <ul onClick={scrollToSectionCarousel}  className={style.carousel__thumbnails}>
                 <li>
                   <label htmlFor="slide-1">
                     <img src={data.soledadNorte} alt="" />
@@ -814,14 +830,14 @@ function Origin3() {
       <div className={style.availableSpacesTitle}>ESPACIOS DISPONIBLES</div>
       <>
         <div className={style.iconsGrid}>
-          <div className={style.itemIcon}>
+        <div className={style.itemIcon}>
             <img
               className={style.icon}
-              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/p_vcv9ie.png"
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/terraza_xfxnf1.png"
               alt=""
             />
-            <div className={style.iconsText}>PARQUEADEROS PRIVADOS</div>
-          </div>
+            <div className={style.iconsText}>TERRAZA</div>
+          </div> 
 
           <div className={style.itemIcon}>
             <img
@@ -842,6 +858,34 @@ function Origin3() {
         </div>
 
         <div className={style.iconsGrid}>
+      
+          <div className={style.itemIcon}>
+            <img
+              className={style.icon}
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/trash_mb6rzo.png"
+              alt=""
+            />
+            <div className={style.iconsText}>SHUT DE BASURAS</div>
+          </div>
+          <div className={style.itemIcon}>
+            <img
+              className={style.iconBbq}
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/bbq_qo1d2p.png"
+              alt=""
+            />
+            <div className={style.iconsText}>ZONA BBQ </div>
+          </div>
+          <div className={style.itemIcon}>
+            <img
+              className={style.icon}
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/bicycle_uuwow3.png"
+              alt=""
+            />
+            <div className={style.iconsText}>BICICLETERO</div>
+          </div>
+        </div>
+        <div className={style.iconsGrid}>
+     
           <div className={style.itemIcon}>
             <img
               className={style.icon}
@@ -858,40 +902,13 @@ function Origin3() {
             />
             <div className={style.iconsText}>SÓTANO CON RAMPA LEVADIZA</div>
           </div>
-          <div className={style.itemIcon}>
-            <img
-              className={style.iconBbq}
-              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/bbq_qo1d2p.png"
-              alt=""
-            />
-            <div className={style.iconsText}>ZONA BBQ </div>
-          </div>
-        </div>
-        <div className={style.iconsGrid}>
-          <div className={style.itemIcon}>
+       <div className={style.itemIcon}>
             <img
               className={style.icon}
-              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/bicycle_uuwow3.png"
+              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/p_vcv9ie.png"
               alt=""
             />
-            <div className={style.iconsText}>BICICLETERO</div>
-          </div>
-          <div className={style.itemIcon}>
-            <img
-              className={style.icon}
-              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/trash_mb6rzo.png"
-              alt=""
-            />
-            <div className={style.iconsText}>SHUT DE BASURAS</div>
-          </div>
-
-          <div className={style.itemIcon}>
-            <img
-              className={style.icon}
-              src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/terraza_xfxnf1.png"
-              alt=""
-            />
-            <div className={style.iconsText}>TERRAZA</div>
+            <div className={style.iconsText}>PARQUEADEROS PRIVADOS</div>
           </div>
         </div>
       </>
@@ -916,7 +933,7 @@ function Origin3() {
               </div>
             </div>
           </div>
-          <img className={style.imgAptos} src={currentPhoto} alt="aptos" />
+          <img className={style.imgAptos} name="topSideView" src={currentPhoto} alt="aptos" />
         </div>
 
         <div className={style.aptosContainer}>
@@ -1153,7 +1170,7 @@ function Origin3() {
         </div>
         <div className={style.parkingItem}>
           <div className={style.parkingTitle}>Semisotano</div>
-          <img src={data.cellar} className={style.parkingPhotos} alt="" />
+          <img src={data.cellar} className={style.parkingPhotos2} alt="" />
         </div>
       </div>
 

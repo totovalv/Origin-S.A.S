@@ -538,11 +538,54 @@ cursor: auto;
   align-content: center;
   flex-direction: column;
 }
-@media (width<=1280px) {
- 
-
+@media (width<=1950px) {
+ .positionHome{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 3rem;
+  justify-items: center;
    
+ } 
+ .ftRecipe .ftRecipeContent .description{
+   margin-top: 5rem;
+   font-size: 1.2rem;
+  }
+  .slider{
+    height: 130%;
+  }
 }
+@media (width<=1500px) {
+  .positionHome{
+   display: grid;
+   grid-template-columns: 40% 60%;
+   padding: 1rem;
+   justify-items: center;
+    
+  } 
+  .ftRecipe .ftRecipeContent .description{
+    margin-top: 0rem;
+    font-size: 1rem;
+   }
+   .slider{
+     height: 100%;
+   }
+ }
+@media (width<=1366px) {
+  .positionHome{
+   display: grid;
+   grid-template-columns: 40% 60%;
+   padding: 1rem;
+   justify-items: center;
+    
+  } 
+  .ftRecipe .ftRecipeContent .description{
+    margin-top: 0rem;
+    font-size: 1rem;
+   }
+   .slider{
+     height: 100%;
+   }
+ }
 
 @media (width<=1024px) {
   .slider{
@@ -579,7 +622,13 @@ cursor: auto;
       height: 20.625rem;
       width: 100%;
     }
-   
+    .allProjects {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-items: center;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
   
 }
 @media (width<=912px) {
@@ -678,7 +727,6 @@ cursor: auto;
 }
 @media (width<=676px) {
   .container {
-    background-color: #002b5b;
     border-radius: 5px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.678);
     border-radius: 1rem;
@@ -1007,29 +1055,17 @@ cursor: auto;
 @media (width<=390px) {
   .yellowBack {
     width: 80vw;
-    height: 105vh;
+    height: 110vh;
   }
   .ftRecipe {
     width: 70vw;
-    height: 100vh;
+    height: 105vh;
   }
   .dividerBlue {
     margin-top: 80vh;
   }
 }
-/* @media (height<=844px) {
-  .yellowBack {
-    width: 80vw;
-    height: 125vh;
-  }
-  .ftRecipe {
-    width: 70vw;
-    height: 120vh;
-  }
-  .container{
-    height: 100vh;
-  }
-} */
+
 @media (width<=376px) {
 
   .container__text h1 {

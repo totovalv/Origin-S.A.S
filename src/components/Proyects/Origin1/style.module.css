@@ -31,6 +31,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-around;
+  text-align: center;
 }
 .icon {
   width: 14vw;
@@ -324,7 +325,7 @@
   margin: 0;
   display: flex;
   margin: 0 -10px;
-  /* height: 10rem; */
+ justify-content: center;
 }
 .carousel__slides + .carousel__thumbnails {
   margin-top: 20px;
@@ -405,7 +406,7 @@
 
 .carouselWrapperBuildings {
   width: 97vw;
-  height: 60vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -414,24 +415,24 @@
   margin: 0.8rem auto 1.25rem;
 }
 
-.carouselContainerBuildings {
+.carouselContainerBuildings{
   width: 162.5rem;
-  height: 20rem;
-  overflow: hidden;
-  margin: 1.5rem;
-}
+      height: 17rem;
+      overflow: hidden;
+      margin: 1.5rem;
+      margin-top: 1.2rem;
+  }
 
 .carouselBuildings div {
-  width: 162.5rem;
-  height: 20rem;
-
+  width: 80.5rem;
+  height: 17rem;
   background-size: cover;
   background-position: center;
 }
 .carouselBuildings {
   display: flex;
   width: 162.5rem;
-  animation: sliding 8s infinite;
+  animation: sliding 6s infinite;
 }
 .carouselBuildings:hover {
   animation-play-state: paused;
@@ -463,6 +464,33 @@
     transform: translateX(0);
   }
 }
+@media (width>=1480px) {
+  .iconsGrid {
+    padding-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    text-align: center;
+    gap: 6rem;
+  }
+  .carouselWrapperBuildings{
+    width: 69vw;
+    height: 40vh;
+}
+.carouselContainerBuildings {
+    width: 162.5rem;
+    height: 18rem;
+}
+.carouselBuildings{
+    width: 162.5rem;
+    flex-direction: row;
+}
+.carouselBuildings div {
+    width: 110.5rem;
+    height: 18rem;
+}
+}
+
 @media (width<=1280px) {
   .introduction {
     margin-top: 5rem;
@@ -470,6 +498,9 @@
     height: 65vh;
     width: 98%;
   }
+  .carouselWrapperBuildings {
+    height: 41vh;
+}
 }
 @media (width<=1024px) {
   .carouselWrapperBuildings {
@@ -544,6 +575,13 @@
   .carouselContainerBuildings {
     margin: 0rem;
   }
+}
+@media (width<=768px) {
+  .carouselWrapperBuildings {
+    height: 23vh;
+    width: 97vw;
+}
+
 }
 @media (width<=540px) {
   .introduction {
@@ -680,6 +718,9 @@
     width: 93vw;
     height: 15vh;
     margin-top: 2rem;
+  }
+  .container{
+    margin-top: 13rem
   }
 }
 @media (width<=360px) {

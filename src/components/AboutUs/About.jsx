@@ -38,13 +38,14 @@ const Carousel = () => {
 
   return (
     <div className={style.carousel}>
-      {startIndex > 0 && (
+      {startIndex > 0 ? (
         <div className={style.arrow} onClick={handlePrev}>
           <div className={style.arrow_left}>
-            <ArrowBackIosIcon />
+            <ArrowBackIosIcon  />
           </div>
         </div>
-      )}
+      ):
+        <div className={style.empty}>Esss</div>}
 
       <div className={style.carousel__images}>
         {images.slice(startIndex, startIndex + 2).map((image, index) => (
@@ -58,13 +59,13 @@ const Carousel = () => {
         ))}
       </div>
 
-      {startIndex < images.length - 2 && (
+      {startIndex < images.length - 2 ? (
         <div className={style.arrow} onClick={handleNext}>
           <div className={style.arrow_right}>
             <ArrowForwardIosIcon />
           </div>
         </div>
-      )}
+      ):<div className={style.empty}>Esss</div>}
 
       {showModal && (
         <div className={style.modal} onClick={handleCloseModal}>
@@ -120,7 +121,7 @@ function About() {
       <div className={style.MVcontainer}>
         <div className={style.misionContain}>
           <div className={style.misionVisionTitles}>MISIÓN</div>
-          <div>
+          <div className={style.textMisionVision}>
             Ofrecer a la población de Bogotá inmuebles de alta calidad y diseño,
             inigualable localización y precios competitivos, siempre
             comprometida con la satisfacción, desarrollo y mejoramiento del
@@ -129,7 +130,7 @@ function About() {
         </div>
         <div className={style.visionContain}>
           <div className={style.misionVisionTitles}>VISIÓN</div>
-          <div>
+          <div className={style.textMisionVision}>
             {" "}
             Al año 2028 Origin Holdings S.A.S será reconocida en Bogotá
             especialmente en las localidades de Puente Aranda y Engativá por

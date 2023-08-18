@@ -139,7 +139,7 @@ const ContactForm = () => {
         <div className={style.rightElement}>
           <form ref={form} onSubmit={sendEmail} className={style.formContain}>
             <div className={style.nameSurnameGrid}>
-              <div>
+              <div className={style.responsiveNameSurname}>
                 <label>NOMBRE</label>
                 <input
                   value={inputs.name}
@@ -149,7 +149,7 @@ const ContactForm = () => {
                   type="text"
                 />
               </div>
-              <div>
+              <div className={style.responsiveNameSurname}>
                 <label>APELLIDO</label>
                 <input
                   value={inputs.surname}

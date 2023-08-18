@@ -342,7 +342,7 @@
   margin: 0;
   display: flex;
   margin: 0 -10px;
-  /* height: 10rem; */
+  justify-content: center;
 }
 .carousel__slides + .carousel__thumbnails {
   margin-top: 20px;
@@ -480,6 +480,24 @@
   100% {
     transform: translateX(0);
   }
+}
+@media (width>=1480px) {
+  .carouselWrapperBuildings{
+    width: 69vw;
+    height: 40vh;
+}
+.carouselContainerBuildings {
+    width: 162.5rem;
+    height: 18rem;
+}
+.carouselBuildings{
+    width: 162.5rem;
+    flex-direction: row;
+}
+.carouselBuildings div {
+    width: 110.5rem;
+    height: 18rem;
+}
 }
 @media (width<=1280px) {
   .carouselWrapperBuildings {

@@ -1,44 +1,51 @@
-
 @font-face {
   font-family: metroBold;
   src: url("../../../src/fonts/Metropolis-SemiBold.otf") format("opentype");
 }
+
 @font-face {
   font-family: metroLight;
   src: url("../../../src/fonts/metropolis.thin.otf") format("opentype");
 }
+
 * {
   --metropolisBold: metroBold;
   --metropolisLight: metroLight;
- 
+
 }
-.optionSelect{
+
+.optionSelect {
   font-size: 2rem;
-  color:  rgb(6, 102, 153);
+  color: rgb(6, 102, 153);
 }
-.optionDefault{
+
+.optionDefault {
   font-size: 2rem;
-color: gray;
+  color: gray;
 }
-.title{
+
+.title {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: 10%90%;
   align-items: center;
   justify-items: center;
 }
-.linkStyle{
+
+.linkStyle {
   display: flex;
   gap: 0.3rem;
   text-decoration: none;
   color: white;
 }
-.backArrow{
+
+.backArrow {
   text-align: center;
 }
-.backBtn{
+
+.backBtn {
   border: none;
-  background:rgb(58, 172, 58);
+  background: rgb(58, 172, 58);
   padding: 1rem;
   font-family: var(--metropolisLight);
   margin-top: 1.5rem;
@@ -46,94 +53,105 @@ color: gray;
 
   border-radius: 0.5rem;
 }
-.selectOption{
-  
-  color:  rgb(6, 102, 153);
+
+.selectOption {
+
+  color: rgb(6, 102, 153);
 }
-.type{
-width: 75%;
+
+.type {
+  width: 75%;
   border-radius: 0.8rem;
   border: 2px solid rgba(0, 0, 0, 0.613);
-  color:rgb(255, 178, 0);
+  color: rgb(255, 178, 0);
   font-family: var(--metropolisBold);
   font-size: 2.8rem;
   text-align: center;
 }
 
-.textData{
+.textData {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   text-align: center;
 }
-.descriptionData{
+
+.descriptionData {
   font-family: var(--metropolisLight);
   font-weight: bold;
   font-size: 2rem;
 }
-.gridContainer{
+
+.gridContainer {
   margin-top: 2rem;
   margin-bottom: 2rem;
-gap: 0.5rem;
+  gap: 0.5rem;
   display: grid;
-  grid-template-columns: 25% 63%  12%;
+  grid-template-columns: 25% 63% 12%;
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.imgApto{
+
+.imgApto {
   width: 100%;
   border-radius: 3rem;
 }
-.video{
+
+.video {
   width: 94%;
   height: 90%;
   align-self: center;
 }
-.videoContain{
+
+.videoContain {
   display: flex;
-  border:4px solid rgb(6, 102, 153);
+  border: 4px solid rgb(6, 102, 153);
   justify-content: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.688);
 }
-.dataContainer{
+
+.dataContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.dataSection{
-  border:3px solid rgb(6, 102, 153);
+.dataSection {
+  border: 3px solid rgb(6, 102, 153);
   display: flex;
   flex-direction: column;
-  height:fit-content;
+  height: fit-content;
   width: 100%;
   font-family: var(--metropolisLight);
   gap: 1rem;
   align-self: center;
   text-align: center;
-  justify-content: center; 
+  justify-content: center;
 
 }
-.dataSection2{
-  border:3px solid rgb(6, 102, 153);
+
+.dataSection2 {
+  border: 3px solid rgb(6, 102, 153);
   display: flex;
   flex-direction: column;
-  height:fit-content;
+  height: fit-content;
   width: 100%;
   font-family: var(--metropolisBold);
   gap: 1rem;
   align-self: center;
   text-align: center;
-  justify-content: center; 
+  justify-content: center;
 }
-.ulSection{
-  justify-items: center; 
+
+.ulSection {
+  justify-items: center;
   align-self: center;
 
 }
-.dataSectionTitle{
+
+.dataSectionTitle {
   background: rgb(6, 102, 153);
   color: white;
   width: 100%;
@@ -142,3 +160,70 @@ gap: 0.5rem;
   text-align: center;
   font-size: 1.2rem;
 }
+
+@media (width<=1280px) {
+  .gridContainer {
+    grid-template-columns: 23% 58% 18%;
+    gap: 0.7rem;
+  }
+}
+
+@media (width<=912px) {
+  .dataContainer {
+    gap: 0.5rem;
+  }
+}
+
+@media (width<=820px) {
+  .ulSection {
+    font-size: 0.8rem;
+  }
+
+  .dataSection2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (width<=768px) {
+  .gridContainer {
+    grid-template-columns: 23% 55% 19.5%;
+
+  }
+}
+
+@media (width<=540px) {
+  .gridContainer {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+    height: 170vh;
+    gap: 1.7rem;
+  }
+
+  .title {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: none;
+    gap: 1rem;
+  }
+
+  .backBtn {
+    justify-self: start;
+  }
+}
+
+@media (width <=414px) {
+  .gridContainer {
+    height: 111vh;
+    gap: 1rem;
+  }
+}
+@media (width <= 375px)
+{.gridContainer{
+  height: 131vh;
+
+}}
+@media (width <= 360px)
+{.descriptionData{
+
+  font-size: 1.5rem;
+}}

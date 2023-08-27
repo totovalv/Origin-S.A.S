@@ -102,7 +102,7 @@ const Apartment = () => {
           </div>
         </div>
         <div className={style.gridContainer}>
-          <div>
+          <div className={style.containerPhotoApto}>
             {id == 1 ? (
               <img
                 className={style.imgApto}

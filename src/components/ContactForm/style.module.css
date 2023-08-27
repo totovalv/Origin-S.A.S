@@ -333,4 +333,45 @@
   display: grid;
 
 }
+.contactTitle{
+font-size: 3rem;
 }
+.titleContainer {
+  height: 28rem;
+}
+}
+@media (width<=412px) {
+  .contactInfoTitle{
+    font-size: 1.4rem;
+  }
+}
+@media (width<=393px) {
+  .thanksText{
+    width: 20rem;
+    padding: 5rem;
+  }
+  .thanksImg {
+    width: 20rem;
+
+}
+}
+@media (width<=375px) {
+.contactTitle{
+  font-size: 2rem;
+}
+.thanksText {
+  width: 19.5rem;
+  padding: 4rem;
+}
+.thanksImg {
+  width: 19.5rem;
+}
+}
+@media (width<=360px) {
+  .contactInfoTitle{
+    font-size: 1.1rem;
+  }
+  .socialMediaBox {
+    text-align: center;
+}
+  }

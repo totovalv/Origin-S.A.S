@@ -159,6 +159,9 @@
   font-size: 1rem;
   font-family: var(--metropolisBold);
 }
+.buttonForm:disabled{
+  background: #52829cfb;
+}
 .thanksForContactContainer {
   background: #066699;
   height: 35rem;

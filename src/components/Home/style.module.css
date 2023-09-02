@@ -534,7 +534,7 @@
   align-content: center;
   flex-direction: column;
 }
-@media (width<=1950px) {
+@media (width<=1920px) {
   .positionHome {
     display: grid;
     grid-template-columns: 50% 50%;

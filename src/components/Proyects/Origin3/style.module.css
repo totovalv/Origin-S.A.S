@@ -647,6 +647,28 @@
   width: 100%;
   height: 90%;
 }
+.linkYoutube{
+  font-size: 1.3vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #565656;
+  cursor: pointer;
+}
+.linkYoutube:hover{
+  color: #7e7e7e;
+
+}
+.iconYoutube{
+  color: red;
+}
+
+.iconYoutube:hover{
+  transform: scale(1.2);
+  color: rgb(255, 45, 45);
+}
 /* -------------------------------s-------- */
 
 .carouselHome
@@ -938,6 +960,16 @@ p:hover {
     height: 52%;
   }
 }
+@media (width>=1366px) {
+  .unorderListMenu{
+    font-size: 18.5px;
+  }
+}
+@media (width>=1280px) {
+  .unorderListMenu{
+    font-size: 18.5px;
+  }
+}
 @media (width<=1024px) {
   .iconBbq {
     width: fit-content;
@@ -992,6 +1024,9 @@ p:hover {
   .apartmentsGrid {
     gap: 1rem;
   }
+  .unorderListMenu{
+    font-size: 17.5px;
+  }
 }
 @media (width<=912px) {
   .detailSection {
@@ -1031,6 +1066,9 @@ p:hover {
   .availabilityLabel {
     font-size: 0.9rem;
   }
+  .parkingPhotos2 {
+    margin-top: 4rem;
+}
 }
 @media (width<=820px) {
   .iconsText {
@@ -1039,6 +1077,9 @@ p:hover {
     font-size: 1.4rem;
     width: fit-content;
     text-align: center;
+  }
+  .linkYoutube{
+    font-size: 1.8vw;
   }
   .containTitleBlueBar {
     font-size: 2rem;
@@ -1226,6 +1267,9 @@ p:hover {
 }
 
 @media (width<=414px) {
+  .linkYoutube{
+    font-size: 3vw;
+  }
   .interestSites {
     font-size: 2rem;
   }

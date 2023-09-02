@@ -8,6 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Home() {
   const navigate = useNavigate();
+  window.scrollTo(0, 0);
 
   return (
     <div>

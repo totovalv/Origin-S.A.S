@@ -41,11 +41,12 @@ const Carousel = () => {
       {startIndex > 0 ? (
         <div className={style.arrow} onClick={handlePrev}>
           <div className={style.arrow_left}>
-            <ArrowBackIosIcon  />
+            <ArrowBackIosIcon />
           </div>
         </div>
-      ):
-        <div className={style.empty}>Esss</div>}
+      ) : (
+        <div className={style.empty}>Esss</div>
+      )}
 
       <div className={style.carousel__images}>
         {images.slice(startIndex, startIndex + 2).map((image, index) => (
@@ -65,7 +66,9 @@ const Carousel = () => {
             <ArrowForwardIosIcon />
           </div>
         </div>
-      ):<div className={style.empty}>Esss</div>}
+      ) : (
+        <div className={style.empty}>Esss</div>
+      )}
 
       {showModal && (
         <div className={style.modal} onClick={handleCloseModal}>
@@ -81,6 +84,9 @@ const Carousel = () => {
 };
 
 function About() {
+  // Desplaza la página al principio después de una redirección
+  window.scrollTo(0, 0);
+
   return (
     <div>
       <Navbar />

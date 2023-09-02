@@ -195,29 +195,29 @@ function Origin3() {
   const mediaQuery768px = window.matchMedia("(width<=768px)");
   const mediaQuery414px = window.matchMedia("(width<=414px)");
 
-
   const scrollToSection = () => {
     scroller.scrollTo("sectionRef", {
       smooth: true,
-      offset: -50,
+      // offset: 1,
     });
   };
-    const scrollToSectionCarousel = () => {
-    scroller.scrollTo("carousel", {
+  const scrollToSectionCarousel = () => {
+    scroller.scrollTo("slides", {
       smooth: true,
       offset: -50,
     });
   };
   const scrollToLeftSide = () => {
-      if(mediaQuery768px.matches){ scroller.scrollTo("topSideView", {
-    smooth: true,
-    offset: -100,
-  });} else{
-
-    scroller.scrollTo("leftSideRef", {
-      smooth: true,
-      offset: -100,
-    });
+    if (mediaQuery768px.matches) {
+      scroller.scrollTo("topSideView", {
+        smooth: true,
+        offset: -100,
+      });
+    } else {
+      scroller.scrollTo("leftSideRef", {
+        smooth: true,
+        offset: -100,
+      });
     }
   };
   return (
@@ -256,7 +256,7 @@ function Origin3() {
           <div className={style.knowTheText}>CONOCE LOS</div>
           <div className={style.gridtextBlueBar}>
             <div className={style.apartments}>APARTAMENTOS</div>
-            <div>MODELO</div>
+            <div>TIPO</div>
           </div>
         </div>
         <button onClick={scrollToSection} className={style.seeMoreBtn}>
@@ -314,10 +314,10 @@ function Origin3() {
               <input type="radio" name="slides" id="slide-4" />
               <input type="radio" name="slides" id="slide-5" />
               <input type="radio" name="slides" id="slide-6" />
-              <ul className={style.carousel__slides}  >
+              <ul className={style.carousel__slides}>
                 <li className={style.carousel__slide}>
                   <figure>
-                    <figcaption >
+                    <figcaption>
                       <h1 className={style.interestSites}>
                         Sitios de interés:{" "}
                       </h1>
@@ -340,7 +340,7 @@ function Origin3() {
                           <li className={style.unorderListMenu}>Salud</li>
                         </label>
                         <label htmlFor="slide-4">
-                          <li className={style.unorderListMenu}>Otras</li>
+                          <li className={style.unorderListMenu}>Otros</li>
                         </label>
                       </ul>
                     </figcaption>
@@ -395,7 +395,7 @@ function Origin3() {
                             href="https://domicilios.tiendasd1.com/"
                             target="blank"
                           >
-                            Tiendas D1 La Granja (650 y 750 mts)
+                            Tiendas D1 Soledad Norte y La Granja (650 y 750 mts)
                           </a>
                         </li>
                         {/* <li className={style.unorderList}>
@@ -416,7 +416,7 @@ function Origin3() {
                           }}
                           className={style.unorderList}
                         >
-                          Comercio Calle 72
+                          Comercio Calle 72 (900 mt)
                         </li>
                         <li
                           style={{
@@ -426,7 +426,12 @@ function Origin3() {
                           }}
                           className={style.unorderList}
                         >
-                          Plaza Las Ferias (2.4 Km)
+                          <a
+                            href="https://ipes.gov.co/plazas/ferias/"
+                            target="blank"
+                          >
+                            Plaza Las Ferias (2.4 Km)
+                          </a>
                         </li>
                         <li
                           style={{
@@ -436,7 +441,12 @@ function Origin3() {
                           }}
                           className={style.unorderList}
                         >
-                          Plaza Quirigua (2.4 Km)
+                          <a
+                            href="https://ipes.gov.co/plazas/quirigua/"
+                            target="blank"
+                          >
+                            Plaza Quirigua (2.4 Km)
+                          </a>
                         </li>
                       </ul>
                       <span className={style.credit}>
@@ -553,12 +563,12 @@ function Origin3() {
                             href="https://bogota.gov.co/servicios/puntos-de-atencion/unidades-de-reaccion-inmediata-uri-granja-engativa-penal-ii"
                             target="blank"
                           >
-                            Unidad de Reacción Inmediata (URI) Engativá (500 mt)
+                            URI Engativá (500 mt)
                           </a>
                         </li>
                         <li className={style.unorderList}>
                           <a
-                            href="https://www.notariasytramites.co/notaria-67-de-bogota/"
+                            href="ttps://www.notaria67bogota.com.co/sitio/"
                             target="blank"
                           >
                             Notaria 67 (900 mt)
@@ -581,6 +591,15 @@ function Origin3() {
                           <a href="http://www.engativa.gov.co/" target="blank">
                             Alcaldía Local Engativá (2.0 Km)
                           </a>
+                        </li>
+                        <li className={style.unorderList}>
+                          Estacion Trasmilenio La Granja (500 mt){" "}
+                        </li>
+                        <li className={style.unorderList}>
+                          Estacion Trasmilenio Av. Cali (550 mt){" "}
+                        </li>
+                        <li className={style.unorderList}>
+                          Museo de arte contemporáneo (1.7 km){" "}
                         </li>
                       </ul>
                       <span className={style.credit}>
@@ -776,7 +795,10 @@ function Origin3() {
                   </figure>
                 </li>
               </ul>
-              <ul onClick={scrollToSectionCarousel}  className={style.carousel__thumbnails}>
+              <ul
+                onClick={scrollToSectionCarousel}
+                className={style.carousel__thumbnails}
+              >
                 <li>
                   <label htmlFor="slide-1">
                     <img src={data.soledadNorte} alt="" />
@@ -830,14 +852,14 @@ function Origin3() {
       <div className={style.availableSpacesTitle}>ESPACIOS DISPONIBLES</div>
       <>
         <div className={style.iconsGrid}>
-        <div className={style.itemIcon}>
+          <div className={style.itemIcon}>
             <img
               className={style.icon}
               src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/terraza_xfxnf1.png"
               alt=""
             />
             <div className={style.iconsText}>TERRAZA</div>
-          </div> 
+          </div>
 
           <div className={style.itemIcon}>
             <img
@@ -845,7 +867,7 @@ function Origin3() {
               src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/reception_rnsgue.png"
               alt=""
             />
-            <div className={style.iconsText}>RECEPCION</div>
+            <div className={style.iconsText}>RECEPCIÓN</div>
           </div>
           <div className={style.itemIcon}>
             <img
@@ -858,7 +880,6 @@ function Origin3() {
         </div>
 
         <div className={style.iconsGrid}>
-      
           <div className={style.itemIcon}>
             <img
               className={style.icon}
@@ -885,7 +906,6 @@ function Origin3() {
           </div>
         </div>
         <div className={style.iconsGrid}>
-     
           <div className={style.itemIcon}>
             <img
               className={style.icon}
@@ -902,7 +922,7 @@ function Origin3() {
             />
             <div className={style.iconsText}>SÓTANO CON RAMPA LEVADIZA</div>
           </div>
-       <div className={style.itemIcon}>
+          <div className={style.itemIcon}>
             <img
               className={style.icon}
               src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684182823/icons/p_vcv9ie.png"
@@ -914,7 +934,7 @@ function Origin3() {
       </>
       <div className={style.titleModelApartmentsContain}>
         <Element className={style.titleModelApartments} name="sectionRef">
-          APARTAMENTOS MODELO
+          APARTAMENTOS TIPO
         </Element>
         <hr className={style.titleUnderlineModelApartments}></hr>
         <hr className={style.titleUnderlineModelApartmentsSoft}></hr>
@@ -933,7 +953,12 @@ function Origin3() {
               </div>
             </div>
           </div>
-          <img className={style.imgAptos} name="topSideView" src={currentPhoto} alt="aptos" />
+          <img
+            className={style.imgAptos}
+            name="topSideView"
+            src={currentPhoto}
+            alt="aptos"
+          />
         </div>
 
         <div className={style.aptosContainer}>

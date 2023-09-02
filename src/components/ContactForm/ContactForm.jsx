@@ -35,10 +35,10 @@ const ContactForm = () => {
     console.log(element.value);
     emailjs
       .sendForm(
-        "service_v0wy4jo",
-        "template_a6pekct",
+        "service_2owld9n",
+        "template_m8x453w",
         form.current,
-        "WtARjJwA3iGUtPMWE"
+        "EqjbG0I5E-PVa-xu7"
       )
       .then(
         (result) => {
@@ -177,7 +177,11 @@ const ContactForm = () => {
               className={style.inputs}
               type="text"
             />
-            <button type="submit" value="Send" className={style.buttonForm}>
+            <button disabled={inputs.user_name&&
+      inputs.user_surname&&
+      inputs.message&&
+      inputs.phone&&
+      inputs.user_email?false:true} type="submit" value="Send" className={style.buttonForm}>
               Enviar
             </button>
           </form>

@@ -6,7 +6,7 @@ import Navbar from "../../Navbar/Navbar";
 import style from "./style.module.css";
 import { useEffect, useState } from "react";
 import Loader from "../../Loader/Loader";
-
+import {AiFillYoutube} from 'react-icons/ai'
 function Origin3() {
   let [data, setData] = useState({});
   let [currentPhoto, setCurrentPhoto] = useState(
@@ -999,7 +999,7 @@ function Origin3() {
                   <div className={style.greenCircleApto}></div>501
                 </div>
                 <button className={style.seeMoreBtnApto}>
-                  <Link className={style.linkStyle} to="/projects/Origin3/1">
+                  <Link className={style.linkStyle} target="_blank" to="/projects/Origin3/1">
                     Ver más
                   </Link>
                 </button>
@@ -1042,7 +1042,7 @@ function Origin3() {
                   <div className={style.greenCircleApto}></div>502
                 </div>
                 <button className={style.seeMoreBtnApto}>
-                  <Link className={style.linkStyle} to="/projects/Origin3/2">
+                  <Link className={style.linkStyle} target="_blank" to="/projects/Origin3/2">
                     Ver más
                   </Link>
                 </button>
@@ -1084,7 +1084,7 @@ function Origin3() {
                   <div className={style.greenCircleApto}></div>503
                 </div>
                 <button className={style.seeMoreBtnApto}>
-                  <Link className={style.linkStyle} to="/projects/Origin3/3">
+                  <Link className={style.linkStyle} target="_blank" to="/projects/Origin3/3">
                     Ver más
                   </Link>
                 </button>
@@ -1126,7 +1126,7 @@ function Origin3() {
                   <div className={style.greenCircleApto}></div>504
                 </div>
                 <button className={style.seeMoreBtnApto}>
-                  <Link className={style.linkStyle} to="/projects/Origin3/4">
+                  <Link className={style.linkStyle} target="_blank" to="/projects/Origin3/4">
                     Ver más
                   </Link>
                 </button>
@@ -1168,7 +1168,7 @@ function Origin3() {
                   <div className={style.greenCircleApto}></div>505
                 </div>
                 <button className={style.seeMoreBtnApto}>
-                  <Link className={style.linkStyle} to="/projects/Origin3/5">
+                  <Link className={style.linkStyle} target="_blank" to="/projects/Origin3/5">
                     Ver más
                   </Link>
                 </button>
@@ -1179,7 +1179,7 @@ function Origin3() {
       </div>
       <div className={style.parking}>
         <div className={style.parkingItem}>
-          <div className={style.parkingTitle}>Recepción y primer piso</div>
+          <div className={style.parkingTitle}>Recepción y primer piso <br></br><a  target="_blank"className={style.linkYoutube} href="https://www.youtube.com/embed/DpwiR0N0SIU">Ver Video <AiFillYoutube className={style.iconYoutube}  size={20}/></a></div>
           <img
             src={data.reception}
             className={style.parkingPhotos}
@@ -1189,12 +1189,12 @@ function Origin3() {
 
         <div className={style.parkingItem}>
           <div className={style.parkingTitle}>
-            Terraza, zona verde y BBQ 2D-3D
+            Terraza, zona verde y BBQ 2D-3D <br/><a  className={style.linkYoutube}  target="_blank"href="https://www.youtube.com/embed/zxOFmJ2DgCA">Ver Video<br/><AiFillYoutube className={style.iconYoutube}  size={20}/></a>
           </div>
           <img src={data.terrace} className={style.roofPhoto} alt="" />
         </div>
         <div className={style.parkingItem}>
-          <div className={style.parkingTitle}>Semisotano</div>
+          <div className={style.parkingTitle}>Semisotano <br></br><a className={style.linkYoutube} target="_blank" href="https://www.youtube.com/embed/DpwiR0N0SIU">Ver Video<AiFillYoutube className={style.iconYoutube}  size={20}/> </a></div>
           <img src={data.cellar} className={style.parkingPhotos2} alt="" />
         </div>
       </div>

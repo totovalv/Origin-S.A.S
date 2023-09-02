@@ -243,17 +243,15 @@ function Navbar() {
         </header>
       ) : (
         <header className={style.header}>
-          <a
-            href="https://www.originholdingssas.com.co/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
+          onClick={(e)=>handleGoHome()}
           >
             <img
               className={style.logoNavbar}
               src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177149/Logos/LOGOborde_hmuzyc.png"
               alt="logo"
             />
-          </a>
+          </div>
           <div className={style.parent}>
             <div className={style.materialBox}>
               <Box

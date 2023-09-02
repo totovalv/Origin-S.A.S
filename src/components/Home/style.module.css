@@ -14,12 +14,11 @@
   --black: #000;
 }
 .positionHome {
-display: grid;
-grid-template-columns:40% 60%;
-padding: 1rem;
-justify-items: center;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 1rem;
+  justify-items: center;
 }
-
 
 .imgHome {
   vertical-align: text-bottom;
@@ -124,7 +123,7 @@ justify-items: center;
 
 .ftRecipe .ftRecipeContent .description {
   text-align: justify;
-  font-family: "Avenir", sans-serif;
+  font-family: "Maiandra GD", sans-serif;
   font-size: 1em;
   cursor: auto;
   color: #000;
@@ -160,7 +159,6 @@ justify-items: center;
 .selectionPosition {
   display: flex;
   flex-direction: column;
-
 }
 
 .container {
@@ -247,27 +245,26 @@ justify-items: center;
   justify-content: center;
   width: 80%;
   margin-top: 2rem;
-
 }
-.contentTextCarousel{
+.contentTextCarousel {
   cursor: auto;
   color: black;
- text-decoration: none;
+  text-decoration: none;
 }
-.contentTextCarousel:hover{
+.contentTextCarousel:hover {
   cursor: auto;
   color: black;
- text-decoration: none;
+  text-decoration: none;
 }
-.blueSpaceTxt{
+.blueSpaceTxt {
   cursor: crosshair;
   color: white;
- text-decoration: none;
+  text-decoration: none;
 }
-.blueSpaceTxt:hover{
+.blueSpaceTxt:hover {
   cursor: auto;
   color: white;
- text-decoration: none;
+  text-decoration: none;
 }
 .constructor {
   position: absolute;
@@ -421,7 +418,7 @@ justify-items: center;
 
 .allProjects {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   text-align: center;
   margin-bottom: 5rem;
@@ -482,18 +479,17 @@ justify-items: center;
   border-right-color: white;
   border-bottom: solid 1px #ffb200;
 }
-.addressOrigin{
+.addressOrigin {
   font-size: 1.3rem;
   margin-top: 2rem;
   justify-self: center;
   color: rgba(0, 0, 0, 0.833);
-text-decoration: none;
-font-family: var(--headlinesFont);
-
+  text-decoration: none;
+  font-family: "Maiandra GD", sans-serif;
 }
-.addressOrigin:hover{
-text-decoration: none;
-cursor: auto;
+.addressOrigin:hover {
+  text-decoration: none;
+  cursor: auto;
 }
 
 .hrblue {
@@ -539,136 +535,131 @@ cursor: auto;
   flex-direction: column;
 }
 @media (width<=1950px) {
- .positionHome{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  padding: 3rem;
-  justify-items: center;
-   
- } 
- .ftRecipe .ftRecipeContent .description{
-   margin-top: 5rem;
-   font-size: 1.2rem;
+  .positionHome {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 3rem;
+    justify-items: center;
   }
-  .slider{
+  .ftRecipe .ftRecipeContent .description {
+    margin-top: 5rem;
+    font-size: 1.2rem;
+  }
+  .slider {
     height: 130%;
   }
 }
 @media (width<=1500px) {
-  .positionHome{
-   display: grid;
-   grid-template-columns: 40% 60%;
-   padding: 1rem;
-   justify-items: center;
-    
-  } 
-  .ftRecipe .ftRecipeContent .description{
+  .positionHome {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 1rem;
+    justify-items: center;
+  }
+  .ftRecipe .ftRecipeContent .description {
     margin-top: 0rem;
     font-size: 1rem;
-   }
-   .slider{
-     height: 100%;
-   }
- }
+  }
+  .slider {
+    height: 100%;
+  }
+}
 @media (width<=1366px) {
-  .positionHome{
-   display: grid;
-   grid-template-columns: 40% 60%;
-   padding: 1rem;
-   justify-items: center;
-    
-  } 
-  .ftRecipe .ftRecipeContent .description{
+  .positionHome {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 1rem;
+    justify-items: center;
+  }
+  .ftRecipe .ftRecipeContent .description {
     margin-top: 0rem;
     font-size: 1rem;
-   }
-   .slider{
-     height: 100%;
-   }
- }
+  }
+  .slider {
+    height: 100%;
+  }
+}
 
 @media (width<=1024px) {
-  .slider{
+  .slider {
     width: 200%;
   }
-  .yellowBack{
+  .yellowBack {
     width: 120vh;
     height: 130vh;
   }
   .positionHome {
     display: grid;
-    grid-template-columns:100%;
+    grid-template-columns: 100%;
     padding: 1rem;
     justify-items: center;
     gap: 1rem;
-    }
-    .ftRecipe {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: inherit;
+  }
+  .ftRecipe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: inherit;
 
-      overflow: hidden;
-      width: 97%;
-      height: 95%;
-      background: var(--white);
-      border-radius: 2rem;
-      padding: 0.625rem;
-    }
-    .container {
-      margin-bottom: 1.5rem;
-    }
-    .ftRecipe .ftRecipeThumb {
-      position: relative;
-      height: 20.625rem;
-      width: 100%;
-    }
-    .allProjects {
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      justify-items: center;
-      text-align: center;
-      margin-bottom: 5rem;
-    }
-  
+    overflow: hidden;
+    width: 97%;
+    height: 95%;
+    background: var(--white);
+    border-radius: 2rem;
+    padding: 0.625rem;
+  }
+  .container {
+    margin-bottom: 1.5rem;
+  }
+  .ftRecipe .ftRecipeThumb {
+    position: relative;
+    height: 20.625rem;
+    width: 100%;
+  }
+  .allProjects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
 }
 @media (width<=912px) {
-  .yellowBack{
+  .yellowBack {
     width: 50vh;
     height: 130vh;
   }
-  .slider{
+  .slider {
     width: 200%;
   }
-  .yellowBack{
+  .yellowBack {
     height: 50vh;
   }
 }
 @media (width<=820px) {
-  .slider{
+  .slider {
     width: 200%;
   }
-  .yellowBack{
+  .yellowBack {
     height: 60vh;
   }
 }
 @media (width<=768px) {
-  .slider{
+  .slider {
     width: 200%;
   }
-  .yellowBack{
+  .yellowBack {
     height: 70vh;
   }
 }
 @media (width<=720px) {
-  .slider{
+  .slider {
     width: 200%;
   }
-  .yellowBack{
+  .yellowBack {
     width: 37vh;
     height: 50vh;
   }
 }
-
 
 @media (width<=672px) {
   .container {
@@ -790,17 +781,15 @@ cursor: auto;
   }
 }
 @media (width<=558px) {
-  .slider{
+  .slider {
     width: 200%;
   }
-  .yellowBack{
+  .yellowBack {
     height: 110vh;
   }
-  .container{
+  .container {
     height: 100vh;
-
   }
- 
 }
 @media (width<=540px) {
   .ftRecipe .ftRecipeContent {
@@ -856,7 +845,7 @@ cursor: auto;
     justify-content: center;
     padding: 0;
   }
-  .slider{
+  .slider {
     width: 200%;
     height: fit-content;
   }
@@ -890,21 +879,20 @@ cursor: auto;
   }
 }
 @media (width<=414px) {
-    .ftRecipe .ftRecipeThumb {
+  .ftRecipe .ftRecipeThumb {
     position: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0;
   }
-  .slider{
+  .slider {
     width: 200%;
     height: fit-content;
   }
   .yellowBack {
     width: 80vw;
     height: 100vh;
-
   }
   .ftRecipe {
     width: 70vw;
@@ -955,18 +943,16 @@ cursor: auto;
     justify-content: center;
     padding: 0;
   }
-  .slider{
+  .slider {
     width: 200%;
     height: fit-content;
   }
   .yellowBack {
     width: 80vw;
     height: 100vh;
-
   }
   .ftRecipe {
     width: 70vw;
-
   }
   .titleProyects h1 {
     font-size: 2.5rem;
@@ -1067,14 +1053,12 @@ cursor: auto;
 }
 
 @media (width<=376px) {
-
   .container__text h1 {
-    font-size: 1.3rem; 
+    font-size: 1.3rem;
   }
-  
-  .container__text p{
-    font-size: 1rem; 
 
+  .container__text p {
+    font-size: 1rem;
   }
   .ftRecipe .ftRecipeContent .description {
     font-size: 0.85em;
@@ -1156,11 +1140,10 @@ cursor: auto;
   }
   .yellowBack {
     width: 80vw;
-    height:93vh;
+    height: 93vh;
   }
   .ftRecipe {
     width: 70vw;
-
   }
   .titleProyects h1 {
     font-size: 2.5rem;
@@ -1196,7 +1179,7 @@ cursor: auto;
     margin-bottom: 4.5rem;
   }
   .dividerBlue {
-    margin-top:80vh;
+    margin-top: 80vh;
   }
   .positionCarouselAuto {
     flex-direction: column;

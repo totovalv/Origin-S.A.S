@@ -5,11 +5,11 @@
   --headlinesFont: "Maiandra GD", sans-serif;
 }
 @font-face {
-  font-family: metroBold;
+  font-family: "Maiandra GD", sans-serif;
   src: url("../../../src/fonts/Metropolis-SemiBold.otf") format("opentype");
 }
 @font-face {
-  font-family: metroLight;
+  font-family: "Maiandra GD", sans-serif;
   src: url("../../../src/fonts/metropolis.thin.otf") format("opentype");
 }
 * {
@@ -58,7 +58,7 @@
   color: var(--titulo);
   justify-self: start;
   align-self: flex-start;
-  font-family: var(--metropolisBold);
+  font-family: "Maiandra GD", sans-serif;
 }
 .logoNavbar {
   width: 17rem;
@@ -86,7 +86,6 @@
   .header {
     display: flex;
     flex-direction: column;
-
   }
   .gridMedia828 {
     display: grid;
@@ -95,7 +94,6 @@
   .logoNavbar {
     width: 13rem;
     height: 8rem;
- 
   }
   .title {
     justify-self: center;
@@ -116,9 +114,8 @@
     grid-template-columns: 30% 70%;
   }
   .logoNavbar {
-    width:9rem;
+    width: 9rem;
     height: 6rem;
- 
   }
   .title {
     justify-self: center;
@@ -139,9 +136,8 @@
     grid-template-columns: 30% 70%;
   }
   .logoNavbar {
-    width:9rem;
+    width: 9rem;
     height: 6rem;
- 
   }
   .title {
     justify-self: center;
@@ -149,4 +145,3 @@
     font-size: 1rem;
   }
 }
-

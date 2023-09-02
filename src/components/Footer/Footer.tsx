@@ -51,8 +51,8 @@ function Footer() {
               <div className={style.followUsInfoLabelOriginTitle}>Origin 3</div>
               <div className={style.followUsInfoLabelOrigin}>
                 {" "}
-                Carrera 77A #83-31 <br />
-                <hr /> Carrera 77A #83-39{" "}
+                Calle 77A #83-31 <br />
+                <hr /> Calle 77A #83-39{" "}
               </div>
               <div className={style.followUsInfoLabelOrigin}>
                 {" "}
@@ -73,10 +73,7 @@ function Footer() {
             </div>
             <div className={style.correo}>
               <div className={style.titleCorreo}>Telefonos:</div>
-              <div className={style.direccionCorreo}>
-                {" "}
-                322 8795258 - 300 5635245
-              </div>
+              <div className={style.direccionCorreo}> 322 8795258</div>
             </div>
           </div>
           <div className={style.contactIconsFooter}>

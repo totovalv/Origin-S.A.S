@@ -17,8 +17,8 @@ const Apartment = () => {
       rooms: " 2 alcobas",
       bath: " 1 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
-      parqueadero:"Parqueadero Privado para Automovil",
-      deposite:"Deposito opcional"
+      parqueadero: "Parqueadero Privado para Automovil",
+      deposite: "Depósito opcional",
     },
     {
       name: 2,
@@ -26,8 +26,8 @@ const Apartment = () => {
       rooms: " 3 alcobas",
       bath: " 2 baños",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
-      parqueadero:"Parqueadero Privado para Automovil",
-      deposite:"Deposito opcional"
+      parqueadero: "Parqueadero Privado para Automovil",
+      deposite: "Depósito opcional",
     },
     {
       name: 3,
@@ -35,8 +35,8 @@ const Apartment = () => {
       rooms: " 2 alcobas",
       bath: " 1 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
-      parqueadero:"Parqueadero Privado para Automovil",
-      deposite:"Deposito opcional"
+      parqueadero: "Parqueadero Privado para Automovil",
+      deposite: "Depósito opcional",
     },
     {
       name: 4,
@@ -44,7 +44,7 @@ const Apartment = () => {
       rooms: " 1 alcoba",
       bath: " 1 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
-      parqueadero:"Parqueadero Privado para Moto"
+      parqueadero: "Parqueadero Privado para Moto",
     },
     {
       name: 5,
@@ -52,14 +52,15 @@ const Apartment = () => {
       rooms: " 1 alcoba",
       bath: " 1 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
-      parqueadero:"Parqueadero Privado para Moto"
-
+      parqueadero: "Parqueadero Privado para Moto",
     },
   ];
 
   useEffect(() => {
-    let newOrderSelect = [1, 2, 3, 4, 5].filter(option => option !== Number(id));
-  setOrderSelect(newOrderSelect);
+    let newOrderSelect = [1, 2, 3, 4, 5].filter(
+      (option) => option !== Number(id)
+    );
+    setOrderSelect(newOrderSelect);
   }, [id]);
   const optionHandle = (path) => {
     let test = `/projects/Origin3/${path}`;
@@ -81,20 +82,26 @@ const Apartment = () => {
             </Link>
           </button>
           <div className={style.textData}>
-          <select
-  className={style.type}
-  name="types"
-  id=""
-  onChange={handleSelectChange}
-  value={id}
->
-  <option className={style.optionDefault} selected >TIPO {id}</option>
-  {orderSelect.map((option, index) => (
-    <option className={style.optionSelect} key={index} value={option}>
-      TIPO {option}
-    </option>
-  ))}
-</select>
+            <select
+              className={style.type}
+              name="types"
+              id=""
+              onChange={handleSelectChange}
+              value={id}
+            >
+              <option className={style.optionDefault} selected>
+                TIPO {id}
+              </option>
+              {orderSelect.map((option, index) => (
+                <option
+                  className={style.optionSelect}
+                  key={index}
+                  value={option}
+                >
+                  TIPO {option}
+                </option>
+              ))}
+            </select>
             <div className={style.descriptionData}>
               {" "}
               {types.map((e) => e.name == id && e.area)}
@@ -130,42 +137,73 @@ const Apartment = () => {
             ) : (
               <img
                 className={style.imgApto}
-               
                 src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1686598925/Aptos%20Origin3/Final%20Aptos/APARTAMENTO_TIPO_3_l2tdkj.png"
                 alt=""
               />
             )}
           </div>
           <div className={style.videoContain}>
-            <iframe
-              className={style.video}
-              src="https://www.youtube-nocookie.com/embed/vyqbNFMDRGQ"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+            {id == 1 ? (
+              <iframe
+                className={style.video}
+                src="https://www.youtube.com/embed/cEOtUqrVaDg"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            ) : id == 2 ? (
+              <iframe
+                className={style.video}
+                src="https://www.youtube.com/embed/SeqgpM0PZSE"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            ) : id == 3 ? (
+              <iframe
+                className={style.video}
+                src="https://www.youtube.com/embed/gnwqEu62zg4"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            ) : id == 4 ? (
+              <iframe
+                className={style.video}
+                src="https://www.youtube.com/embed/SeqgpM0PZSE"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            ) : (
+              <iframe
+                className={style.video}
+                src="https://www.youtube.com/embed/H-Hn7a8IOKY"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            )}
           </div>
           <div className={style.dataContainer}>
-
-
-          <div className={style.dataSection}>
-            <div className={style.dataSectionTitle}>Áreas disponibles</div>
-            <ul className={style.ulSection}>
-              <li> {types.map((e) => e.name == id && e.rooms)}</li>
-              <li> Sala comedor</li>
-              <li> {types.map((e) => e.name == id && e.bath)}</li>
-              <li> Cocina </li>
-              <li> Área de ropas</li>
-
-            </ul>
-
-          </div>
-          <div className={style.dataSection2}> 
-            <div>{types.map((e) => e.name == id && e.parqueadero)} </div> 
-            {types.map((e,index) => e.name == id && e.deposite !=null?(<div key={index}> {e.deposite}</div>) : null)}
-      
-          </div>
-
+            <div className={style.dataSection}>
+              <div className={style.dataSectionTitle}>Áreas disponibles</div>
+              <ul className={style.ulSection}>
+                <li> {types.map((e) => e.name == id && e.rooms)}</li>
+                <li> Sala comedor</li>
+                <li> {types.map((e) => e.name == id && e.bath)}</li>
+                <li> Cocina </li>
+                <li> Área de ropas</li>
+              </ul>
+            </div>
+            <div className={style.dataSection2}>
+              <div>{types.map((e) => e.name == id && e.parqueadero)} </div>
+              {types.map((e, index) =>
+                e.name == id && e.deposite != null ? (
+                  <div key={index}> {e.deposite}</div>
+                ) : null
+              )}
+            </div>
           </div>
         </div>
       </>

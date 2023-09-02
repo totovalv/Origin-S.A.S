@@ -86,14 +86,14 @@ const ContactForm = () => {
             <div className={style.locationBox}>
               <CiLocationOn size={30} />
               <div className={style.contactInfoTitle}>Direccion</div>
-              <div className={style.cityLabel}>Bogota,Colombia</div>
+              <div className={style.cityLabel}>Bogotá,Colombia</div>
               <div>Calle 86a #69t-81, torre 4 apto</div>
               <div>2101.</div>
             </div>
             <div className={style.phoneContactBox}>
               <BsTelephone size={25} />
               <div className={style.contactInfoTitle}>TELEFONO</div>
-              <div>300 5635245 - 322 8795258 </div>
+              <div> 322 8795258 </div>
             </div>
           </div>
           <div>
@@ -106,14 +106,6 @@ const ContactForm = () => {
 
               <div className={style.socialMediaBox}>
                 <div>
-                  <a
-                    className={style.iconsFooter}
-                    href="mailto: Origin.holdings.sas@gmail.com?Subject=Contact%20me!"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <AiOutlineMail className={style.icon} size={30} />
-                  </a>
                   <a
                     className={style.iconsFooter}
                     href="https://www.facebook.com/profile.php?id=100095422713723"

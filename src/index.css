@@ -1,5 +1,11 @@
+
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../../../fonts/metropolis.extra-bold.otf") format("opentype");
+}
 *{
   text-decoration: none;
   /* border: 1px solid; */
   /* color: #ffffffa5; */
+  font-family:myFirstFont;
 }

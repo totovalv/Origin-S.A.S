@@ -568,7 +568,7 @@ function Origin3() {
                         </li>
                         <li className={style.unorderList}>
                           <a
-                            href="ttps://www.notaria67bogota.com.co/sitio/"
+                            href="https://www.notaria67bogota.com.co/sitio/"
                             target="blank"
                           >
                             Notaria 67 (900 mt)
@@ -1168,7 +1168,7 @@ function Origin3() {
                   <div className={style.greenCircleApto}></div>505
                 </div>
                 <button className={style.seeMoreBtnApto}>
-                  <Link className={style.linkStyle} target="_blank" to="/projects/Origin3/5">
+                  <Link className={style.linkStyle}  to="/projects/Origin3/5">
                     Ver más
                   </Link>
                 </button>

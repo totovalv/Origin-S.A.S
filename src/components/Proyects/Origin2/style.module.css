@@ -1,3 +1,11 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("../../../fonts/Metropolis-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../../../fonts/metropolis.extra-bold.otf") format("opentype");
+}
 /* @import url('https://fonts.cdnfonts.com/css/maiandra-gd'); */
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
 @import url("https://fonts.cdnfonts.com/css/maiandra-gd");
@@ -5,10 +13,15 @@
 :root {
   --monserrat: "Gruppo", cursive;
 }
+* {
+  --myFirstFont:myFirstFont;
+  --metropolisBold: metroBold;
+  --metropolisLight: metroLight;
+}
+
 
 .titleEspaciosDisp {
   color: #066699;
-  font-family: "Maiandra GD", sans-serif;
   font-size: 2.5rem;
 }
 .gridFullScreen {
@@ -19,15 +32,6 @@
 .container {
   display: grid;
   justify-items: center;
-}
-
-@font-face {
-  font-family: myFirstFont;
-  src: url("../../../fonts/Metropolis-SemiBold.otf") format("opentype");
-}
-@font-face {
-  font-family: MetropolisBold;
-  src: url("../../../fonts/metropolis.extra-bold.otf") format("opentype");
 }
 .iconsGrid {
   padding-top: 5vh;
@@ -51,7 +55,7 @@
 }
 .iconsText {
   margin-top: 2vh;
-  font-family: "Maiandra GD", sans-serif;
+  font-family: var(--metropolisBold);
   font-size: 1.1rem;
 }
 .itemIcon {
@@ -112,7 +116,6 @@
 }
 
 .principalTitle h1 {
-  font-family: "Maiandra GD", sans-serif;
   font-size: 6rem;
   color: #066699;
   padding: 2rem;
@@ -406,7 +409,6 @@
   text-align: center;
   width: 100%;
   color: #066699;
-  font-family: "Maiandra GD", sans-serif;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
@@ -555,7 +557,6 @@
     height: 13%;
   }
   .principalTitle h1 {
-    font-family: "Maiandra GD", sans-serif;
     font-size: 3rem;
   }
   .introduction {
@@ -610,7 +611,6 @@
     margin-top: 1rem;
   }
   .principalTitle h1 {
-    font-family: "Maiandra GD", sans-serif;
     font-size: 1rem;
   }
   .titleUbicacion {
@@ -627,8 +627,7 @@
     font-size: 1.5rem;
   }
   .iconsText {
-    margin-top: 2vh;
-    font-family: "Maiandra GD", sans-serif;
+    margin-top: 2vh;  
     font-size: 0.6rem;
   }
 

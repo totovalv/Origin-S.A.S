@@ -134,7 +134,7 @@ const ContactForm = () => {
               <div className={style.responsiveNameSurname}>
                 <label>NOMBRE</label>
                 <input
-                  value={inputs.name}
+                  value={inputs.user_name}
                   name="user_name"
                   onChange={handlerChange}
                   className={style.inputs}
@@ -144,7 +144,7 @@ const ContactForm = () => {
               <div className={style.responsiveNameSurname}>
                 <label>APELLIDO</label>
                 <input
-                  value={inputs.surname}
+                  value={inputs.user_surname}
                   name="user_surname"
                   onChange={handlerChange}
                   className={style.inputs}
@@ -154,7 +154,7 @@ const ContactForm = () => {
             </div>
             <label>EMAIL</label>
             <input
-              value={inputs.email}
+              value={inputs.user_email}
               name="user_email"
               onChange={handlerChange}
               className={style.inputs}

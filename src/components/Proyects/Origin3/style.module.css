@@ -898,8 +898,9 @@ p:hover {
   height: 100%;
   object-fit: cover;
 }
-@media (width<=1920px) {
 
+
+@media (width>=1480px ) {
   .knowOurBuildings {
     margin-top: 32rem;
   }
@@ -939,9 +940,8 @@ p:hover {
     text-align: center;
   }
   .knowOurBuildings {
-    grid-template-columns: 28% 40% 26%;
- 
-}
+    grid-template-columns: 32% 42% 21%;
+  }
   .availableSpacesTitle {
     margin-top: 15rem;
   }

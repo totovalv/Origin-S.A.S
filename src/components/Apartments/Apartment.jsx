@@ -154,7 +154,7 @@ const Apartment = () => {
             ) : id == 2 ? (
               <iframe
                 className={style.video}
-                src="https://www.youtube.com/embed/SeqgpM0PZSE"
+                src="https://www.youtube.com/embed/w85kmEOEU70"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
@@ -170,7 +170,7 @@ const Apartment = () => {
             ) : id == 4 ? (
               <iframe
                 className={style.video}
-                src="https://www.youtube.com/embed/SeqgpM0PZSE"
+                src="https://www.youtube.com/embed/JlrCFiISbV4"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen

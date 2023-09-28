@@ -1179,7 +1179,7 @@ function Origin3() {
       </div>
       <div className={style.parking}>
         <div className={style.parkingItem}>
-          <div className={style.parkingTitle}>Recepción y primer piso <br></br><a  className={style.linkYoutube} href="https://www.youtube.com/embed/DpwiR0N0SIU">Ver Video <AiFillYoutube className={style.iconYoutube}  size={20}/></a></div>
+          <div className={style.parkingTitle}>Recepción y primer piso <br></br><a target="_blank" className={style.linkYoutube} href="https://www.youtube.com/embed/DpwiR0N0SIU">Ver Video <AiFillYoutube className={style.iconYoutube}  size={20}/></a></div>
           <img
             src={data.reception}
             className={style.parkingPhotos}
@@ -1189,12 +1189,12 @@ function Origin3() {
 
         <div className={style.parkingItem}>
           <div className={style.parkingTitle}>
-            Terraza, zona verde y BBQ 2D-3D <br/><a  className={style.linkYoutube}  href="https://www.youtube.com/embed/zxOFmJ2DgCA">Ver Video<br/><AiFillYoutube className={style.iconYoutube}  size={20}/></a>
+            Terraza, zona verde y BBQ 2D-3D <br/><a target="_blank"  className={style.linkYoutube}  href="https://www.youtube.com/embed/zxOFmJ2DgCA">Ver Video<br/><AiFillYoutube className={style.iconYoutube}  size={20}/></a>
           </div>
           <img src={data.terrace} className={style.roofPhoto} alt="" />
         </div>
         <div className={style.parkingItem}>
-          <div className={style.parkingTitle}>Semisotano <br></br><a className={style.linkYoutube}  href="https://www.youtube.com/embed/DpwiR0N0SIU">Ver Video<AiFillYoutube className={style.iconYoutube}  size={20}/> </a></div>
+          <div className={style.parkingTitle}>Semisotano <br></br><a target="_blank" className={style.linkYoutube}  href="https://www.youtube.com/embed/DpwiR0N0SIU">Ver Video<AiFillYoutube className={style.iconYoutube}  size={20}/> </a></div>
           <img src={data.cellar} className={style.parkingPhotos2} alt="" />
         </div>
       </div>

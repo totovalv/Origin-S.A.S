@@ -148,40 +148,40 @@ const Apartment = () => {
                 className={style.video}
                 src="https://www.youtube.com/embed/cEOtUqrVaDg"
                 title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               ></iframe>
             ) : id == 2 ? (
               <iframe
                 className={style.video}
                 src="https://www.youtube.com/embed/w85kmEOEU70"
                 title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               ></iframe>
             ) : id == 3 ? (
               <iframe
                 className={style.video}
                 src="https://www.youtube.com/embed/gnwqEu62zg4"
                 title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               ></iframe>
             ) : id == 4 ? (
               <iframe
                 className={style.video}
                 src="https://www.youtube.com/embed/JlrCFiISbV4"
                 title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               ></iframe>
             ) : (
               <iframe
                 className={style.video}
                 src="https://www.youtube.com/embed/H-Hn7a8IOKY"
                 title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               ></iframe>
             )}
           </div>

@@ -549,6 +549,13 @@
     height: 130%;
   }
 }
+@media (width<=1694px) {
+  .ftRecipe .ftRecipeContent {
+    flex: 1;
+    padding: 0rem;
+  }
+}
+
 @media (width<=1500px) {
   .positionHome {
     display: grid;

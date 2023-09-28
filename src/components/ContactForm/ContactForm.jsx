@@ -10,8 +10,11 @@ import { BiLike } from "react-icons/bi";
 import { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import ContactUs from "../ContactUs/ContactUs";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 const ContactForm = () => {
+  const MySwal = withReactContent(Swal)
   const [inputs, setInputs] = useState({
     user_name: "",
     user_surname: "",
@@ -26,6 +29,9 @@ const ContactForm = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
+    MySwal.fire({
+      title: <div>Su correo ha sido enviado correctamente.</div>,
+    })
     e.preventDefault();
     const messageCopy = `Nombre y apellido: ${inputs.user_name} ${inputs.user_surname}\nEmail: ${inputs.user_email}\nPhone: ${inputs.phone}\nMensaje: ${inputs.message}`;
     const element = document.getElementById("messageId");

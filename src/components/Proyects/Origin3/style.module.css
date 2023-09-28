@@ -121,7 +121,7 @@
 }
 .knowOurBuildings {
   display: grid;
-  grid-template-columns: 15% 65% 10%;
+  grid-template-columns: 20% 57% 12%;
   background: rgb(6, 102, 153);
   justify-content: center;
   height: 20rem;
@@ -1051,6 +1051,7 @@ p:hover {
   }
   .knowOurBuildings {
     margin-top: 7rem;
+    grid-template-columns: 28% 60% 10%;
   }
   .porcentageNumber {
     font-size: 4rem;
@@ -1135,6 +1136,9 @@ p:hover {
     width: 99%;
     word-wrap: break-word;
   }
+  .knowOurBuildings{
+    grid-template-columns: 34% 46% 16%;
+  }
 }
 @media (width<=768px) {
   .apartmentsGrid {
@@ -1158,6 +1162,14 @@ p:hover {
     border: none;
     font-size: 1rem;
   }
+  .porcentageBarImg {
+    width: 13rem;
+    bottom: 9.3rem;
+}
+.buildingPart{
+    font-size: 1.3rem;
+
+}
 }
 
 @media (width<=540px) {
@@ -1290,8 +1302,8 @@ p:hover {
     font-size: 1rem;
   }
   .porcentageBarImg {
-    width: 9rem;
-    bottom: 6.3rem;
+    width: 8rem;
+    bottom: 5.89rem;
   }
   .buildingPart {
     font-size: 0.8rem;
@@ -1303,7 +1315,7 @@ p:hover {
     font-size: 1rem;
   }
   .knowOurBuildings {
-    grid-template-columns: 30% 56% 12%;
+    grid-template-columns: 27% 50% 21%;
   }
   .sliderComponent {
     width: 94vw;
@@ -1391,6 +1403,16 @@ p:hover {
   .availabilityLabel {
     font-size: 0.7rem;
   }
+  .buildingLogo {
+    width: 7rem;
+    height: 7rem;
+}
+.seeMoreBtn{
+  margin-bottom: 0.5rem;
+    width: 5rem;
+    height: 1.5rem;
+    margin-right: 0.1rem;
+}
 }
 
 @media (width<=393px) {
@@ -1425,7 +1447,7 @@ p:hover {
     width: 4.5rem;
     font-size: 0.8rem;
     height: 2rem;
-    margin-right: 2rem;
+    margin-right: -0.5rem;
   }
 }
 
@@ -1434,9 +1456,26 @@ p:hover {
     width: 7.1rem;
     bottom: 5.3rem;
   }
+  .seeMoreBtn {
+    margin-bottom: 0.5rem;
+    width: 4.5rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    margin-right: -0.5rem;
+  }
+
 }
 @media (width<=360px) {
   .porcentage {
     grid-template-columns: 26% 72%;
   }
+  .leftSideContainer{
+    width: 91%;
+    justify-items: center;
+    margin-left: 1.4rem;
+  }
+.apartmentsGrid {
+  grid-template-columns: repeat(1, 1fr);
+  width: 87%;
+}
 }

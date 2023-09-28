@@ -246,7 +246,23 @@
 .arrow_right {
   margin-left: 10px;
 }
-
+@media (width<=1694px) {
+  .blueLineBottom {
+    left: 70.9rem;
+}
+}
+@media (width<=1500px) {
+  
+  .blueLineBottom {
+    left: 58.9rem;
+}
+.textHistory {
+  width: 52rem;
+  font-size: 1.5rem;
+  FONT-WEIGHT: 500;
+  padding: 3rem;
+}
+}
 @media (width>=1480px) {
   .history {
     font-size: 6rem;
@@ -255,11 +271,6 @@
     font-size: 6rem;
   }
 
-  .textHistory {
-    width: 64rem;
-    font-size: 2.2rem;
-    margin-left: 5rem;
-  }
   .descriptionTxt {
     width: 45rem;
     font-size: 2rem;
@@ -277,9 +288,7 @@
   .misionVisionTitles {
     font-size: 2rem;
   }
-  .blueLineBottom {
-    left: 84.9rem;
-  }
+
 }
 @media (width<=1280px) {
   .blueLineBottom {

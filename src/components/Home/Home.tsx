@@ -165,7 +165,7 @@ function Home() {
           />
           <h1>ORIGIN I</h1>
           <hr className={style.hrYellow} />
-          <div className={style.addressOrigin}>Barrio La Asunción. Bogota.</div>
+          <div className={style.addressOrigin}>Barrio La Asunción. Bogotá.</div>
         </Link>
         <Link to="/projects/Origin2" className={style.imagesProjects}>
           <img

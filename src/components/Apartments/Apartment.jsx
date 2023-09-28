@@ -149,7 +149,7 @@ const Apartment = () => {
                 src="https://www.youtube.com/embed/cEOtUqrVaDg"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             ) : id == 2 ? (
               <iframe
@@ -157,7 +157,7 @@ const Apartment = () => {
                 src="https://www.youtube.com/embed/SeqgpM0PZSE"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             ) : id == 3 ? (
               <iframe
@@ -165,7 +165,7 @@ const Apartment = () => {
                 src="https://www.youtube.com/embed/gnwqEu62zg4"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             ) : id == 4 ? (
               <iframe
@@ -173,7 +173,7 @@ const Apartment = () => {
                 src="https://www.youtube.com/embed/SeqgpM0PZSE"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             ) : (
               <iframe
@@ -181,7 +181,7 @@ const Apartment = () => {
                 src="https://www.youtube.com/embed/H-Hn7a8IOKY"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             )}
           </div>

@@ -685,38 +685,6 @@ function Origin3() {
                             Gimnasios, ver mas...
                           </a>
                         </li>
-                        {/* <li className={style.unorderList}>
-                          <a
-                            href="https://www.google.com/maps/place/La+Granja+Public+Park/@4.6979802,-74.1010539,19.08z/data=!4m6!3m5!1s0x8e3f9b37e176bb6f:0xc7ae941226a07276!8m2!3d4.6978674!4d-74.1005495!16s%2Fg%2F11b7hfpbyq?entry=ttu"
-                            target="blank"
-                          >
-                            Spirit (700 mt)
-                          </a>
-                        </li> */}
-                        {/* <li className={style.unorderList}>
-                          <a
-                            href="https://www.google.com/maps/place/La+Granja+Public+Park/@4.6979802,-74.1010539,19.08z/data=!4m6!3m5!1s0x8e3f9b37e176bb6f:0xc7ae941226a07276!8m2!3d4.6978674!4d-74.1005495!16s%2Fg%2F11b7hfpbyq?entry=ttu"
-                            target="blank"
-                          >
-                            Smart Fit Calle 80 (2.2 Km)
-                          </a>
-                        </li> */}
-                        {/* <li className={style.unorderList}>
-                          <a
-                            href="https://www.google.com/maps/place/La+Granja+Public+Park/@4.6979802,-74.1010539,19.08z/data=!4m6!3m5!1s0x8e3f9b37e176bb6f:0xc7ae941226a07276!8m2!3d4.6978674!4d-74.1005495!16s%2Fg%2F11b7hfpbyq?entry=ttu"
-                            target="blank"
-                          >
-                            FIT360 (1.1 Km)
-                          </a>
-                        </li> */}
-                        {/* <li className={style.unorderList}>
-                          <a
-                            href="https://www.google.com/maps/place/La+Granja+Public+Park/@4.6979802,-74.1010539,19.08z/data=!4m6!3m5!1s0x8e3f9b37e176bb6f:0xc7ae941226a07276!8m2!3d4.6978674!4d-74.1005495!16s%2Fg%2F11b7hfpbyq?entry=ttu"
-                            target="blank"
-                          >
-                            BHB GYM (1.2 Km)
-                          </a>
-                        </li> */}
                       </ul>
                       <span className={style.credit}>
                         <label htmlFor="slide-1">
@@ -999,7 +967,7 @@ function Origin3() {
                   <div className={style.greenCircleApto}></div>501
                 </div>
                 <button className={style.seeMoreBtnApto}>
-                  <Link className={style.linkStyle}  to="/projects/Origin3/1">
+                  <Link className={style.linkStyle} target="_blank" to="/projects/Origin3/1">
                     Ver más
                   </Link>
                 </button>
@@ -1042,7 +1010,7 @@ function Origin3() {
                   <div className={style.greenCircleApto}></div>502
                 </div>
                 <button className={style.seeMoreBtnApto}>
-                  <Link className={style.linkStyle}  to="/projects/Origin3/2">
+                  <Link className={style.linkStyle} target="_blank"  to="/projects/Origin3/2">
                     Ver más
                   </Link>
                 </button>
@@ -1084,7 +1052,7 @@ function Origin3() {
                   <div className={style.greenCircleApto}></div>503
                 </div>
                 <button className={style.seeMoreBtnApto}>
-                  <Link className={style.linkStyle}  to="/projects/Origin3/3">
+                  <Link className={style.linkStyle}  target="_blank" to="/projects/Origin3/3">
                     Ver más
                   </Link>
                 </button>
@@ -1126,7 +1094,7 @@ function Origin3() {
                   <div className={style.greenCircleApto}></div>504
                 </div>
                 <button className={style.seeMoreBtnApto}>
-                  <Link className={style.linkStyle}  to="/projects/Origin3/4">
+                  <Link className={style.linkStyle}  target="_blank" to="/projects/Origin3/4">
                     Ver más
                   </Link>
                 </button>
@@ -1168,7 +1136,7 @@ function Origin3() {
                   <div className={style.greenCircleApto}></div>505
                 </div>
                 <button className={style.seeMoreBtnApto}>
-                  <Link className={style.linkStyle}  to="/projects/Origin3/5">
+                  <Link className={style.linkStyle} target="_blank"  to="/projects/Origin3/5">
                     Ver más
                   </Link>
                 </button>

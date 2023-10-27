@@ -77,6 +77,7 @@ function Navbar() {
   const mediaQuery1062px = window.matchMedia("(width<=1062px)");
   const mediaQuery828px = window.matchMedia("(width<=828px)");
   const mediaQuery629px = window.matchMedia("(width<=629px)");
+  const mediaQuery428px = window.matchMedia("(width<=428px)");
   const mediaQuery414px = window.matchMedia("(width<=414px)");
 
   const mediaQuery375px = window.matchMedia("(width<=375px)");
@@ -86,8 +87,11 @@ function Navbar() {
   const open = Boolean(anchorEl);
   useEffect(() => {
     if (mediaQuery1062px.matches) setSizeFont("h6");
-    if (mediaQuery629px.matches) setSizeFont("subtitle1");
-
+    if (mediaQuery629px.matches) setSizeFont("subtitle1");  
+    if (mediaQuery428px.matches) {
+      setSizeFont(10);
+      setSizeIcon(10);
+    }
     if (mediaQuery414px.matches) {
       setSizeFont(10);
       setSizeIcon(10);

@@ -732,3 +732,22 @@
     font-size: 0.5rem;
   }
 }
+
+@media (min-width: 428px) and (max-width: 428px) and (min-height: 926px) and (max-height: 926px) {
+  .carouselWrapperBuildings {
+    width: 90vw;
+    height: 20vh;
+    margin-top: 2rem;
+}
+.carouselBuildings {
+  display: flex;
+  width: 162.5rem;
+  margin-left: -24rem;
+}
+.carouselBuildings div {
+  width: 257rem;
+  height: 5.5rem;
+  background-size: contain;
+}
+
+  }

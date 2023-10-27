@@ -87,7 +87,7 @@ function Home() {
                   <b>Localidad:</b> Engativá (Bogotá)
                 </p>
               </div>
-              <div style={{ display: "flex", justifyContent: "end" }}>
+              <div style={{ display: "flex", justifyContent: "end",paddingRight:"1rem"}}>
                 <button
                   className={style.btn}
                   onClick={() => navigate("projects/Origin3")}

@@ -935,7 +935,7 @@ function Origin3() {
               <div className={style.textApto}>
                 <div className={style.typeApto}>TIPO 1</div>
                 <div className={style.typeAptoDescription}>
-                  45.45 M2 - Área Privada
+                  45 M2 - Área Privada
                 </div>
               </div>
               <img

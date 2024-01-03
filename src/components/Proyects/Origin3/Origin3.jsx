@@ -195,6 +195,7 @@ function Origin3() {
   const mediaQuery768px = window.matchMedia("(width<=768px)");
   const mediaQuery414px = window.matchMedia("(width<=414px)");
 
+  
   const scrollToSection = () => {
     scroller.scrollTo("sectionRef", {
       smooth: true,

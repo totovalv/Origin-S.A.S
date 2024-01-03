@@ -13,7 +13,7 @@ const Apartment = () => {
   let types = [
     {
       name: 1,
-      area: "(45.56 m2 Área Privada)",
+      area: "45.56 M2 Area Privada / 49.08 M2 Area Construida",
       rooms: " 2 alcobas",
       bath: " 1 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
@@ -22,7 +22,7 @@ const Apartment = () => {
     },
     {
       name: 2,
-      area: "(61.73 M2 - Área Privada)",
+      area: "61.73 M2 - Area Privada / 66.2 M2 - Area Construida",
       rooms: " 3 alcobas",
       bath: " 2 baños",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
@@ -31,7 +31,7 @@ const Apartment = () => {
     },
     {
       name: 3,
-      area: "(45.45 M2 - Área Privada)",
+      area: "45.45 M2 - Area Privada / 48.94 M2 - Area Construida",
       rooms: " 2 alcobas",
       bath: " 1 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
@@ -40,7 +40,7 @@ const Apartment = () => {
     },
     {
       name: 4,
-      area: "32.71 M2 - Área Privada",
+      area: "32.71 M2 - Area Privada / 36.28 M2 - Area Construida",
       rooms: " 1 alcoba",
       bath: " 1 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",
@@ -48,7 +48,7 @@ const Apartment = () => {
     },
     {
       name: 5,
-      area: "(23.31 M2 - Área Privada)",
+      area: "23.31 M2 - Area Privada / 25.43 M2 - Area Construida",
       rooms: " 1 alcoba",
       bath: " 1 baño",
       img: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684177143/Aptos%20Origin3/Apto_Tipo1_kdzsns.jpg",

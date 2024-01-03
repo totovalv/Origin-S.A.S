@@ -45,7 +45,7 @@ const Carousel = () => {
           </div>
         </div>
       ) : (
-        <div className={style.empty}>Esss</div>
+        <div className={style.empty}></div>
       )}
 
       <div className={style.carousel__images}>
@@ -67,7 +67,7 @@ const Carousel = () => {
           </div>
         </div>
       ) : (
-        <div className={style.empty}>Esss</div>
+        <div className={style.empty}></div>
       )}
 
       {showModal && (
@@ -106,6 +106,7 @@ function About() {
         </div>
         <div className={style.bgTxtHistory}>
           <div className={style.textHistory}>
+            <div className={style.textHistoryParagraph}>
             {" "}
             Surgió en el año 2014 bajo una iniciativa de emprendimiento familiar
             con un concepto de brindar opciones de vivienda para población de
@@ -114,6 +115,7 @@ function About() {
             ubicada en excelentes sectores de la ciudad. Es así que el año 2016
             se construyó Origin I y en el año 2020 Origin II con éxito en
             ventas.
+            </div>
           </div>
         </div>
       </div>

@@ -99,7 +99,7 @@ function Origin3() {
       buildingLogo:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684794554/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/building_logo_biztci.png",
       timeline:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688334981/origin-III-1_uhkqvt.png",
+        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1704043568/origin-III-1_uhkqvt.png",
 
       map: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688334981/MAPA-sitioscercanos_flqmet.jpg",
       reception:

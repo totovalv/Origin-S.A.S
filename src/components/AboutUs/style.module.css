@@ -92,13 +92,20 @@
 }
 .textHistory {
   width: 45rem;
-  font-weight: 600;
+  font-weight: lighter;
   padding: 7rem;
   font-size: 1.2rem;
   text-align: center;
-  font-family: var(--metropolisLight);
   margin-left: 5rem;
+  text-decoration: none;
 }
+
+.textHistoryParagraph {
+  font-family: var(--metropolisLight);
+}
+
+
+
 .MVcontainer {
   margin-bottom: 5rem;
   margin-top: 5rem;
@@ -337,6 +344,12 @@
     width: 33rem;
     font-size: 1rem;
   }
+
+  .textHistoryParagraph {
+    font-family: var(--metropolisLight);
+    font-size: 1.5rem;
+  }
+  
   .our {
     font-size: 2rem;
   }
@@ -380,6 +393,11 @@
     padding: 3rem;
     font-size: 1rem;
   }
+
+  .textHistoryParagraph {
+    font-family: var(--metropolisLight);
+    font-size: 1.3rem;
+  }
 }
 
 @media (width<=540px) {
@@ -405,10 +423,17 @@
     font-size: 1.5rem;
   }
   .textHistory {
-    width: 37vw;
+    width: 22rem;
     padding: 1rem;
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
+
+  .textHistoryParagraph {
+    font-family: var(--metropolisLight);
+    font-size: 1.1rem;
+  }
+
+
   .MVcontainer {
     margin-bottom: 2rem;
     margin-top: 2rem;

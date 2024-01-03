@@ -150,6 +150,7 @@
 .inputMessage {
   height: 6rem;
   border: 1.5px solid;
+  resize: none;
 }
 .buttonForm {
   height: 2.2rem;

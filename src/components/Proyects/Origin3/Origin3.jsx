@@ -285,11 +285,17 @@ function Origin3() {
             <div className={style.spaceOne}>
               <h5>
                 No. Apartamentos: 20
-                <br />5 por piso, 50 mt2 c/u aprox.
+                <br />5 por piso
+                <br />Desde 25.4 hasta 66.2 M2
+                <br />1, 2 y 3 Habitaciones
               </h5>
             </div>
             <div className={style.spaceTow}>
-              <h5>Licencia de Construcción Curaduría No. 5.</h5>
+              <h5>Licencia de Construcción Curaduría No. 2. 
+                <div>
+                  No. 11001-2-22-1978
+                </div>
+              </h5>
             </div>
             <div className={style.spaceThree}>
               <h5>Vivienda: No VIS</h5>
@@ -301,7 +307,7 @@ function Origin3() {
               <h5>No. Pisos: 5</h5>
             </div>
             <div className={style.sapaceSix}>
-              <h5>Área del lote: 300 mt2(14*23.6mts)</h5>
+              <h5>Área del lote: 330 mt2 <br /> (14*23.6mts)</h5>
             </div>
           </div>
         </div>
@@ -935,7 +941,10 @@ function Origin3() {
               <div className={style.textApto}>
                 <div className={style.typeApto}>TIPO 1</div>
                 <div className={style.typeAptoDescription}>
-                  45 M2 - Área Privada
+                  45.56 M2 - Area Privada
+                <div className={style.typeAptoDescription}>
+                  49.08 M2 - Area Construida
+                </div>
                 </div>
               </div>
               <img
@@ -980,7 +989,10 @@ function Origin3() {
               <div className={style.textApto}>
                 <div className={style.typeApto}>TIPO 2</div>
                 <div className={style.typeAptoDescription}>
-                  61.73 M2 - Área Privada
+                  61.73 M2 - Area Privada
+                <div className={style.typeAptoDescription}>
+                  66.2 M2 - Area Construida
+                </div>
                 </div>
               </div>
               <img
@@ -1022,7 +1034,10 @@ function Origin3() {
               <div className={style.textApto}>
                 <div className={style.typeApto}>TIPO 3</div>
                 <div className={style.typeAptoDescription}>
-                  45.45 M2 - Área Privada
+                  45.45 M2 - Area Privada
+                <div className={style.typeAptoDescription}>
+                  48.94 M2 - Area Construida
+                </div>
                 </div>
               </div>
               <img
@@ -1040,16 +1055,16 @@ function Origin3() {
               </button>
               <div className={style.numberApartmentsGrid}>
                 <div className={style.availabilityLabelApto}>
-                  <div className={style.greenCircleApto}></div>203
+                  <div className={style.greenCircleApto}></div>205
                 </div>
                 <div className={style.availabilityLabelApto}>
-                  <div className={style.greenCircleApto}></div>303
+                  <div className={style.greenCircleApto}></div>305
                 </div>
                 <div className={style.availabilityLabelApto}>
-                  <div className={style.greenCircleApto}></div>403
+                  <div className={style.greenCircleApto}></div>405
                 </div>
                 <div className={style.availabilityLabelApto}>
-                  <div className={style.greenCircleApto}></div>503
+                  <div className={style.greenCircleApto}></div>505
                 </div>
                 <button className={style.seeMoreBtnApto}>
                   <Link className={style.linkStyle}  target="_blank" to="/projects/Origin3/3">
@@ -1064,7 +1079,10 @@ function Origin3() {
               <div className={style.textApto}>
                 <div className={style.typeApto}>TIPO 4</div>
                 <div className={style.typeAptoDescription}>
-                  32.71 M2 - Área Privada
+                  32.71 M2 - Area Privada
+                  <div className={style.typeAptoDescription}>
+                  36.28 M2 - Area Construida
+                  </div>
                 </div>
               </div>
               <img
@@ -1106,7 +1124,10 @@ function Origin3() {
               <div className={style.textApto}>
                 <div className={style.typeApto}>TIPO 5</div>
                 <div className={style.typeAptoDescription}>
-                  23.31 M2 - Área Privada
+                  23.31 M2 - Area Privada
+                  <div className={style.typeAptoDescription}>
+                  25.43 M2 - Area Construida
+                  </div>
                 </div>
               </div>
               <img
@@ -1124,16 +1145,16 @@ function Origin3() {
               </button>
               <div className={style.numberApartmentsGrid}>
                 <div className={style.availabilityLabelApto}>
-                  <div className={style.greenCircleApto}></div>205
+                  <div className={style.greenCircleApto}></div>203
                 </div>
                 <div className={style.availabilityLabelApto}>
-                  <div className={style.greenCircleApto}></div>305
+                  <div className={style.greenCircleApto}></div>303
                 </div>
                 <div className={style.availabilityLabelApto}>
-                  <div className={style.greenCircleApto}></div>405
+                  <div className={style.greenCircleApto}></div>403
                 </div>
                 <div className={style.availabilityLabelApto}>
-                  <div className={style.greenCircleApto}></div>505
+                  <div className={style.greenCircleApto}></div>503
                 </div>
                 <button className={style.seeMoreBtnApto}>
                   <Link className={style.linkStyle} target="_blank"  to="/projects/Origin3/5">

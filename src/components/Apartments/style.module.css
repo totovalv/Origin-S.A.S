@@ -80,6 +80,9 @@
   font-family: var(--metropolisLight);
   font-weight: bold;
   font-size: 2rem;
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
 }
 
 .gridContainer {
@@ -188,6 +191,12 @@
     grid-template-columns: 23% 55% 19.5%;
 
   }
+
+  .descriptionData {
+    display: flex;
+    flex-flow: column;
+  }
+
 }
 
 @media (width<=540px) {

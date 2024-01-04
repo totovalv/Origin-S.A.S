@@ -942,10 +942,8 @@ function Origin3() {
               <div className={style.textApto}>
                 <div className={style.typeApto}>TIPO 1</div>
                 <div className={style.typeAptoDescription}>
-                  45.56 M2 - Area Privada
-                <div className={style.typeAptoDescription}>
+                  45.56 M2 - Area Privada <br />
                   49.08 M2 - Area Construida
-                </div>
                 </div>
               </div>
               <img
@@ -991,9 +989,10 @@ function Origin3() {
                 <div className={style.typeApto}>TIPO 2</div>
                 <div className={style.typeAptoDescription}>
                   61.73 M2 - Area Privada
-                <div className={style.typeAptoDescription}>
+                  
+                  <br />
+
                   66.2 M2 - Area Construida
-                </div>
                 </div>
               </div>
               <img
@@ -1036,9 +1035,8 @@ function Origin3() {
                 <div className={style.typeApto}>TIPO 3</div>
                 <div className={style.typeAptoDescription}>
                   45.45 M2 - Area Privada
-                <div className={style.typeAptoDescription}>
+                <br />
                   48.94 M2 - Area Construida
-                </div>
                 </div>
               </div>
               <img
@@ -1081,9 +1079,8 @@ function Origin3() {
                 <div className={style.typeApto}>TIPO 4</div>
                 <div className={style.typeAptoDescription}>
                   32.71 M2 - Area Privada
-                  <div className={style.typeAptoDescription}>
+                <br />
                   36.28 M2 - Area Construida
-                  </div>
                 </div>
               </div>
               <img
@@ -1126,9 +1123,8 @@ function Origin3() {
                 <div className={style.typeApto}>TIPO 5</div>
                 <div className={style.typeAptoDescription}>
                   23.31 M2 - Area Privada
-                  <div className={style.typeAptoDescription}>
+                  <br />
                   25.43 M2 - Area Construida
-                  </div>
                 </div>
               </div>
               <img

@@ -125,7 +125,7 @@ function About() {
           <Carousel />
         </div>
       </div>
-      <div className={style.blueLineTop}>line</div>
+      {/* <div className={style.blueLineTop}>line</div> */}
       <div className={style.MVcontainer}>
         <div className={style.misionContain}>
           <div className={style.misionVisionTitles}>MISIÓN</div>
@@ -147,7 +147,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className={style.blueLineBottom}>line</div>
+      {/* <div className={style.blueLineBottom}>line</div> */}
 
       <Footer />
       <ContactUs />

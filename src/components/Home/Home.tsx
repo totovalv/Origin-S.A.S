@@ -79,8 +79,8 @@ function Home() {
                 />
                 <p className={style.blueSpaceTxt}>
                   <h4>Edificio Origin III</h4>
-                  Es un proyecto de apartamentos y apartaestudios desde 23.3m2
-                  hasta 61.7m2 de área privada. <br />
+                  Es un proyecto de apartamentos y apartaestudios  desde 25.4m2
+                  hasta 66.2m2 de área construida. <br />
                   <b>Dirección:</b> Calle 77a 83-31/39 <br />
                   <b>Barrio:</b> Soledad Norte
                   <br />

@@ -67,6 +67,16 @@ const Apartment = () => {
     );
     setOrderSelect(newOrderSelect);
   }, [id]);
+
+
+  const analyticsId = '421830914';
+
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('config', analyticsId, {
+      'page_path': `/projects/Origin3/${id}`,
+    });
+  }
+
   const optionHandle = (path) => {
     let test = `/projects/Origin3/${path}`;
     navigate(test);

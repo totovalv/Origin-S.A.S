@@ -812,8 +812,6 @@ function Origin3() {
         </div>
       </div>  
       
-
-      <span>Algo se jod</span>
       <div className={style.timeline}>
         <img className={style.imgTimeline} src={data.timeline} alt="timeline" />
       </div>

@@ -110,6 +110,8 @@ function Origin3() {
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1691718765/CUBIERTAO_kgqllr.png",
     });
   }, []);
+
+  
   const mediaQuery1062px = window.matchMedia("(width<=768px)");
   const imagesMallMarkert = [
     data.marketQuirigua,
@@ -808,8 +810,8 @@ function Origin3() {
             </div>
           </div>
         </div>
-      </div>
-
+      </div>  
+      <span>Esto es un span de prueba</span>
       <div className={style.timeline}>
         <img className={style.imgTimeline} src={data.timeline} alt="timeline" />
       </div>

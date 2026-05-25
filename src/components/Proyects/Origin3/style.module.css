@@ -171,13 +171,14 @@
 .redirect {
   text-decoration: none;
 }
-.timeline {
+.anouncement {
   margin-top: 5vh;
+  margin-bottom: 5vh;
   display: flex;
   justify-content: center;
 }
-.imgTimeline {
-  width: 95vw;
+.imgAnouncement {
+  width: 50vw;
 }
 .ubicationTitle {
   display: flex;

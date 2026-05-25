@@ -98,9 +98,7 @@ function Origin3() {
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688334981/5_wacorj.png",
       buildingLogo:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1684794554/Origin3%20Aleda%C3%B1os/Origin3%20Acabados/building_logo_biztci.png",
-      timeline:
-        "https://res.cloudinary.com/dxajrtcwk/image/upload/v1704043568/origin-III-1_uhkqvt.png",
-
+      announcement: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1779738343/imagenComunicadoOrigin3_xeagtb.jpg",   
       map: "https://res.cloudinary.com/dxajrtcwk/image/upload/v1688334981/MAPA-sitioscercanos_flqmet.jpg",
       reception:
         "https://res.cloudinary.com/dxajrtcwk/image/upload/v1690653570/Aptos%20Origin3/PRIMER_NIVEL_xzoizv.png",
@@ -812,8 +810,8 @@ function Origin3() {
         </div>
       </div>  
       
-      <div className={style.timeline}>
-        <img className={style.imgTimeline} src={data.timeline} alt="timeline" />
+      <div className={style.anouncement}>
+        <img className={style.imgAnouncement} src={data.announcement} alt="anouncement" />
       </div>
       <div className={style.titleContain}>
         <div className={style.ubicationTitle}>UBICACIÓN</div>

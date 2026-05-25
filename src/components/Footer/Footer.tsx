@@ -73,7 +73,8 @@ function Footer() {
             </div>
             <div className={style.correo}>
               <div className={style.titleCorreo}>Telefonos:</div>
-              <div className={style.direccionCorreo}> 322 8795258</div>
+              <div className={style.direccionCorreo}> 300 563 5245</div>
+              <div className={style.direccionCorreo}> 322 879 5258</div>
             </div>
           </div>
           <div className={style.contactIconsFooter}>

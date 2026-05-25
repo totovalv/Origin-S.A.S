@@ -54,7 +54,8 @@
 }
 .contactIconsFooter {
   justify-self: left;
-  margin-left: 1.5rem;
+  margin-left: 2rem;
+  margin-top: 2.5rem;
 }
 
 .followUsContactContainer {
@@ -185,6 +186,10 @@
   }
 }
 @media (width<=1285px) {
+  .contactIconsFooter {
+    justify-content: center;
+    margin-left: 2.5rem;
+  }
   .correo {
     width: 100%;
     text-align: center;
@@ -223,12 +228,19 @@
   .direccionCorreo {
     font-size: 1.3rem;
   }
+  .contactIconsFooter {
+    margin: 0;
+    width: 100%;
+    margin-top: 5.5rem;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 @media (width<=912px) {
-  .bodyFooter {
+  /* .bodyFooter {
     height: 80vh;
-  }
+  } */
 }
 @media (width<=540px) {
   .bodyFooter {
@@ -262,7 +274,7 @@
   .contactIconsFooter {
     justify-self: center;
     margin-left: 0rem;
-    margin-top: 2.5rem;
+    margin-top: 5rem;
   }
   .ContactUs {
     justify-self: center;
@@ -303,7 +315,7 @@
   .contactIconsFooter {
     justify-self: center;
     margin-left: 0rem;
-    margin-top: 2.5rem;
+    margin-top: 5rem;
   }
   .ContactUs {
     justify-self: center;

@@ -166,33 +166,44 @@
   background: #52829cfb;
 }
 .thanksForContactContainer {
-  position: relative;
   background: #066699;
   height: 35rem;
   width: 100%;
 }
+
+.thanksForContactInnerContainer {
+  max-width: 80%;
+  height: 100%;
+  margin: auto;
+  /* background: #000; */
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .thanksText {
-  background: rgb(255, 255, 255);
   position: absolute;
-  width: 40rem;
-  /* height: 23rem; */
-  right: 0;
+  background: #fff;
+  max-height: 100%;
+  width: 50%;
   top: 50%;
+  left: 70%;
   transform: translate(-50%, -50%);
+  padding: 5rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding: 6rem;
+  align-items: center;
 }
 .thanksImg {
-  position: relative;
-  top: 3rem;
-  left: 5rem;
-  width: 50%;
-  height: 70%;
+  position: absolute;
+  left: 0;
+  width: 50vw;
+  height: 90%;
   object-fit: cover;
-
 }
 .thanks {
   font-family: var(--metropolisBold);
@@ -206,12 +217,14 @@
   color: #066699;
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .message {
   font-family: var(--metropolisLight);
   font-size: 0.85rem;
-  width: 30rem;
   line-height: 2rem;
+  text-align: center;
+
 }
 .iconsFooter {
   text-decoration: none;
@@ -224,21 +237,32 @@
   transform: scale(1.2);
 }
 
-@media (width<=1024px) {
-  .thanksImg {
-    position: relative;
-    top: 3rem;
-    left: 5rem;
-    width: 60%;
-    height: 70%;
-    object-fit: cover;
-  }
+@media (width <= 1400px) {
   .thanksText {
-    width: 39rem;
-    height: 22rem;
-    bottom: 11rem;
-    left: 18rem;
+    padding: 4rem;
+  }
 }
+
+@media (width <= 1060px) {
+  .thanksText {
+    padding: 3rem;
+  }
+
+  .thanks {
+    font-size: 4rem;
+  }
+
+  .forCommunicate {
+    font-size: 2rem;
+  }
+
+  .message {
+    font-size: 0.80rem;
+  }
+}
+
+
+@media (width<=1024px) {
 .firstBoxContact {
   height: 18rem;
   justify-items: center;
@@ -265,74 +289,45 @@
     justify-content: center;
 }
 
-.thanksText {
-  left: 14rem;
-}
 }
 @media (width<=820px) {
-  .thanksImg {
-    left: 2rem;
-    width: 36rem;
-    height: 20rem;
-}
-  .thanksText {
-    left: 10rem;
-}
 .secondBoxContact{
   grid-template-columns: 50% 50%;
 }
 }
 @media (width<=768px) {
+  .thanksImg {
+    width: 100%;
+  }
+
+  .thanksText {
+    left: 50%;
+    width: 80%;
+  }
+
+  .thanks {
+    font-size: 3rem;
+  }
+
+  .forCommunicate {
+    font-size: 1.5rem;
+  }
+
+  .message {
+    font-size: 0.70rem;
+  }
+  
   .containerContactForm {
     grid-template-columns: initial;
   }
   .rightElement {
     padding: 3rem;
 }
-.thanksText {
-  left: 7rem;
-}
-}
-@media (width<=540px) {
-  .message {
-    width: 20rem;
-}.thanksText {
-  left: 2rem;
-  width: 30rem;
-  height: 24rem;
-  bottom: 11rem;
-}
-.thanks{
-  font-size: 2.5rem;
-  height: 5rem;
-}
-.forCommunicate {
-  font-size: 1.5rem;
-}.thanksImg {
-  left: 2rem;
-  width: 30rem;
-  height: 19rem;
 
 }
-}
+
 @media (width<=414px) {
-  .thanksText {
-    width: 22rem;
-  padding: 6rem;
 
-}.message {
-  width: 11rem;
-}
-.thanks {
-  font-size: 1.5rem;
-}
-.forCommunicate {
-  font-size: 1rem;
-}.thanksImg {
-  left: 2rem;
-  width: 22rem;
-  height: 19rem;
-}
 .formContain {
   width: 63vw;
 }
@@ -357,26 +352,15 @@ font-size: 3rem;
   }
 }
 @media (width<=393px) {
-  .thanksText{
-    width: 20rem;
-    padding: 5rem;
-  }
-  .thanksImg {
-    width: 20rem;
+
 
 }
-}
+
 @media (width<=375px) {
 .contactTitle{
   font-size: 2rem;
 }
-.thanksText {
-  width: 19.5rem;
-  padding: 4rem;
-}
-.thanksImg {
-  width: 19.5rem;
-}
+
 }
 @media (width<=360px) {
   .contactInfoTitle{

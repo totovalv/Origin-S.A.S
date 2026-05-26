@@ -195,6 +195,7 @@ const ContactForm = () => {
         </div>
       </div>
       <div className={style.thanksForContactContainer}>
+        <div className={style.thanksForContactInnerContainer}>
         <img
           className={style.thanksImg}
           src="https://res.cloudinary.com/dxajrtcwk/image/upload/v1688937233/mosaic_lgf5ja.jpg"
@@ -207,6 +208,7 @@ const ContactForm = () => {
             Queremos brindarte la mejor atención, responderemos lo más rápido
             posible, el tiempo de espera es máximo tres días hábiles.
           </div>
+        </div>
         </div>
       </div>
       <Footer />

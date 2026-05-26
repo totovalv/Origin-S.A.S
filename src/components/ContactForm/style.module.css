@@ -17,27 +17,15 @@
   --metroUltraBold: metroUltraBold;
 }
 .titleContainer {
-  display: grid;
-  align-items: center;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   height: auto;
+  margin: 2rem 0;
 }
-.hrTop {
-  justify-self: center;
-  height: 0.2rem;
-  align-self: center;
-  background-color: #ffb200;
-  border: 0rem;
-  margin-bottom: 1rem;
-}
-.hrBottom {
-  justify-self: center;
-  height: 0.1rem;
-  align-self: center;
-  background-color: #ffb200;
-  border: 0rem;
-}
+
 .contactContain {
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,19 +33,25 @@
 }
 .contactTitle {
   color: #066699;
-  font-size: 3.8rem;
+  font-size: clamp(2rem, 6vw, 4rem);
   font-family: var(--metropolisBold);
+  width: 100%;
+  text-align: center;
 }
 
 .contactText {
   font-family: var(--metropolisLight);
   text-align: center;
   display: flex;
-  width: 80%;
+  width: 70%;
   text-align: center;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
 }
 .contactTextBold {
   font-family: var(--metropolisBold);
+  width: 70%;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  text-align: center;
 }
 .containerContactForm {
   display: grid;
@@ -323,12 +317,6 @@
 .responsiveNameSurname{
   display: grid;
 
-}
-.contactTitle{
-font-size: 3rem;
-}
-.titleContainer {
-  height: 28rem;
 }
 }
 @media (width<=412px) {

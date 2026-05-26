@@ -77,10 +77,6 @@ const ContactForm = () => {
             Horario de atención: Lunes - Sábado 8:00 am - 4:30 pm
           </div>
         </div>
-        <div className={style.hrLines}>
-          <hr className={style.hrTop} />
-          <hr className={style.hrBottom} />
-        </div>
       </div>
       <div className={style.containerContactForm}>
         <div className={style.leftElement}>

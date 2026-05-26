@@ -67,10 +67,6 @@ const ContactForm = () => {
     <div>
       <Navbar />
       <div className={style.titleContainer}>
-        <div>
-          <hr className={style.hrTop} />
-          <hr className={style.hrBottom} />
-        </div>
         <div className={style.contactContain}>
           <div className={style.contactTitle}>CONTÁCTANOS</div>
           <div className={style.contactText}>

@@ -18,10 +18,9 @@
 }
 .titleContainer {
   display: grid;
-  grid-template-columns: 25% 50% 25%;
   align-items: center;
   text-align: center;
-  height: 20rem;
+  height: auto;
 }
 .hrTop {
   justify-self: center;

@@ -98,8 +98,9 @@ const ContactForm = () => {
             </div>
             <div className={style.phoneContactBox}>
               <BsTelephone size={25} />
-              <div className={style.contactInfoTitle}>TELEFONO</div>
-              <div> 322 8795258 </div>
+              <div className={style.contactInfoTitle}>TELEFONOS</div>
+              <div> 300 563 5358 </div>
+              <div> 322 879 5258 </div>
             </div>
           </div>
           <div>
@@ -107,7 +108,7 @@ const ContactForm = () => {
               <div className={style.emailBox}>
                 <TfiEmail size={27} />
                 <div className={style.contactInfoTitle}>EMAIL</div>
-                <div>info@mysite.com</div>
+                <div>Origin.holdings.sas@gmail.com</div>
               </div>
 
               <div className={style.socialMediaBox}>

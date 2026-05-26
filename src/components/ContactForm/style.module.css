@@ -100,6 +100,8 @@
   font-weight: bold;
   letter-spacing: 0.2rem;
 }
+
+  
 .cityLabel {
   font-family: var(--metropolisBold);
 }
@@ -107,7 +109,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
-  margin-right: 6rem;
+  /* margin-right: 6rem; */
 }
 .socialMediaBox {
   display: flex;
@@ -164,29 +166,33 @@
   background: #52829cfb;
 }
 .thanksForContactContainer {
+  position: relative;
   background: #066699;
   height: 35rem;
   width: 100%;
 }
 .thanksText {
   background: rgb(255, 255, 255);
-  position: relative;
-  width: 45rem;
-  height: 23rem;
-  bottom: 18rem;
-  left: 33rem;
+  position: absolute;
+  width: 40rem;
+  /* height: 23rem; */
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 7rem;
+  padding: 6rem;
 }
 .thanksImg {
   position: relative;
   top: 3rem;
   left: 5rem;
-  width: 48rem;
-  height: 24rem;
+  width: 50%;
+  height: 70%;
+  object-fit: cover;
+
 }
 .thanks {
   font-family: var(--metropolisBold);
@@ -223,8 +229,9 @@
     position: relative;
     top: 3rem;
     left: 5rem;
-    width: 36rem;
-    height: 18rem;
+    width: 60%;
+    height: 70%;
+    object-fit: cover;
   }
   .thanksText {
     width: 39rem;
@@ -233,7 +240,6 @@
     left: 18rem;
 }
 .firstBoxContact {
-  grid-template-columns: 43% 43%;
   height: 18rem;
   justify-items: center;
   justify-content: center;
@@ -253,12 +259,13 @@
     margin-right: 0rem;
   }
   .firstBoxContact {
-    grid-template-columns: 35% 35%;
     height: 18rem;
     justify-items: center;
     gap: 3rem;
     justify-content: center;
-}.thanksText {
+}
+
+.thanksText {
   left: 14rem;
 }
 }

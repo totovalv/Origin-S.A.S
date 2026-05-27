@@ -78,6 +78,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
+      <hr />
       <div className={style.containerContactForm}>
         <div className={style.leftElement}>
           <div className={style.firstBoxContact}>
